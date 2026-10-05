@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestRovingCube",
+  "nationalPokedexNumber": 10044,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 105,
+  "baseExperienceYield": 185,
+  "experienceGroup": "medium_fast",
+  "primaryType": "psychic",
+  "baseStats": {
+    "hp": 104,
+    "attack": 75,
+    "defence": 105,
+    "special_attack": 107,
+    "special_defence": 99,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "analytic"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:confusion",
+    "8:reflect",
+    "18:psybeam",
+    "30:psychic",
+    "45:triattack"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "steel"
+}

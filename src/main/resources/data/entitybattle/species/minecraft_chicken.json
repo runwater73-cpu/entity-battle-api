@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftChicken",
+  "nationalPokedexNumber": 11011,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 197,
+  "baseExperienceYield": 98,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 47,
+    "attack": 43,
+    "defence": 42,
+    "special_attack": 35,
+    "special_defence": 45,
+    "speed": 76
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "earlybird"
+  ],
+  "moves": [
+    "1:peck",
+    "1:growl",
+    "8:quickattack",
+    "18:wingattack",
+    "30:agility",
+    "45:bravebird"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "flying"
+}

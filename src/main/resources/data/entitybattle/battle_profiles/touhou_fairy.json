@@ -1,0 +1,11 @@
+{
+  "entity": "touhou_little_maid:fairy",
+  "species": "entitybattle:touhou_little_maid_fairy",
+  "level": { "min": 12, "max": 27 },
+  "defeat": "vanilla_death",
+  "catchable": true,
+  "worldMode": "native_mob",
+  "worldBehavior": "hostile",
+  "nativeDrops": true,
+  "nativeExperience": true
+}

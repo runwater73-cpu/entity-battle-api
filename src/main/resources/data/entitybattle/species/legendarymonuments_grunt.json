@@ -1,0 +1,45 @@
+{
+  "name": "LegendarymonumentsGrunt",
+  "nationalPokedexNumber": 10089,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 147,
+  "baseExperienceYield": 145,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "secondaryType": "fighting",
+  "baseStats": {
+    "hp": 89,
+    "attack": 97,
+    "defence": 76,
+    "special_attack": 38,
+    "special_defence": 68,
+    "speed": 58
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "guts"
+  ],
+  "moves": [
+    "1:scratch",
+    "1:leer",
+    "8:bite",
+    "18:brickbreak",
+    "30:crunch",
+    "45:closecombat"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

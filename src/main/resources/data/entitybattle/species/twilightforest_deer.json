@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestDeer",
+  "nationalPokedexNumber": 10014,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 170,
+  "baseExperienceYield": 124,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "secondaryType": "grass",
+  "baseStats": {
+    "hp": 64,
+    "attack": 62,
+    "defence": 53,
+    "special_attack": 42,
+    "special_defence": 55,
+    "speed": 88
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "sapsipper"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "8:quickattack",
+    "18:leechseed",
+    "30:stomp",
+    "45:energyball"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

@@ -1,0 +1,45 @@
+{
+  "name": "DeepAetherVenomite",
+  "nationalPokedexNumber": 10084,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 134,
+  "baseExperienceYield": 158,
+  "experienceGroup": "medium_fast",
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "baseStats": {
+    "hp": 76,
+    "attack": 89,
+    "defence": 67,
+    "special_attack": 74,
+    "special_defence": 62,
+    "speed": 96
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "poisonpoint"
+  ],
+  "moves": [
+    "1:poisonsting",
+    "1:bugbite",
+    "8:poisonfang",
+    "18:xscissor",
+    "30:sludgebomb",
+    "45:agility"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

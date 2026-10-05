@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftParrot",
+  "nationalPokedexNumber": 11037,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 156,
+  "baseExperienceYield": 137,
+  "experienceGroup": "medium_fast",
+  "primaryType": "flying",
+  "baseStats": {
+    "hp": 56,
+    "attack": 45,
+    "defence": 49,
+    "special_attack": 79,
+    "special_defence": 67,
+    "speed": 106
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "keeneye"
+  ],
+  "moves": [
+    "1:peck",
+    "1:growl",
+    "8:confusion",
+    "18:wingattack",
+    "30:airslash",
+    "45:psychic"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "psychic"
+}

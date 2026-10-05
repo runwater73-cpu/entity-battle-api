@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestHelmetCrab",
+  "nationalPokedexNumber": 10020,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 145,
+  "baseExperienceYield": 148,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 72,
+    "attack": 92,
+    "defence": 115,
+    "special_attack": 42,
+    "special_defence": 75,
+    "speed": 38
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "shellarmor"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:harden",
+    "8:bubblebeam",
+    "18:metalclaw",
+    "30:crabhammer",
+    "45:irondefense"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "steel"
+}

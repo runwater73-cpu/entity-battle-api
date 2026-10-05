@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestKnightPhantom",
+  "nationalPokedexNumber": 10025,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 3,
+  "baseExperienceYield": 370,
+  "experienceGroup": "slow",
+  "primaryType": "ghost",
+  "secondaryType": "steel",
+  "baseStats": {
+    "hp": 178,
+    "attack": 142,
+    "defence": 146,
+    "special_attack": 88,
+    "special_defence": 126,
+    "speed": 90
+  },
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "pressure"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:metalclaw",
+    "8:shadowsneak",
+    "18:ironhead",
+    "30:shadowclaw",
+    "45:closecombat"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 1.8,
+    "height": 2.8
+  },
+  "height": 35,
+  "weight": 3000
+}

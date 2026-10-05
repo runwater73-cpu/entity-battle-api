@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestDeathTome",
+  "nationalPokedexNumber": 10013,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 135,
+  "baseExperienceYield": 156,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 62,
+    "attack": 42,
+    "defence": 67,
+    "special_attack": 115,
+    "special_defence": 94,
+    "speed": 80
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "magicguard"
+  ],
+  "moves": [
+    "1:confusion",
+    "1:disable",
+    "8:psybeam",
+    "18:shadowball",
+    "30:psychic",
+    "45:nightshade"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "psychic"
+}

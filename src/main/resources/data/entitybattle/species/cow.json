@@ -1,0 +1,31 @@
+{
+  "name": "Cow",
+  "nationalPokedexNumber": 10002,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 190,
+  "baseExperienceYield": 64,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 65,
+    "attack": 80,
+    "defence": 50,
+    "special_attack": 35,
+    "special_defence": 35,
+    "speed": 35
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 1,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": ["thickfat"],
+  "moves": ["1:tackle", "1:growl", "5:stomp", "10:rest", "15:bodypress"],
+  "hitbox": { "fixed": false, "width": 0.9, "height": 1.4 },
+  "height": 14,
+  "weight": 800
+}

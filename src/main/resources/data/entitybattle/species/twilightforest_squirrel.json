@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestSquirrel",
+  "nationalPokedexNumber": 10049,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 172,
+  "baseExperienceYield": 122,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 53,
+    "attack": 46,
+    "defence": 45,
+    "special_attack": 52,
+    "special_defence": 54,
+    "speed": 108
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "pickup"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:quickattack",
+    "8:thundershock",
+    "18:agility",
+    "30:spark",
+    "45:thunderbolt"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "electric"
+}

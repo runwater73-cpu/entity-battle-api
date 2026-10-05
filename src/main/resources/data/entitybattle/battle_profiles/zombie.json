@@ -1,0 +1,11 @@
+{
+  "entity": "minecraft:zombie",
+  "species": "entitybattle:zombie",
+  "level": { "min": 5, "max": 20 },
+  "defeat": "vanilla_death",
+  "catchable": false,
+  "worldMode": "native_mob",
+  "worldBehavior": "hostile",
+  "nativeDrops": true,
+  "nativeExperience": true
+}

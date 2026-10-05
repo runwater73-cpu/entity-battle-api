@@ -1,0 +1,44 @@
+{
+  "name": "MinecraftPig",
+  "nationalPokedexNumber": 11039,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 178,
+  "baseExperienceYield": 116,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 72,
+    "attack": 67,
+    "defence": 59,
+    "special_attack": 36,
+    "special_defence": 52,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "thickfat"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "8:stomp",
+    "18:headbutt",
+    "30:rest",
+    "45:takedown"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

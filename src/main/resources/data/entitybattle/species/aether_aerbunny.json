@@ -1,0 +1,45 @@
+{
+  "name": "AetherAerbunny",
+  "nationalPokedexNumber": 10065,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 179,
+  "baseExperienceYield": 115,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 52,
+    "attack": 49,
+    "defence": 40,
+    "special_attack": 37,
+    "special_defence": 44,
+    "speed": 115
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "runaway"
+  ],
+  "moves": [
+    "1:pound",
+    "1:quickattack",
+    "8:doublekick",
+    "18:agility",
+    "30:aerialace",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "flying"
+}

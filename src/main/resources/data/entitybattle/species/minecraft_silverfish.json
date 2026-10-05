@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftSilverfish",
+  "nationalPokedexNumber": 11050,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 177,
+  "baseExperienceYield": 117,
+  "experienceGroup": "medium_fast",
+  "primaryType": "bug",
+  "baseStats": {
+    "hp": 45,
+    "attack": 59,
+    "defence": 51,
+    "special_attack": 38,
+    "special_defence": 44,
+    "speed": 107
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "swarm"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:bugbite",
+    "8:rockthrow",
+    "18:agility",
+    "30:xscissor",
+    "45:rockslide"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "rock"
+}

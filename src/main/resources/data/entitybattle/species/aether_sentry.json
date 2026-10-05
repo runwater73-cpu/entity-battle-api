@@ -1,0 +1,44 @@
+{
+  "name": "AetherSentry",
+  "nationalPokedexNumber": 10075,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 133,
+  "baseExperienceYield": 158,
+  "experienceGroup": "medium_fast",
+  "primaryType": "steel",
+  "baseStats": {
+    "hp": 92,
+    "attack": 91,
+    "defence": 121,
+    "special_attack": 48,
+    "special_defence": 82,
+    "speed": 31
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "sturdy"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:harden",
+    "8:metalclaw",
+    "18:irondefense",
+    "30:ironhead",
+    "45:bodypress"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

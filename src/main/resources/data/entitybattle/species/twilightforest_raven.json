@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestRaven",
+  "nationalPokedexNumber": 10040,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 152,
+  "baseExperienceYield": 140,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "secondaryType": "flying",
+  "baseStats": {
+    "hp": 62,
+    "attack": 71,
+    "defence": 49,
+    "special_attack": 75,
+    "special_defence": 52,
+    "speed": 104
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "insomnia"
+  ],
+  "moves": [
+    "1:peck",
+    "1:astonish",
+    "8:wingattack",
+    "18:feintattack",
+    "30:airslash",
+    "45:darkpulse"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestKobold",
+  "nationalPokedexNumber": 10026,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 186,
+  "baseExperienceYield": 108,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "secondaryType": "ground",
+  "baseStats": {
+    "hp": 49,
+    "attack": 67,
+    "defence": 42,
+    "special_attack": 30,
+    "special_defence": 40,
+    "speed": 89
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "pickpocket"
+  ],
+  "moves": [
+    "1:scratch",
+    "1:sandattack",
+    "8:bite",
+    "18:feintattack",
+    "30:crunch",
+    "45:dig"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

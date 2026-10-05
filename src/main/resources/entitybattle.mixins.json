@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.entitybattle.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["MobExperienceAccessor"],
+  "client": ["PokemonRendererMixin", "BattleOverlayMixin", "PartyOverlayMixin", "StorageSlotMixin", "PCGUIMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

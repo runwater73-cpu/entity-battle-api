@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestSnowGuardian",
+  "nationalPokedexNumber": 10047,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 140,
+  "baseExperienceYield": 152,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ice",
+  "secondaryType": "ghost",
+  "baseStats": {
+    "hp": 78,
+    "attack": 68,
+    "defence": 82,
+    "special_attack": 76,
+    "special_defence": 78,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "snowcloak"
+  ],
+  "moves": [
+    "1:powdersnow",
+    "1:astonish",
+    "8:iceshard",
+    "18:hex",
+    "30:icebeam",
+    "45:shadowball"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

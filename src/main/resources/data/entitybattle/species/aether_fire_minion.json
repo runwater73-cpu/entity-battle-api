@@ -1,0 +1,44 @@
+{
+  "name": "AetherFireMinion",
+  "nationalPokedexNumber": 10079,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 124,
+  "baseExperienceYield": 167,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fire",
+  "baseStats": {
+    "hp": 81,
+    "attack": 76,
+    "defence": 65,
+    "special_attack": 110,
+    "special_defence": 73,
+    "speed": 87
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "flamebody"
+  ],
+  "moves": [
+    "1:ember",
+    "1:flamewheel",
+    "8:firepunch",
+    "18:flamethrower",
+    "30:fireblast",
+    "45:flareblitz"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

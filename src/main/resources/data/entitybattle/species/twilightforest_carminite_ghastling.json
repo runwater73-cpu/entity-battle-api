@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestCarminiteGhastling",
+  "nationalPokedexNumber": 10011,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 170,
+  "baseExperienceYield": 123,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "secondaryType": "fire",
+  "baseStats": {
+    "hp": 48,
+    "attack": 36,
+    "defence": 42,
+    "special_attack": 85,
+    "special_defence": 52,
+    "speed": 100
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:ember",
+    "8:confuseray",
+    "18:hex",
+    "30:flameburst",
+    "45:shadowball"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

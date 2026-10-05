@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestUnstableIceCore",
+  "nationalPokedexNumber": 10055,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 126,
+  "baseExperienceYield": 165,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ice",
+  "baseStats": {
+    "hp": 76,
+    "attack": 55,
+    "defence": 70,
+    "special_attack": 122,
+    "special_defence": 76,
+    "speed": 86
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "static"
+  ],
+  "moves": [
+    "1:powdersnow",
+    "1:thundershock",
+    "8:iceshard",
+    "18:spark",
+    "30:icebeam",
+    "45:thunderbolt"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "electric"
+}

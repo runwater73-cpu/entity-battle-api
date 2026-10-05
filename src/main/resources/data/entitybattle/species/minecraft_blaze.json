@@ -1,0 +1,44 @@
+{
+  "name": "MinecraftBlaze",
+  "nationalPokedexNumber": 11005,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 123,
+  "baseExperienceYield": 168,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fire",
+  "baseStats": {
+    "hp": 78,
+    "attack": 65,
+    "defence": 72,
+    "special_attack": 126,
+    "special_defence": 82,
+    "speed": 72
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "flamebody"
+  ],
+  "moves": [
+    "1:ember",
+    "1:smokescreen",
+    "8:firespin",
+    "18:flamethrower",
+    "30:willowisp",
+    "45:fireblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

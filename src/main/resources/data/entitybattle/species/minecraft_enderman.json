@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftEnderman",
+  "nationalPokedexNumber": 11018,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 83,
+  "baseExperienceYield": 206,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "baseStats": {
+    "hp": 98,
+    "attack": 117,
+    "defence": 77,
+    "special_attack": 105,
+    "special_defence": 96,
+    "speed": 114
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "infiltrator"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:confusion",
+    "8:teleport",
+    "18:shadowclaw",
+    "30:psychic",
+    "45:darkpulse"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "psychic"
+}

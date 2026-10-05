@@ -1,0 +1,51 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.143'
+    id 'idea'
+}
+
+version = mod_version
+group = mod_group_id
+base { archivesName = mod_id }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    maven { url = 'https://api.modrinth.com/maven' }
+    maven { url = 'https://thedarkcolour.github.io/KotlinForForge/' }
+    mavenCentral()
+}
+
+neoForge {
+    version = neo_version
+    parchment {
+        mappingsVersion = parchment_mappings_version
+        minecraftVersion = parchment_minecraft_version
+    }
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+    mods {
+        entitybattle { sourceSet(sourceSets.main) }
+    }
+}
+
+dependencies {
+    implementation(providers.gradleProperty('cobblemon_local_jar').isPresent()
+            ? files(providers.gradleProperty('cobblemon_local_jar').get())
+            : "maven.modrinth:${cobblemon_project}:${cobblemon_version}")
+    implementation("maven.modrinth:${kotlinforforge_project}:${kotlinforforge_version}")
+    implementation('org.jetbrains.kotlin:kotlin-stdlib:2.4.0')
+}
+
+var generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {
+    var properties = [mod_id: mod_id, mod_version: mod_version, neo_version: neo_version]
+    inputs.properties properties
+    expand properties
+    from 'src/main/templates'
+    into 'build/generated/sources/modMetadata'
+}
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

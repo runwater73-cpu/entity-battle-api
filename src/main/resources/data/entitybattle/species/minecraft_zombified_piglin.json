@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftZombifiedPiglin",
+  "nationalPokedexNumber": 11076,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 122,
+  "baseExperienceYield": 169,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 90,
+    "attack": 107,
+    "defence": 77,
+    "special_attack": 70,
+    "special_defence": 76,
+    "speed": 77
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "cursedbody"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:astonish",
+    "8:ember",
+    "18:flamewheel",
+    "30:shadowclaw",
+    "45:firepunch"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "fire"
+}

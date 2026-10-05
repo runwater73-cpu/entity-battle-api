@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestLowerGoblinKnight",
+  "nationalPokedexNumber": 10029,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 130,
+  "baseExperienceYield": 162,
+  "experienceGroup": "medium_fast",
+  "primaryType": "steel",
+  "secondaryType": "dark",
+  "baseStats": {
+    "hp": 95,
+    "attack": 117,
+    "defence": 105,
+    "special_attack": 40,
+    "special_defence": 71,
+    "speed": 48
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "battlearmor"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:metalclaw",
+    "8:assurance",
+    "18:ironhead",
+    "30:crunch",
+    "45:swordsdance"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

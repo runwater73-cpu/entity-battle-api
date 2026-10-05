@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestLoyalZombie",
+  "nationalPokedexNumber": 10030,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 175,
+  "baseExperienceYield": 119,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "baseStats": {
+    "hp": 82,
+    "attack": 78,
+    "defence": 66,
+    "special_attack": 35,
+    "special_defence": 52,
+    "speed": 36
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "guts"
+  ],
+  "moves": [
+    "1:scratch",
+    "1:leer",
+    "8:bite",
+    "18:poisonfang",
+    "30:crunch",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "poison"
+}

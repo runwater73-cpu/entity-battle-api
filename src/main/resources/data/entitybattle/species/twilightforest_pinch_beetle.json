@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestPinchBeetle",
+  "nationalPokedexNumber": 10038,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 131,
+  "baseExperienceYield": 161,
+  "experienceGroup": "medium_fast",
+  "primaryType": "bug",
+  "baseStats": {
+    "hp": 85,
+    "attack": 118,
+    "defence": 93,
+    "special_attack": 35,
+    "special_defence": 70,
+    "speed": 72
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "hypercutter"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:bugbite",
+    "8:brickbreak",
+    "18:xscissor",
+    "30:megahorn",
+    "45:superpower"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "fighting"
+}

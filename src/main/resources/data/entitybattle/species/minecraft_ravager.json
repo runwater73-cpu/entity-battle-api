@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftRavager",
+  "nationalPokedexNumber": 11046,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 3,
+  "baseExperienceYield": 337,
+  "experienceGroup": "slow",
+  "primaryType": "fighting",
+  "baseStats": {
+    "hp": 198,
+    "attack": 151,
+    "defence": 132,
+    "special_attack": 50,
+    "special_defence": 105,
+    "speed": 66
+  },
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "intimidate"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:stomp",
+    "8:irondefense",
+    "18:bodyslam",
+    "30:hammerarm",
+    "45:closecombat"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 1.8,
+    "height": 2.8
+  },
+  "height": 35,
+  "weight": 3000,
+  "secondaryType": "steel"
+}

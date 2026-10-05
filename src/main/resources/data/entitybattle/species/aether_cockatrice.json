@@ -1,0 +1,45 @@
+{
+  "name": "AetherCockatrice",
+  "nationalPokedexNumber": 10072,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 129,
+  "baseExperienceYield": 162,
+  "experienceGroup": "medium_fast",
+  "primaryType": "flying",
+  "secondaryType": "poison",
+  "baseStats": {
+    "hp": 86,
+    "attack": 92,
+    "defence": 72,
+    "special_attack": 65,
+    "special_defence": 67,
+    "speed": 95
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "intimidate"
+  ],
+  "moves": [
+    "1:peck",
+    "1:poisonsting",
+    "8:wingattack",
+    "18:glare",
+    "30:poisonfang",
+    "45:bravebird"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

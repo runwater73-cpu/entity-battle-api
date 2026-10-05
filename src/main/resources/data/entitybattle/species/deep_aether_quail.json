@@ -1,0 +1,45 @@
+{
+  "name": "DeepAetherQuail",
+  "nationalPokedexNumber": 10083,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 185,
+  "baseExperienceYield": 109,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "baseStats": {
+    "hp": 52,
+    "attack": 52,
+    "defence": 41,
+    "special_attack": 37,
+    "special_defence": 43,
+    "speed": 97
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "earlybird"
+  ],
+  "moves": [
+    "1:peck",
+    "1:quickattack",
+    "8:wingattack",
+    "18:agility",
+    "30:aerialace",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

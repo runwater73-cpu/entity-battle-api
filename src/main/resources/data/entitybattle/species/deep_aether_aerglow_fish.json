@@ -1,0 +1,44 @@
+{
+  "name": "DeepAetherAerglowFish",
+  "nationalPokedexNumber": 10082,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 171,
+  "baseExperienceYield": 123,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 55,
+    "attack": 49,
+    "defence": 48,
+    "special_attack": 62,
+    "special_defence": 53,
+    "speed": 94
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "swiftswim"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:watergun",
+    "8:quickattack",
+    "18:waterpulse",
+    "30:aquajet",
+    "45:hydropump"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

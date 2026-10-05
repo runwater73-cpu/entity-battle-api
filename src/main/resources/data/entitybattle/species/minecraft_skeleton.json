@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftSkeleton",
+  "nationalPokedexNumber": 11051,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 151,
+  "baseExperienceYield": 142,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 74,
+    "attack": 85,
+    "defence": 65,
+    "special_attack": 51,
+    "special_defence": 68,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "sniper"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:leer",
+    "8:rockthrow",
+    "18:boneclub",
+    "30:shadowclaw",
+    "45:stoneedge"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "rock"
+}

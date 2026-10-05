@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftZombieVillager",
+  "nationalPokedexNumber": 11075,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 162,
+  "baseExperienceYield": 132,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "baseStats": {
+    "hp": 85,
+    "attack": 76,
+    "defence": 68,
+    "special_attack": 48,
+    "special_defence": 65,
+    "speed": 45
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "guts"
+  ],
+  "moves": [
+    "1:scratch",
+    "1:leer",
+    "8:bite",
+    "18:poisonfang",
+    "30:crunch",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "poison"
+}

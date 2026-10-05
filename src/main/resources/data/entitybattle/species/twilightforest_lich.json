@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestLich",
+  "nationalPokedexNumber": 10027,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 3,
+  "baseExperienceYield": 365,
+  "experienceGroup": "slow",
+  "primaryType": "ghost",
+  "secondaryType": "psychic",
+  "baseStats": {
+    "hp": 172,
+    "attack": 78,
+    "defence": 108,
+    "special_attack": 166,
+    "special_defence": 142,
+    "speed": 94
+  },
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "pressure"
+  ],
+  "moves": [
+    "1:confusion",
+    "1:hypnosis",
+    "8:shadowball",
+    "18:psychic",
+    "30:darkpulse",
+    "45:nastyplot"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 1.8,
+    "height": 2.8
+  },
+  "height": 35,
+  "weight": 3000
+}

@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftGhast",
+  "nationalPokedexNumber": 11023,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 108,
+  "baseExperienceYield": 183,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 110,
+    "attack": 54,
+    "defence": 75,
+    "special_attack": 132,
+    "special_defence": 108,
+    "speed": 60
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:ember",
+    "8:willowisp",
+    "18:hex",
+    "30:flamethrower",
+    "45:fireblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "fire"
+}

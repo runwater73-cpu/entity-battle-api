@@ -1,0 +1,1220 @@
+[
+  {
+    "entity": "twilightforest:adherent",
+    "species": "entitybattle:twilightforest_adherent",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:alpha_yeti",
+    "species": "entitybattle:twilightforest_alpha_yeti",
+    "level": {
+      "min": 55,
+      "max": 70
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:armored_giant",
+    "species": "entitybattle:twilightforest_armored_giant",
+    "level": {
+      "min": 55,
+      "max": 70
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:bighorn_sheep",
+    "species": "entitybattle:twilightforest_bighorn_sheep",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:blockchain_goblin",
+    "species": "entitybattle:twilightforest_blockchain_goblin",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:boar",
+    "species": "entitybattle:twilightforest_boar",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:carminite_broodling",
+    "species": "entitybattle:twilightforest_carminite_broodling",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:carminite_ghastguard",
+    "species": "entitybattle:twilightforest_carminite_ghastguard",
+    "level": {
+      "min": 30,
+      "max": 45
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:carminite_ghastling",
+    "species": "entitybattle:twilightforest_carminite_ghastling",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:carminite_golem",
+    "species": "entitybattle:twilightforest_carminite_golem",
+    "level": {
+      "min": 40,
+      "max": 55
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:death_tome",
+    "species": "entitybattle:twilightforest_death_tome",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:deer",
+    "species": "entitybattle:twilightforest_deer",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:dwarf_rabbit",
+    "species": "entitybattle:twilightforest_dwarf_rabbit",
+    "level": {
+      "min": 2,
+      "max": 15
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:fire_beetle",
+    "species": "entitybattle:twilightforest_fire_beetle",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:giant_miner",
+    "species": "entitybattle:twilightforest_giant_miner",
+    "level": {
+      "min": 45,
+      "max": 60
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:harbinger_cube",
+    "species": "entitybattle:twilightforest_harbinger_cube",
+    "level": {
+      "min": 30,
+      "max": 45
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:hedge_spider",
+    "species": "entitybattle:twilightforest_hedge_spider",
+    "level": {
+      "min": 12,
+      "max": 28
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:helmet_crab",
+    "species": "entitybattle:twilightforest_helmet_crab",
+    "level": {
+      "min": 12,
+      "max": 28
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:hostile_wolf",
+    "species": "entitybattle:twilightforest_hostile_wolf",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:hydra",
+    "species": "entitybattle:twilightforest_hydra",
+    "level": {
+      "min": 65,
+      "max": 80
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:ice_crystal",
+    "species": "entitybattle:twilightforest_ice_crystal",
+    "level": {
+      "min": 30,
+      "max": 45
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:king_spider",
+    "species": "entitybattle:twilightforest_king_spider",
+    "level": {
+      "min": 30,
+      "max": 45
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:knight_phantom",
+    "species": "entitybattle:twilightforest_knight_phantom",
+    "level": {
+      "min": 55,
+      "max": 70
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:kobold",
+    "species": "entitybattle:twilightforest_kobold",
+    "level": {
+      "min": 8,
+      "max": 22
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:lich",
+    "species": "entitybattle:twilightforest_lich",
+    "level": {
+      "min": 60,
+      "max": 75
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:lich_minion",
+    "species": "entitybattle:twilightforest_lich_minion",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:lower_goblin_knight",
+    "species": "entitybattle:twilightforest_lower_goblin_knight",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:loyal_zombie",
+    "species": "entitybattle:twilightforest_loyal_zombie",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:maze_slime",
+    "species": "entitybattle:twilightforest_maze_slime",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:minoshroom",
+    "species": "entitybattle:twilightforest_minoshroom",
+    "level": {
+      "min": 50,
+      "max": 65
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:minotaur",
+    "species": "entitybattle:twilightforest_minotaur",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:mist_wolf",
+    "species": "entitybattle:twilightforest_mist_wolf",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:mosquito_swarm",
+    "species": "entitybattle:twilightforest_mosquito_swarm",
+    "level": {
+      "min": 10,
+      "max": 25
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:naga",
+    "species": "entitybattle:twilightforest_naga",
+    "level": {
+      "min": 50,
+      "max": 65
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:penguin",
+    "species": "entitybattle:twilightforest_penguin",
+    "level": {
+      "min": 4,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:pinch_beetle",
+    "species": "entitybattle:twilightforest_pinch_beetle",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:quest_ram",
+    "species": "entitybattle:twilightforest_quest_ram",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:raven",
+    "species": "entitybattle:twilightforest_raven",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:redcap",
+    "species": "entitybattle:twilightforest_redcap",
+    "level": {
+      "min": 12,
+      "max": 28
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:redcap_sapper",
+    "species": "entitybattle:twilightforest_redcap_sapper",
+    "level": {
+      "min": 22,
+      "max": 38
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:rising_zombie",
+    "species": "entitybattle:twilightforest_rising_zombie",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:roving_cube",
+    "species": "entitybattle:twilightforest_roving_cube",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:skeleton_druid",
+    "species": "entitybattle:twilightforest_skeleton_druid",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:slime_beetle",
+    "species": "entitybattle:twilightforest_slime_beetle",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:snow_guardian",
+    "species": "entitybattle:twilightforest_snow_guardian",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:snow_queen",
+    "species": "entitybattle:twilightforest_snow_queen",
+    "level": {
+      "min": 60,
+      "max": 75
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:squirrel",
+    "species": "entitybattle:twilightforest_squirrel",
+    "level": {
+      "min": 2,
+      "max": 15
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:stable_ice_core",
+    "species": "entitybattle:twilightforest_stable_ice_core",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:swarm_spider",
+    "species": "entitybattle:twilightforest_swarm_spider",
+    "level": {
+      "min": 8,
+      "max": 22
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:tiny_bird",
+    "species": "entitybattle:twilightforest_tiny_bird",
+    "level": {
+      "min": 2,
+      "max": 15
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:towerwood_borer",
+    "species": "entitybattle:twilightforest_towerwood_borer",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:troll",
+    "species": "entitybattle:twilightforest_troll",
+    "level": {
+      "min": 40,
+      "max": 55
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:unstable_ice_core",
+    "species": "entitybattle:twilightforest_unstable_ice_core",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:upper_goblin_knight",
+    "species": "entitybattle:twilightforest_upper_goblin_knight",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:ur_ghast",
+    "species": "entitybattle:twilightforest_ur_ghast",
+    "level": {
+      "min": 70,
+      "max": 85
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:winter_wolf",
+    "species": "entitybattle:twilightforest_winter_wolf",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:wraith",
+    "species": "entitybattle:twilightforest_wraith",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "twilightforest:yeti",
+    "species": "entitybattle:twilightforest_yeti",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:phyg",
+    "species": "entitybattle:aether_phyg",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:flying_cow",
+    "species": "entitybattle:aether_flying_cow",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:sheepuff",
+    "species": "entitybattle:aether_sheepuff",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:moa",
+    "species": "entitybattle:aether_moa",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:aerbunny",
+    "species": "entitybattle:aether_aerbunny",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:aerwhale",
+    "species": "entitybattle:aether_aerwhale",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:blue_swet",
+    "species": "entitybattle:aether_blue_swet",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:golden_swet",
+    "species": "entitybattle:aether_golden_swet",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:whirlwind",
+    "species": "entitybattle:aether_whirlwind",
+    "level": {
+      "min": 10,
+      "max": 25
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:evil_whirlwind",
+    "species": "entitybattle:aether_evil_whirlwind",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:aechor_plant",
+    "species": "entitybattle:aether_aechor_plant",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:cockatrice",
+    "species": "entitybattle:aether_cockatrice",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:zephyr",
+    "species": "entitybattle:aether_zephyr",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:mimic",
+    "species": "entitybattle:aether_mimic",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:sentry",
+    "species": "entitybattle:aether_sentry",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:slider",
+    "species": "entitybattle:aether_slider",
+    "level": {
+      "min": 55,
+      "max": 70
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:valkyrie",
+    "species": "entitybattle:aether_valkyrie",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:valkyrie_queen",
+    "species": "entitybattle:aether_valkyrie_queen",
+    "level": {
+      "min": 60,
+      "max": 75
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:fire_minion",
+    "species": "entitybattle:aether_fire_minion",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:sun_spirit",
+    "species": "entitybattle:aether_sun_spirit",
+    "level": {
+      "min": 65,
+      "max": 80
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "aether:cloud_minion",
+    "species": "entitybattle:aether_cloud_minion",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "deep_aether:aerglow_fish",
+    "species": "entitybattle:deep_aether_aerglow_fish",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "deep_aether:quail",
+    "species": "entitybattle:deep_aether_quail",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "deep_aether:venomite",
+    "species": "entitybattle:deep_aether_venomite",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "deep_aether:windfly",
+    "species": "entitybattle:deep_aether_windfly",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "deep_aether:baby_zephyr",
+    "species": "entitybattle:deep_aether_baby_zephyr",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "deep_aether:gentle_wind",
+    "species": "entitybattle:deep_aether_gentle_wind",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "artifacts:mimic",
+    "species": "entitybattle:artifacts_mimic",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "legendarymonuments:grunt",
+    "species": "entitybattle:legendarymonuments_grunt",
+    "level": {
+      "min": 20,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftPufferfish",
+  "nationalPokedexNumber": 11044,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 164,
+  "baseExperienceYield": 130,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 55,
+    "attack": 72,
+    "defence": 71,
+    "special_attack": 68,
+    "special_defence": 73,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "abilities": [
+    "poisonpoint"
+  ],
+  "moves": [
+    "1:poisonsting",
+    "1:watergun",
+    "8:acid",
+    "18:poisonfang",
+    "30:waterpulse",
+    "45:toxic"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "poison"
+}

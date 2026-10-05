@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftMagmaCube",
+  "nationalPokedexNumber": 11032,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 127,
+  "baseExperienceYield": 165,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fire",
+  "baseStats": {
+    "hp": 94,
+    "attack": 97,
+    "defence": 78,
+    "special_attack": 102,
+    "special_defence": 72,
+    "speed": 42
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "flamebody"
+  ],
+  "moves": [
+    "1:ember",
+    "1:rockthrow",
+    "8:flamewheel",
+    "18:rockslide",
+    "30:lavaplume",
+    "45:fireblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "rock"
+}
