@@ -1,0 +1,45 @@
+{
+  "name": "DeepAetherWindfly",
+  "nationalPokedexNumber": 10085,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 158,
+  "baseExperienceYield": 135,
+  "experienceGroup": "medium_fast",
+  "primaryType": "bug",
+  "secondaryType": "flying",
+  "baseStats": {
+    "hp": 57,
+    "attack": 52,
+    "defence": 45,
+    "special_attack": 77,
+    "special_defence": 51,
+    "speed": 114
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "swarm"
+  ],
+  "moves": [
+    "1:gust",
+    "1:bugbite",
+    "8:quickattack",
+    "18:airslash",
+    "30:xscissor",
+    "45:hurricane"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

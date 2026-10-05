@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftZoglin",
+  "nationalPokedexNumber": 11073,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 100,
+  "baseExperienceYield": 190,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 131,
+    "attack": 131,
+    "defence": 101,
+    "special_attack": 47,
+    "special_defence": 76,
+    "speed": 74
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "reckless"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:stomp",
+    "8:bulldoze",
+    "18:shadowclaw",
+    "30:takedown",
+    "45:earthquake"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 17,
+  "weight": 1100,
+  "secondaryType": "ground"
+}

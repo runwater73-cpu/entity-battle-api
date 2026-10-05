@@ -1,0 +1,45 @@
+{
+  "name": "AetherSheepuff",
+  "nationalPokedexNumber": 10063,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 170,
+  "baseExperienceYield": 123,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 75,
+    "attack": 51,
+    "defence": 59,
+    "special_attack": 42,
+    "special_defence": 60,
+    "speed": 76
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "fluffy"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "8:headbutt",
+    "18:wingattack",
+    "30:cottonguard",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "flying"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftFox",
+  "nationalPokedexNumber": 11021,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 153,
+  "baseExperienceYield": 140,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 65,
+    "attack": 72,
+    "defence": 52,
+    "special_attack": 45,
+    "special_defence": 63,
+    "speed": 115
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "pickup"
+  ],
+  "moves": [
+    "1:quickattack",
+    "1:bite",
+    "8:sandattack",
+    "18:agility",
+    "30:crunch",
+    "45:suckerpunch"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "dark"
+}

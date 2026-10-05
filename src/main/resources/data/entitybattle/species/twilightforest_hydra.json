@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestHydra",
+  "nationalPokedexNumber": 10022,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 3,
+  "baseExperienceYield": 403,
+  "experienceGroup": "slow",
+  "primaryType": "dragon",
+  "secondaryType": "fire",
+  "baseStats": {
+    "hp": 225,
+    "attack": 140,
+    "defence": 128,
+    "special_attack": 150,
+    "special_defence": 122,
+    "speed": 75
+  },
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "pressure"
+  ],
+  "moves": [
+    "1:bite",
+    "1:dragonbreath",
+    "8:flamethrower",
+    "18:crunch",
+    "30:dragonpulse",
+    "45:fireblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 1.8,
+    "height": 2.8
+  },
+  "height": 35,
+  "weight": 3000
+}

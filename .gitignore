@@ -1,0 +1,16 @@
+.gradle/
+build/
+run/
+docx_render*/
+.idea/
+.vscode/
+*.log
+*.hprof
+*.docx
+~$*
+
+# One-off local generators depend on private modpack paths; the generated JSON is committed.
+add_vanilla_species.py
+create_pack_profiles_doc.py
+customize_pack_species.py
+generate_independent_species.py

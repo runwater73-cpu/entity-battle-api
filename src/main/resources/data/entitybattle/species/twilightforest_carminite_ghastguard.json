@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestCarminiteGhastguard",
+  "nationalPokedexNumber": 10010,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 122,
+  "baseExperienceYield": 169,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "secondaryType": "fire",
+  "baseStats": {
+    "hp": 86,
+    "attack": 58,
+    "defence": 72,
+    "special_attack": 115,
+    "special_defence": 90,
+    "speed": 76
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:willowisp",
+    "8:hex",
+    "18:flamethrower",
+    "30:shadowball",
+    "45:fireblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestHedgeSpider",
+  "nationalPokedexNumber": 10019,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 158,
+  "baseExperienceYield": 135,
+  "experienceGroup": "medium_fast",
+  "primaryType": "bug",
+  "secondaryType": "poison",
+  "baseStats": {
+    "hp": 65,
+    "attack": 88,
+    "defence": 64,
+    "special_attack": 45,
+    "special_defence": 58,
+    "speed": 76
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "poisonpoint"
+  ],
+  "moves": [
+    "1:poisonsting",
+    "1:stringshot",
+    "8:bugbite",
+    "18:poisonfang",
+    "30:xscissor",
+    "45:toxic"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

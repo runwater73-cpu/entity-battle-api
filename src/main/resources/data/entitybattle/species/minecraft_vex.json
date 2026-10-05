@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftVex",
+  "nationalPokedexNumber": 11064,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 143,
+  "baseExperienceYield": 149,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 57,
+    "attack": 79,
+    "defence": 49,
+    "special_attack": 80,
+    "special_defence": 54,
+    "speed": 120
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "infiltrator"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:gust",
+    "8:shadowsneak",
+    "18:airslash",
+    "30:shadowclaw",
+    "45:nightshade"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "flying"
+}

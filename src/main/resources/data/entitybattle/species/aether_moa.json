@@ -1,0 +1,45 @@
+{
+  "name": "AetherMoa",
+  "nationalPokedexNumber": 10064,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 140,
+  "baseExperienceYield": 152,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "secondaryType": "flying",
+  "baseStats": {
+    "hp": 89,
+    "attack": 86,
+    "defence": 68,
+    "special_attack": 48,
+    "special_defence": 64,
+    "speed": 93
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "earlybird"
+  ],
+  "moves": [
+    "1:peck",
+    "1:quickattack",
+    "8:wingattack",
+    "18:stomp",
+    "30:aerialace",
+    "45:bravebird"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

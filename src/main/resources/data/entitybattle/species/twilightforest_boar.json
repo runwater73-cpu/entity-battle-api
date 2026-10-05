@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestBoar",
+  "nationalPokedexNumber": 10008,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 172,
+  "baseExperienceYield": 122,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "secondaryType": "ground",
+  "baseStats": {
+    "hp": 75,
+    "attack": 85,
+    "defence": 58,
+    "special_attack": 30,
+    "special_defence": 48,
+    "speed": 62
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "thickfat"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:mudslap",
+    "8:headbutt",
+    "18:bulldoze",
+    "30:takedown",
+    "45:earthquake"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

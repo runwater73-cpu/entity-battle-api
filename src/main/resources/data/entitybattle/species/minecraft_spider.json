@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftSpider",
+  "nationalPokedexNumber": 11056,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 139,
+  "baseExperienceYield": 153,
+  "experienceGroup": "medium_fast",
+  "primaryType": "bug",
+  "baseStats": {
+    "hp": 81,
+    "attack": 91,
+    "defence": 73,
+    "special_attack": 49,
+    "special_defence": 69,
+    "speed": 87
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "swarm"
+  ],
+  "moves": [
+    "1:poisonsting",
+    "1:stringshot",
+    "8:bugbite",
+    "18:bite",
+    "30:xscissor",
+    "45:poisonjab"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "poison"
+}

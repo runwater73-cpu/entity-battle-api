@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestMinotaur",
+  "nationalPokedexNumber": 10033,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseExperienceYield": 171,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fighting",
+  "baseStats": {
+    "hp": 112,
+    "attack": 124,
+    "defence": 90,
+    "special_attack": 38,
+    "special_defence": 68,
+    "speed": 71
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "angerpoint"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:stomp",
+    "8:bulldoze",
+    "18:brickbreak",
+    "30:earthquake",
+    "45:megahorn"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "ground"
+}

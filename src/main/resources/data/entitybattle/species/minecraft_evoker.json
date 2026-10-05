@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftEvoker",
+  "nationalPokedexNumber": 11020,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 83,
+  "baseExperienceYield": 207,
+  "experienceGroup": "medium_fast",
+  "primaryType": "psychic",
+  "baseStats": {
+    "hp": 119,
+    "attack": 57,
+    "defence": 84,
+    "special_attack": 147,
+    "special_defence": 122,
+    "speed": 79
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "pressure"
+  ],
+  "moves": [
+    "1:confusion",
+    "1:disable",
+    "8:psybeam",
+    "18:shadowball",
+    "30:psychic",
+    "45:nastyplot"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "dark"
+}

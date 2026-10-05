@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftBat",
+  "nationalPokedexNumber": 11003,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 188,
+  "baseExperienceYield": 107,
+  "experienceGroup": "medium_fast",
+  "primaryType": "poison",
+  "baseStats": {
+    "hp": 43,
+    "attack": 38,
+    "defence": 35,
+    "special_attack": 40,
+    "special_defence": 40,
+    "speed": 118
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "infiltrator"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:gust",
+    "8:bite",
+    "18:aircutter",
+    "30:confuseray",
+    "45:airslash"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "flying"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestLichMinion",
+  "nationalPokedexNumber": 10028,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 177,
+  "baseExperienceYield": 117,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ghost",
+  "baseStats": {
+    "hp": 54,
+    "attack": 63,
+    "defence": 58,
+    "special_attack": 62,
+    "special_defence": 52,
+    "speed": 54
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "cursedbody"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:leer",
+    "8:bite",
+    "18:nightshade",
+    "30:shadowball",
+    "45:crunch"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "dark"
+}

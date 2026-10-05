@@ -1,0 +1,11 @@
+{
+  "entity": "minecraft:cow",
+  "species": "entitybattle:cow",
+  "level": { "min": 3, "max": 8 },
+  "defeat": "vanilla_death",
+  "catchable": true,
+  "worldMode": "pokemon_entity",
+  "worldBehavior": "passive",
+  "nativeDrops": true,
+  "nativeExperience": true
+}

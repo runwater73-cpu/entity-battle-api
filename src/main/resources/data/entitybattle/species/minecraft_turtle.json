@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftTurtle",
+  "nationalPokedexNumber": 11063,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 123,
+  "baseExperienceYield": 169,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 108,
+    "attack": 69,
+    "defence": 122,
+    "special_attack": 52,
+    "special_defence": 108,
+    "speed": 37
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 2,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "shellarmor"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:watergun",
+    "8:withdraw",
+    "18:rockslide",
+    "30:irondefense",
+    "45:hydropump"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "rock"
+}

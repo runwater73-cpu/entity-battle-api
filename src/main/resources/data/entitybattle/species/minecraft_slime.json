@@ -1,0 +1,44 @@
+{
+  "name": "MinecraftSlime",
+  "nationalPokedexNumber": 11053,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 161,
+  "baseExperienceYield": 132,
+  "experienceGroup": "medium_fast",
+  "primaryType": "poison",
+  "baseStats": {
+    "hp": 95,
+    "attack": 66,
+    "defence": 72,
+    "special_attack": 51,
+    "special_defence": 69,
+    "speed": 36
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "stickyhold"
+  ],
+  "moves": [
+    "1:pound",
+    "1:acid",
+    "8:defensecurl",
+    "18:sludge",
+    "30:bodyslam",
+    "45:sludgebomb"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

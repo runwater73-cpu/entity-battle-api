@@ -1,0 +1,45 @@
+{
+  "name": "AetherValkyrie",
+  "nationalPokedexNumber": 10077,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 92,
+  "baseExperienceYield": 198,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fighting",
+  "secondaryType": "flying",
+  "baseStats": {
+    "hp": 112,
+    "attack": 125,
+    "defence": 91,
+    "special_attack": 68,
+    "special_defence": 92,
+    "speed": 94
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "innerfocus"
+  ],
+  "moves": [
+    "1:wingattack",
+    "1:brickbreak",
+    "8:aerialace",
+    "18:swordsdance",
+    "30:closecombat",
+    "45:bravebird"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

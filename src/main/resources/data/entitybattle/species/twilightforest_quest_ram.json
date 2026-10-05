@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestQuestRam",
+  "nationalPokedexNumber": 10039,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 3,
+  "baseExperienceYield": 205,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 155,
+    "attack": 88,
+    "defence": 121,
+    "special_attack": 68,
+    "special_defence": 115,
+    "speed": 55
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "fluffy"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:cottonguard",
+    "8:stomp",
+    "18:playrough",
+    "30:rest",
+    "45:moonblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 17,
+  "weight": 1100,
+  "secondaryType": "fairy"
+}

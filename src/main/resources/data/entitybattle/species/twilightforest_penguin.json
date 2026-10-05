@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestPenguin",
+  "nationalPokedexNumber": 10037,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 177,
+  "baseExperienceYield": 117,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 61,
+    "attack": 49,
+    "defence": 57,
+    "special_attack": 58,
+    "special_defence": 63,
+    "speed": 56
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 2,
+    "speed": 0
+  },
+  "abilities": [
+    "thickfat"
+  ],
+  "moves": [
+    "1:pound",
+    "1:watergun",
+    "8:peck",
+    "18:iceshard",
+    "30:bubblebeam",
+    "45:icebeam"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "ice"
+}

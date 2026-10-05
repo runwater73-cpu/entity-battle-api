@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestWinterWolf",
+  "nationalPokedexNumber": 10058,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 116,
+  "baseExperienceYield": 175,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ice",
+  "baseStats": {
+    "hp": 90,
+    "attack": 105,
+    "defence": 72,
+    "special_attack": 80,
+    "special_defence": 75,
+    "speed": 92
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "intimidate"
+  ],
+  "moves": [
+    "1:bite",
+    "1:icywind",
+    "8:howl",
+    "18:crunch",
+    "30:icefang",
+    "45:blizzard"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "dark"
+}

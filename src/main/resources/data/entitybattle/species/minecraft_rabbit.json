@@ -1,0 +1,44 @@
+{
+  "name": "MinecraftRabbit",
+  "nationalPokedexNumber": 11045,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 184,
+  "baseExperienceYield": 110,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 46,
+    "attack": 49,
+    "defence": 37,
+    "special_attack": 35,
+    "special_defence": 44,
+    "speed": 113
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "runaway"
+  ],
+  "moves": [
+    "1:pound",
+    "1:quickattack",
+    "8:doublekick",
+    "18:agility",
+    "30:headbutt",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

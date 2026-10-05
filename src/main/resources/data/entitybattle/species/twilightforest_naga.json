@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestNaga",
+  "nationalPokedexNumber": 10036,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 3,
+  "baseExperienceYield": 379,
+  "experienceGroup": "slow",
+  "primaryType": "dragon",
+  "baseStats": {
+    "hp": 205,
+    "attack": 152,
+    "defence": 110,
+    "special_attack": 110,
+    "special_defence": 106,
+    "speed": 106
+  },
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "shedskin"
+  ],
+  "moves": [
+    "1:wrap",
+    "1:bite",
+    "8:bulldoze",
+    "18:dragonbreath",
+    "30:crunch",
+    "45:dragonpulse"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 1.8,
+    "height": 2.8
+  },
+  "height": 35,
+  "weight": 3000,
+  "secondaryType": "ground"
+}

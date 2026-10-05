@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftGuardian",
+  "nationalPokedexNumber": 11026,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 105,
+  "baseExperienceYield": 186,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 94,
+    "attack": 81,
+    "defence": 102,
+    "special_attack": 109,
+    "special_defence": 95,
+    "speed": 66
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 2,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "roughskin"
+  ],
+  "moves": [
+    "1:watergun",
+    "1:confusion",
+    "8:waterpulse",
+    "18:reflect",
+    "30:psychic",
+    "45:hydropump"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "psychic"
+}

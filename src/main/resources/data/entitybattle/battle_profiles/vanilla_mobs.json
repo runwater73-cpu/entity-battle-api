@@ -1,0 +1,1080 @@
+[
+  {
+    "entity": "minecraft:allay",
+    "species": "entitybattle:minecraft_allay",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:armadillo",
+    "species": "entitybattle:minecraft_armadillo",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:axolotl",
+    "species": "entitybattle:minecraft_axolotl",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:bat",
+    "species": "entitybattle:minecraft_bat",
+    "level": {
+      "min": 2,
+      "max": 15
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:bee",
+    "species": "entitybattle:minecraft_bee",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:blaze",
+    "species": "entitybattle:minecraft_blaze",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:bogged",
+    "species": "entitybattle:minecraft_bogged",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:breeze",
+    "species": "entitybattle:minecraft_breeze",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:camel",
+    "species": "entitybattle:minecraft_camel",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:cat",
+    "species": "entitybattle:minecraft_cat",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:cave_spider",
+    "species": "entitybattle:minecraft_cave_spider",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:chicken",
+    "species": "entitybattle:minecraft_chicken",
+    "level": {
+      "min": 2,
+      "max": 15
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:cod",
+    "species": "entitybattle:minecraft_cod",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:creeper",
+    "species": "entitybattle:minecraft_creeper",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:dolphin",
+    "species": "entitybattle:minecraft_dolphin",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:donkey",
+    "species": "entitybattle:minecraft_donkey",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:drowned",
+    "species": "entitybattle:minecraft_drowned",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:elder_guardian",
+    "species": "entitybattle:minecraft_elder_guardian",
+    "level": {
+      "min": 55,
+      "max": 70
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:enderman",
+    "species": "entitybattle:minecraft_enderman",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:endermite",
+    "species": "entitybattle:minecraft_endermite",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:evoker",
+    "species": "entitybattle:minecraft_evoker",
+    "level": {
+      "min": 40,
+      "max": 55
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:fox",
+    "species": "entitybattle:minecraft_fox",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:frog",
+    "species": "entitybattle:minecraft_frog",
+    "level": {
+      "min": 4,
+      "max": 19
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:ghast",
+    "species": "entitybattle:minecraft_ghast",
+    "level": {
+      "min": 28,
+      "max": 43
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:glow_squid",
+    "species": "entitybattle:minecraft_glow_squid",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:goat",
+    "species": "entitybattle:minecraft_goat",
+    "level": {
+      "min": 10,
+      "max": 25
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:guardian",
+    "species": "entitybattle:minecraft_guardian",
+    "level": {
+      "min": 28,
+      "max": 43
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:hoglin",
+    "species": "entitybattle:minecraft_hoglin",
+    "level": {
+      "min": 28,
+      "max": 43
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:horse",
+    "species": "entitybattle:minecraft_horse",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:husk",
+    "species": "entitybattle:minecraft_husk",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:iron_golem",
+    "species": "entitybattle:minecraft_iron_golem",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:llama",
+    "species": "entitybattle:minecraft_llama",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:magma_cube",
+    "species": "entitybattle:minecraft_magma_cube",
+    "level": {
+      "min": 22,
+      "max": 37
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:mooshroom",
+    "species": "entitybattle:minecraft_mooshroom",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:mule",
+    "species": "entitybattle:minecraft_mule",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:ocelot",
+    "species": "entitybattle:minecraft_ocelot",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:panda",
+    "species": "entitybattle:minecraft_panda",
+    "level": {
+      "min": 10,
+      "max": 25
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:parrot",
+    "species": "entitybattle:minecraft_parrot",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:phantom",
+    "species": "entitybattle:minecraft_phantom",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:pig",
+    "species": "entitybattle:minecraft_pig",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:piglin",
+    "species": "entitybattle:minecraft_piglin",
+    "level": {
+      "min": 22,
+      "max": 37
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:piglin_brute",
+    "species": "entitybattle:minecraft_piglin_brute",
+    "level": {
+      "min": 38,
+      "max": 53
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:pillager",
+    "species": "entitybattle:minecraft_pillager",
+    "level": {
+      "min": 20,
+      "max": 35
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:polar_bear",
+    "species": "entitybattle:minecraft_polar_bear",
+    "level": {
+      "min": 18,
+      "max": 33
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:pufferfish",
+    "species": "entitybattle:minecraft_pufferfish",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:rabbit",
+    "species": "entitybattle:minecraft_rabbit",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:ravager",
+    "species": "entitybattle:minecraft_ravager",
+    "level": {
+      "min": 50,
+      "max": 65
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:salmon",
+    "species": "entitybattle:minecraft_salmon",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:sheep",
+    "species": "entitybattle:minecraft_sheep",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:shulker",
+    "species": "entitybattle:minecraft_shulker",
+    "level": {
+      "min": 35,
+      "max": 50
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:silverfish",
+    "species": "entitybattle:minecraft_silverfish",
+    "level": {
+      "min": 10,
+      "max": 25
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:skeleton",
+    "species": "entitybattle:minecraft_skeleton",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:skeleton_horse",
+    "species": "entitybattle:minecraft_skeleton_horse",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:slime",
+    "species": "entitybattle:minecraft_slime",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:sniffer",
+    "species": "entitybattle:minecraft_sniffer",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:snow_golem",
+    "species": "entitybattle:minecraft_snow_golem",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:spider",
+    "species": "entitybattle:minecraft_spider",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:squid",
+    "species": "entitybattle:minecraft_squid",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:stray",
+    "species": "entitybattle:minecraft_stray",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:strider",
+    "species": "entitybattle:minecraft_strider",
+    "level": {
+      "min": 12,
+      "max": 27
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:tadpole",
+    "species": "entitybattle:minecraft_tadpole",
+    "level": {
+      "min": 2,
+      "max": 15
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:trader_llama",
+    "species": "entitybattle:minecraft_trader_llama",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:tropical_fish",
+    "species": "entitybattle:minecraft_tropical_fish",
+    "level": {
+      "min": 3,
+      "max": 18
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:turtle",
+    "species": "entitybattle:minecraft_turtle",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:vex",
+    "species": "entitybattle:minecraft_vex",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:villager",
+    "species": "entitybattle:minecraft_villager",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:vindicator",
+    "species": "entitybattle:minecraft_vindicator",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:wandering_trader",
+    "species": "entitybattle:minecraft_wandering_trader",
+    "level": {
+      "min": 5,
+      "max": 20
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:warden",
+    "species": "entitybattle:minecraft_warden",
+    "level": {
+      "min": 70,
+      "max": 85
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:witch",
+    "species": "entitybattle:minecraft_witch",
+    "level": {
+      "min": 25,
+      "max": 40
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:wither",
+    "species": "entitybattle:minecraft_wither",
+    "level": {
+      "min": 70,
+      "max": 85
+    },
+    "defeat": "vanilla_death",
+    "catchable": false,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:wither_skeleton",
+    "species": "entitybattle:minecraft_wither_skeleton",
+    "level": {
+      "min": 22,
+      "max": 37
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:wolf",
+    "species": "entitybattle:minecraft_wolf",
+    "level": {
+      "min": 8,
+      "max": 23
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:zoglin",
+    "species": "entitybattle:minecraft_zoglin",
+    "level": {
+      "min": 28,
+      "max": 43
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:zombie_horse",
+    "species": "entitybattle:minecraft_zombie_horse",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "passive",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:zombie_villager",
+    "species": "entitybattle:minecraft_zombie_villager",
+    "level": {
+      "min": 15,
+      "max": 30
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  },
+  {
+    "entity": "minecraft:zombified_piglin",
+    "species": "entitybattle:minecraft_zombified_piglin",
+    "level": {
+      "min": 22,
+      "max": 37
+    },
+    "defeat": "vanilla_death",
+    "catchable": true,
+    "worldMode": "native_mob",
+    "worldBehavior": "hostile",
+    "nativeDrops": true,
+    "nativeExperience": true
+  }
+]

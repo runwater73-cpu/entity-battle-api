@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestIceCrystal",
+  "nationalPokedexNumber": 10023,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 133,
+  "baseExperienceYield": 158,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ice",
+  "baseStats": {
+    "hp": 68,
+    "attack": 35,
+    "defence": 60,
+    "special_attack": 103,
+    "special_defence": 88,
+    "speed": 112
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "levitate"
+  ],
+  "moves": [
+    "1:powdersnow",
+    "1:confusion",
+    "8:iceshard",
+    "18:aurorabeam",
+    "30:icebeam",
+    "45:blizzard"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "psychic"
+}

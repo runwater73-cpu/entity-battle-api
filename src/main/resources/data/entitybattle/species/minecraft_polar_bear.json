@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftPolarBear",
+  "nationalPokedexNumber": 11043,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 120,
+  "baseExperienceYield": 172,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ice",
+  "baseStats": {
+    "hp": 112,
+    "attack": 116,
+    "defence": 86,
+    "special_attack": 49,
+    "special_defence": 77,
+    "speed": 65
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "thickfat"
+  ],
+  "moves": [
+    "1:powdersnow",
+    "1:stomp",
+    "8:icepunch",
+    "18:rest",
+    "30:icefang",
+    "45:blizzard"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "normal"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "MinecraftSheep",
+  "nationalPokedexNumber": 11048,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 181,
+  "baseExperienceYield": 113,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 69,
+    "attack": 55,
+    "defence": 64,
+    "special_attack": 38,
+    "special_defence": 59,
+    "speed": 48
+  },
+  "evYield": {
+    "hp": 2,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "fluffy"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:growl",
+    "8:headbutt",
+    "18:cottonguard",
+    "30:stomp",
+    "45:rest"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

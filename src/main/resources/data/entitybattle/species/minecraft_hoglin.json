@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftHoglin",
+  "nationalPokedexNumber": 11027,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 104,
+  "baseExperienceYield": 187,
+  "experienceGroup": "medium_fast",
+  "primaryType": "ground",
+  "baseStats": {
+    "hp": 128,
+    "attack": 132,
+    "defence": 102,
+    "special_attack": 40,
+    "special_defence": 72,
+    "speed": 76
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "reckless"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:stomp",
+    "8:bulldoze",
+    "18:brickbreak",
+    "30:takedown",
+    "45:earthquake"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 17,
+  "weight": 1100,
+  "secondaryType": "fighting"
+}

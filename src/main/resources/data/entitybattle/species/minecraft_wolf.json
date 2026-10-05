@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftWolf",
+  "nationalPokedexNumber": 11072,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 135,
+  "baseExperienceYield": 157,
+  "experienceGroup": "medium_fast",
+  "primaryType": "normal",
+  "baseStats": {
+    "hp": 85,
+    "attack": 96,
+    "defence": 74,
+    "special_attack": 43,
+    "special_defence": 69,
+    "speed": 94
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "intimidate"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:howl",
+    "8:bite",
+    "18:roar",
+    "30:crunch",
+    "45:closecombat"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450,
+  "secondaryType": "dark"
+}

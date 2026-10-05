@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestBlockchainGoblin",
+  "nationalPokedexNumber": 10007,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 143,
+  "baseExperienceYield": 149,
+  "experienceGroup": "medium_fast",
+  "primaryType": "steel",
+  "secondaryType": "dark",
+  "baseStats": {
+    "hp": 72,
+    "attack": 108,
+    "defence": 88,
+    "special_attack": 45,
+    "special_defence": 72,
+    "speed": 52
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "ironfist"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:metalclaw",
+    "8:assurance",
+    "18:ironhead",
+    "30:crunch",
+    "45:hammerarm"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

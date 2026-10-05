@@ -1,0 +1,45 @@
+{
+  "name": "MinecraftPiglinBrute",
+  "nationalPokedexNumber": 11041,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 89,
+  "baseExperienceYield": 201,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fighting",
+  "baseStats": {
+    "hp": 134,
+    "attack": 136,
+    "defence": 106,
+    "special_attack": 54,
+    "special_defence": 90,
+    "speed": 70
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "intimidate"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:bite",
+    "8:brickbreak",
+    "18:bulkup",
+    "30:crunch",
+    "45:closecombat"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 17,
+  "weight": 1100,
+  "secondaryType": "dark"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestGiantMiner",
+  "nationalPokedexNumber": 10017,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 100,
+  "baseExperienceYield": 190,
+  "experienceGroup": "medium_fast",
+  "primaryType": "fighting",
+  "baseStats": {
+    "hp": 142,
+    "attack": 148,
+    "defence": 105,
+    "special_attack": 48,
+    "special_defence": 74,
+    "speed": 43
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "sheerforce"
+  ],
+  "moves": [
+    "1:pound",
+    "1:rockthrow",
+    "8:bulldoze",
+    "18:stomp",
+    "30:earthquake",
+    "45:superpower"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 17,
+  "weight": 1100,
+  "secondaryType": "ground"
+}

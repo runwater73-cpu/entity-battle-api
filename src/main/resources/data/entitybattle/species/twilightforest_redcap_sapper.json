@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestRedcapSapper",
+  "nationalPokedexNumber": 10042,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 130,
+  "baseExperienceYield": 162,
+  "experienceGroup": "medium_fast",
+  "primaryType": "dark",
+  "secondaryType": "fire",
+  "baseStats": {
+    "hp": 82,
+    "attack": 103,
+    "defence": 66,
+    "special_attack": 78,
+    "special_defence": 65,
+    "speed": 81
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 2,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "prankster"
+  ],
+  "moves": [
+    "1:scratch",
+    "1:taunt",
+    "8:ember",
+    "18:flamewheel",
+    "30:crunch",
+    "45:fireblast"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

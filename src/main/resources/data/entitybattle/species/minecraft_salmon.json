@@ -1,0 +1,44 @@
+{
+  "name": "MinecraftSalmon",
+  "nationalPokedexNumber": 11047,
+  "implemented": false,
+  "maleRatio": 0.5,
+  "catchRate": 176,
+  "baseExperienceYield": 118,
+  "experienceGroup": "medium_fast",
+  "primaryType": "water",
+  "baseStats": {
+    "hp": 58,
+    "attack": 55,
+    "defence": 51,
+    "special_attack": 43,
+    "special_defence": 49,
+    "speed": 91
+  },
+  "evYield": {
+    "hp": 0,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 2
+  },
+  "abilities": [
+    "swiftswim"
+  ],
+  "moves": [
+    "1:tackle",
+    "1:watergun",
+    "8:quickattack",
+    "18:waterpulse",
+    "30:aquajet",
+    "45:hydropump"
+  ],
+  "hitbox": {
+    "fixed": false,
+    "width": 0.9,
+    "height": 1.4
+  },
+  "height": 10,
+  "weight": 450
+}

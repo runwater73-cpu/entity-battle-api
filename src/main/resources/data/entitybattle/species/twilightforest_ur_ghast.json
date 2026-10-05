@@ -1,0 +1,45 @@
+{
+  "name": "TwilightforestUrGhast",
+  "nationalPokedexNumber": 10057,
+  "implemented": false,
+  "maleRatio": -1.0,
+  "catchRate": 3,
+  "baseExperienceYield": 418,
+  "experienceGroup": "slow",
+  "primaryType": "ghost",
+  "secondaryType": "fire",
+  "baseStats": {
+    "hp": 260,
+    "attack": 96,
+    "defence": 139,
+    "special_attack": 172,
+    "special_defence": 145,
+    "speed": 58
+  },
+  "evYield": {
+    "hp": 3,
+    "attack": 0,
+    "defence": 0,
+    "special_attack": 0,
+    "special_defence": 0,
+    "speed": 0
+  },
+  "abilities": [
+    "pressure"
+  ],
+  "moves": [
+    "1:astonish",
+    "1:willowisp",
+    "8:flamethrower",
+    "18:shadowball",
+    "30:fireblast",
+    "45:hyperbeam"
+  ],
+  "height": 35,
+  "weight": 3000,
+  "hitbox": {
+    "fixed": false,
+    "width": 1.8,
+    "height": 2.8
+  }
+}
