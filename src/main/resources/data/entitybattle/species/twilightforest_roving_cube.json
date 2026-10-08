@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:twilightforest_maze_slime",
   "name": "TwilightforestRovingCube",
   "nationalPokedexNumber": 10044,
   "implemented": false,

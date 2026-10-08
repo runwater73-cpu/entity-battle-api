@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:twilightforest_giant_miner",
+  "evolutions": [
+    {
+      "id": "twilightforest_giant_miner_to_twilightforest_armored_giant",
+      "variant": "item_interact",
+      "result": "entitybattle:twilightforest_armored_giant",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 55
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

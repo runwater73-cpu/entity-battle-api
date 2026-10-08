@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_villager",
   "name": "MinecraftWanderingTrader",
   "nationalPokedexNumber": 11067,
   "implemented": false,

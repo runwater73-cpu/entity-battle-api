@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_snow_golem",
   "name": "MinecraftIronGolem",
   "nationalPokedexNumber": 11030,
   "implemented": false,

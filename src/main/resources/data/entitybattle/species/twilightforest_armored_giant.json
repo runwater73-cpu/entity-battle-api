@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:twilightforest_giant_miner",
   "name": "TwilightforestArmoredGiant",
   "nationalPokedexNumber": 10005,
   "implemented": false,

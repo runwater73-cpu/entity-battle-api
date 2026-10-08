@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_guardian",
   "name": "MinecraftElderGuardian",
   "nationalPokedexNumber": 11017,
   "implemented": false,

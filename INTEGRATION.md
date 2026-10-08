@@ -138,7 +138,7 @@ EntityPokemonOrigin.registerAppearance(MyEntities.MY_MOB.get(), new EntityPokemo
 
 ## 转换道具与创造标签页
 
-本模组注册独立创造物品栏标签页“生物宝可梦化”，其中有 `entitybattle:converter`。用它右击已接入的原生生物，满足来源资格时会永久转换为野生 `PokemonEntity`。道具不消耗，当前没有合成配方；它不是只在创造模式才能使用。`pokemon_entity` 的 Boss 遇到未完成的原作开战条件时先保留剧情交互，解锁后自动转换，无需道具。默认自动模式的战斗中断保留宝可梦；原生模式的临时 R 战斗中断恢复来源。
+本模组注册独立创造物品栏标签页“生物宝可梦化”，其中有 `entitybattle:converter`。用它右击已接入的原生生物，满足来源资格时会永久转换为野生 `PokemonEntity`。道具不消耗，可用两份紫水晶碎片、两份红石和一份铁锭合成；默认配方 ID 为 `entitybattle:converter`。整合包数据包同 ID 覆盖优先，不同 ID 旧配方并存；KubeJS、CraftTweaker 可以按该 ID 删除默认配方并保留自定义版本。`pokemon_entity` 的 Boss 遇到未完成的原作开战条件时先保留剧情交互，解锁后自动转换，无需道具。默认自动模式的战斗中断保留宝可梦；原生模式的临时 R 战斗中断恢复来源。
 
 ## 原生剧情与死亡回调接口
 
@@ -166,7 +166,7 @@ python validation/profile_document.py --mods "你的模组目录"
 
 1. 全部预置来源均安装时应在日志看到 `Loaded 169 entity battle profiles`；缺少可选来源会跳过相应条目。检查 species 没有解析错误。
 2. 默认配置下对僵尸按 `R`：不应触发本模组对战。启用 `enableRChallenge` 并重启后再按 `R`：应进入 Cobblemon 野生单打，队伍最多六只按正常规则依次上场；逃跑后恢复同一只僵尸和其 AI；战胜时触发原生死亡、掉落和经验。
-3. 启用 `enableRChallenge`，临时把僵尸 `catchable` 设为 `true` 并调整 species `catchRate`，验证按 R 对战捕捉成功后不会重新生成僵尸，宝可梦能收入队伍、收回和再次放出。
+3. 普通僵尸默认 `catchable=true`、捕获率 180。验证转换器捕捉或启用 R 后临时捕捉成功时不再生成原生僵尸，并能收入队伍、收回、放出、28 级使用转化粉进化为巫妖仆从。
 4. 生成牛：默认应是保留挤奶、繁殖和原生 AI 的牛；可直接进行 Minecraft 战斗，或用转换器变成宝可梦后再对战。只有开启 `enableRChallenge` 才能对原生牛按 R 临时对战。要验证直接模式，可把 `examples/direct_pokemon_entity/cow.json` 的内容用于覆盖默认牛 profile；此时世界中应只有一个野生 `PokemonEntity`，并检查牛外观、捕捉、战斗血条、队伍头像及放出收回动画。
 5. 在创造界面找到独立标签页及转换器。用转换器右击已接入的原生僵尸，确认世界里变成真实 `PokemonEntity`，并可走 Cobblemon 对战；未接入实体不应转换。
 6. 对来源模组的复杂实体，额外检查装备、变种、骑乘、卸载/重启、死亡回调和第三方任务计数。
@@ -180,3 +180,33 @@ profile 可选 `moves: ["shadowball", "flameburst", "supersonic", "protect"]`，
 不由世界 Mob 转换而来的 NPC / 奖励宝可梦，可以调用 `EntityPokemonOrigin.setPresentation(pokemon, sourceEntityId, appearanceOrNull)` 添加来源模型与招式表现。该调用不添加源实体 UUID，不授权世界掉落和 Boss 奖励结算；已有来源绑定不会被覆盖。NPC 用 Cobblemon 原生 `NPCPartyStore` 与 `BattleBuilder.pvn`，例子见 [暮色领主](TWILIGHT_LORD.md)。
 
 群战可选 `bossBattle.minionMoves` 定义临时援军的四招，优先于来源随从 profile 的 `moves`，不改变普通野生同种生物的学习规则。已有 Java 构造函数保留，新增字段省略时按既有行为执行。
+
+## 原生进化与模型身份
+
+0.2.0-beta.2 的十六条获取路线见 [生存获取](CREATURE_EVOLUTIONS.md)。进化数据可写在独立 species 的 `evolutions` 中，或通过 `species_additions` 添加，原生道具交互、条件、确认、动画、属性与个体数据由 Cobblemon 负责。例如 `data/entitybattle/species_additions/acquisition/zombie.json`：
+
+```json
+{
+  "target": "entitybattle:zombie",
+  "evolutions": [{
+    "id": "zombie_to_twilightforest_lich_minion",
+    "variant": "item_interact",
+    "result": "entitybattle:twilightforest_lich_minion",
+    "optional": true,
+    "consumeHeldItem": false,
+    "learnableMoves": [],
+    "requirements": [{"variant": "level", "minLevel": 28}],
+    "requiredContext": "#entitybattle:transformation_powders"
+  }]
+}
+```
+
+可选来源道具请使用标签，标签成员设置 `required=false`；不要直接引用缺失的可选道具字符串，否则原生旧式物品条件解析器可能退回不限定物品。当前转化粉标签在无暮色森林时为空。
+
+结果物种的 `species` 数据需同步定义 `"preEvolution": "entitybattle:zombie"` 等完整前身标识；原生进化成就和图鉴关系会读取该字段。当前十六条路线均已补齐前身。
+
+`EntityPokemonEvolutions` 监听原生 `EVOLUTION_TESTED` 和 `EVOLUTION_ACCEPTED`，拒绝缺失或未启用的本模组目标。完成事件从有效 profile 找新模型来源；跨来源清理旧外观、来源 UUID、拥有个体的首领快照和恢复上下文，同来源形态变化保留外观。若目标变为官方物种则解除原生模型身份；已放出的同一实体向跟踪玩家同步新显示身份。无须给每条路线写特殊渲染器。
+
+作者只提供数据，不必自写道具进化。原生流程使用粉时加入待确认列表并扣一份；确认后变种。缺少结果模组时不能消耗粉或确认旧待进化，图鉴仍可能读取到静态数据中的未启用关系；实际物种可用标记由服务器统一维护。
+
+在方可梦 1.8.1 中，超极巨化因子设置器会把进化目标传给仅处理普通名称的 `getByName`，完整命名空间会造成复制及读取失败。公共 `SpeciesEvolutionLookupMixin` 只把明确带冒号的标识转交原生 `getByIdentifier`，普通名称流程不变。原生进化预览也在发事件前捕获外观集合，完成模型重绑定后重建其原生显示对象；未改第三方 JAR。

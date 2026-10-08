@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:aether_zephyr",
+  "evolutions": [
+    {
+      "id": "aether_zephyr_to_aether_cloud_minion",
+      "variant": "item_interact",
+      "result": "entitybattle:aether_cloud_minion",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

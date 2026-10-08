@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:twilightforest_maze_slime",
+  "evolutions": [
+    {
+      "id": "twilightforest_maze_slime_to_twilightforest_roving_cube",
+      "variant": "item_interact",
+      "result": "entitybattle:twilightforest_roving_cube",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 35
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

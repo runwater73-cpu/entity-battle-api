@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_magma_cube",
   "name": "TwilightforestHarbingerCube",
   "nationalPokedexNumber": 10018,
   "implemented": false,

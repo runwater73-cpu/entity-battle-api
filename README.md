@@ -2,6 +2,8 @@
 
 让已接入的 Minecraft 原生或模组生物使用 Cobblemon 的物种数据、野生对战与捕捉流程，同时复用来源生物的模型和基础渲染。
 
+作者：**RunWater1**。
+
 ## 版本与安装
 
 - Minecraft 1.21.1、NeoForge 21.1.244 或更新的 21.1.x
@@ -13,7 +15,7 @@
 
 ## 游戏内使用
 
-默认的 `native_mob` 模式保留生物在大世界中的原生 AI、攻击、交互和通常的死亡流程。玩家可以直接按 Minecraft 方式战斗。使用创造标签页“生物宝可梦化”中的 `entitybattle:converter` 右击已接入生物，可将该个体**永久转换**为野生 `PokemonEntity`，随后按 Cobblemon 的方式对战或捕捉。转换器在生存模式也可使用，但目前没有合成配方。
+默认的 `native_mob` 模式保留生物在大世界中的原生 AI、攻击、交互和通常的死亡流程。玩家可以直接按 Minecraft 方式战斗。使用创造标签页“生物宝可梦化”中的 `entitybattle:converter` 右击已接入生物，可将该个体**永久转换**为野生 `PokemonEntity`，随后按 Cobblemon 的方式对战或捕捉。转换器可用两份紫水晶碎片、两份红石和一份铁锭合成。普通僵尸现已可捕捉，28 级后可用暮色转化粉进化为巫妖仆从；全部补充路线见 [生存获取与进化](CREATURE_EVOLUTIONS.md)。
 
 对原生生物按 `R` 临时开战默认关闭。单人游戏可在“模组列表 → Entity Battle API → 配置”中开启；也可修改 `config/entitybattle-common.toml` 中的 `enableRChallenge`，然后重启游戏。多人服务器由服主修改服务端配置并重启服务器。关闭此项不影响转换器，也不改变 Cobblemon 对普通野生宝可梦的按键行为。
 
@@ -27,6 +29,7 @@
 
 - [接入指南](INTEGRATION.md)：profile、species、两种世界模式、Java 扩展点与验证步骤
 - [预置生物配置](PACK_PROFILES.md)：文件位置、字段修改和 Boss 捕捉策略
+- [生存获取与转化粉进化](CREATURE_EVOLUTIONS.md)：十六条路线、最低等级、原生确认、个体数据与修改方法
 - [架构说明](ARCHITECTURE.md)：实体转换、会话恢复和模块职责
 - [模型注册与融合显示](MODEL_REPOSITORY.md)：Cobblemon 模型仓库、原生动画保留、自动接入及格式边界
 - [玩偶显示兼容](DOLL_MODEL_COMPATIBILITY.md)：运行时模型、放置 / 投掷显示、命名空间与融合外观保存
@@ -50,7 +53,7 @@
 
 需要 JDK 21。运行 `./gradlew build`，Windows 使用 `gradlew.bat build`。Gradle 默认从 Modrinth 获取 Cobblemon 1.8.1；也可通过 `-Pcobblemon_local_jar=<路径>` 指向本地 JAR。输出位于 `build/libs/`。
 
-当前版本为 `0.2.0-beta.1`，公开测试目标为 Minecraft 1.21.1 / NeoForge / Cobblemon 1.8.1。全部可选来源安装时预置 169 个 profile。服务端剧情 / 战斗结算、客户端来源姿态 / 实际物品模型和缺少可选来源启动均有专项验证，详见 [验证记录](BOSS_VERIFICATION.md)。自然地牢完整游玩、随机投球捕捉、全部第三方显示界面及战斗平衡仍需游戏测试；暂不宣称稳定正式版或真人多人协作已完成。
+当前版本为 `0.2.0-beta.2`，公开测试目标为 Minecraft 1.21.1 / NeoForge / Cobblemon 1.8.1。全部可选来源安装时预置 169 个 profile。服务端剧情 / 战斗结算、客户端来源姿态 / 实际物品模型和缺少可选来源启动均有专项验证，详见 [验证记录](BOSS_VERIFICATION.md)。自然地牢完整游玩、随机投球捕捉、全部第三方显示界面及战斗平衡仍需游戏测试；暂不宣称稳定正式版或真人多人协作已完成。
 
 ## 许可
 

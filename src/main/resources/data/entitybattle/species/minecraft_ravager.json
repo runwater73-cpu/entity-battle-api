@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_pillager",
   "name": "MinecraftRavager",
   "nationalPokedexNumber": 11046,
   "implemented": false,

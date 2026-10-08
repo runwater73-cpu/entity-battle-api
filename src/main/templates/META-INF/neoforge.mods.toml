@@ -8,7 +8,7 @@ modId="${mod_id}"
 version="${mod_version}"
 displayName="Entity Battle API"
 displayURL="https://github.com/runwater73-cpu/entity-battle-api"
-authors="runwater73-cpu"
+authors="RunWater1"
 description='''Battle Minecraft living entities using Cobblemon's battle engine.'''
 
 [[mixins]]

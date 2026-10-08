@@ -1,0 +1,9 @@
+allprojects {
+    afterEvaluate { p ->
+        if (p.plugins.hasPlugin('net.neoforged.moddev')) {
+            p.sourceSets.main.java.srcDir(p.file('validation/evolution-src'))
+            p.neoForge.runs.server.gameDirectory = p.file(p.providers.gradleProperty('evolution_base_only').isPresent()
+                    ? 'build/evolution-absent-run' : 'build/evolution-smoke-run')
+        }
+    }
+}

@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_horse",
   "name": "MinecraftZombieHorse",
   "nationalPokedexNumber": 11074,
   "implemented": false,

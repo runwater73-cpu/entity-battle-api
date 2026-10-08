@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:minecraft_evoker",
+  "evolutions": [
+    {
+      "id": "minecraft_evoker_to_legendarymonuments_grunt",
+      "variant": "item_interact",
+      "result": "entitybattle:legendarymonuments_grunt",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 35
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

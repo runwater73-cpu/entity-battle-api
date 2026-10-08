@@ -60,10 +60,10 @@ def shade(cell, color):
     tc_pr.append(node)
 
 
-def cell_margins(cell):
+def cell_margins(cell, vertical=90):
     tc_pr = cell._tc.get_or_add_tcPr()
     mar = OxmlElement("w:tcMar")
-    for side, amount in (("top", 90), ("bottom", 90), ("start", 90), ("end", 90)):
+    for side, amount in (("top", vertical), ("bottom", vertical), ("start", 90), ("end", 90)):
         node = OxmlElement("w:" + side)
         node.set(qn("w:w"), str(amount))
         node.set(qn("w:type"), "dxa")
@@ -197,6 +197,8 @@ def add_group_table(doc, rows):
     header._tr.get_or_add_trPr().append(OxmlElement("w:tblHeader"))
     for idx, title in enumerate(headers):
         cell_text(header.cells[idx], title, centered=True)
+        header.cells[idx].width = Cm(widths[idx])
+        header.cells[idx].paragraphs[0].paragraph_format.keep_with_next = True
         for run in header.cells[idx].paragraphs[0].runs:
             set_font(run, 7.7, bold=True, color="FFFFFF")
         shade(header.cells[idx], "27566F")
@@ -302,6 +304,35 @@ def build(output=OUTPUT, pack_only=False):
         "谜题羊可捕捉，必须先完成原生任务领奖。妖精的颜色、幼体外观和点数掉落，"
         "以及复杂首领阶段、任务回调和掉落仍需实机验证。")
 
+    doc.add_heading("转化粉与生存获取", level=1)
+    doc.add_paragraph("作者为 RunWater1。普通僵尸现可捕捉，捕获率为180。转换器可用两份紫水晶碎片、两份红石和一份铁锭合成；整合包可按配方标识覆盖。捕捉并培养来源宝可梦，放出后用一份暮色转化粉右击，再在原生队伍详情确认进化。下表是本模组新增路线。")
+    doc.add_paragraph("原生进化保留等级、个体值、努力值、性格、昵称、主人、精灵球、携带物与已学招式，使用结果物种的属性、特性与模型。不附赠随从装备，不继承旧世界死亡身份。正式首领仍需整场胜利；谜题羊仍须羊毛任务领奖。召唤类生物有的已有原作获取途径，本表补充稳定培养路线。详细修改方法见项目中文生存获取说明。")
+    routes = json.loads((ROOT / "validation/creature-acquisition.json").read_text(encoding="utf-8"))
+    route_table = doc.add_table(rows=1, cols=4)
+    route_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    route_table.autofit = False
+    table_borders(route_table)
+    route_widths = [4.3, 4.3, 2.4, 16.2]
+    for idx, heading in enumerate(("来源宝可梦", "进化结果", "最低等级", "补充原因")):
+        cell_text(route_table.rows[0].cells[idx], heading)
+        cell_margins(route_table.rows[0].cells[idx], vertical=50)
+        shade(route_table.rows[0].cells[idx], "27566F")
+        for run in route_table.rows[0].cells[idx].paragraphs[0].runs:
+            set_font(run, 8.5, True, "FFFFFF")
+    route_table.rows[0]._tr.get_or_add_trPr().append(OxmlElement("w:tblHeader"))
+    for index, route in enumerate(routes):
+        cells = route_table.add_row().cells
+        cells[0]._tc.getparent().get_or_add_trPr().append(OxmlElement("w:cantSplit"))
+        for idx, value in enumerate((route["sourceName"], route["targetName"], route["level"], route["reason"])):
+            cell_text(cells[idx], value)
+            cell_margins(cells[idx], vertical=50)
+            cells[idx].width = Cm(route_widths[idx])
+            if index % 2:
+                shade(cells[idx], "F3F7F9")
+    for idx, column in enumerate(route_table.columns):
+        column.width = Cm(route_widths[idx])
+        route_table.rows[0].cells[idx].width = Cm(route_widths[idx])
+
     order = ("原版生物", "暮色森林", "森罗物语暮色", "天境", "深入天境", "其他内容模组", "车万女仆野外生物")
     for group in order:
         group_rows = [r for r in rows if r["group"] == group]
@@ -351,12 +382,14 @@ def build(output=OUTPUT, pack_only=False):
                 shade(new_row.cells[idx], "F3F7F9")
     for idx, column in enumerate(equipment.columns):
         column.width = Cm(widths[idx])
+        equipment.rows[0].cells[idx].width = Cm(widths[idx])
 
     footer = section.footer.paragraphs[0]
     footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_font(footer.add_run("生物宝可梦接入模组  ·  " + title), 7.5, color="586975")
     doc.core_properties.title = title
     doc.core_properties.subject = "接入生物设定"
+    doc.core_properties.author = "RunWater1"
     doc.save(output)
     print(json.dumps({"output": str(output), "rows": len(rows), "bytes": output.stat().st_size}, ensure_ascii=False))
 

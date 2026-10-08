@@ -11,7 +11,7 @@
 | `native_mob` | 来源模组的 `Mob` | 使用转换器永久变为野生 `PokemonEntity`；也可在配置开启时对准按 R 临时转换对战 | 世界阶段保留；按 R 临时对战的 `vanilla_death` 会尝试走来源 Mob 死亡结算 |
 | `pokemon_entity` | 从生成起就是 `PokemonEntity` | 直接使用 Cobblemon 的野生对战、捕捉和队伍行为 | 不会自动运行来源 Mob 的 AI 或专属交互；需要额外的行为适配器 |
 
-普通生物预置 `worldMode` 为 `native_mob`；15 个标记为 `boss` 的实体受 `bossWorldMode` 覆盖，仍保留来源资格门槛。`config/entitybattle-common.toml` 中的 `enableRChallenge` 默认是 `false`：大世界中的普通原生 Mob 可直接用 Minecraft 方式战斗，对准生物按 R 不会触发本模组的临时转换。想用宝可梦方式挑战普通生物时，用创造标签页“生物宝可梦化”中的转换器右击已接入生物，将其永久转换为野生 `PokemonEntity`。转换器在生存模式也可使用，但当前没有合成配方。单人游戏可在“模组列表 → Entity Battle API → 配置 → Common”中切换 R 对战开关；多人服务器须由服主修改服务端配置。修改后重启游戏或服务器。本模组不会在 Mob 攻击玩家时自动开战。`examples/direct_pokemon_entity/cow.json` 保留了牛的直接模式示例，默认不加载。
+普通生物预置 `worldMode` 为 `native_mob`；15 个标记为 `boss` 的实体受 `bossWorldMode` 覆盖，仍保留来源资格门槛。`config/entitybattle-common.toml` 中的 `enableRChallenge` 默认是 `false`：大世界中的普通原生 Mob 可直接用 Minecraft 方式战斗，对准生物按 R 不会触发本模组的临时转换。想用宝可梦方式挑战普通生物时，用创造标签页“生物宝可梦化”中的转换器右击已接入生物，将其永久转换为野生 `PokemonEntity`。转换器可在生存模式用两份紫水晶碎片、两份红石和一份铁锭合成，整合包可覆盖默认配方。单人游戏可在“模组列表 → Entity Battle API → 配置 → Common”中切换 R 对战开关；多人服务器须由服主修改服务端配置。修改后重启游戏或服务器。本模组不会在 Mob 攻击玩家时自动开战。`examples/direct_pokemon_entity/cow.json` 保留了牛的直接模式示例，默认不加载。
 
 正式 Boss 包括娜迦、巫妖、米诺菇、九头蛇、幻影骑士、暮初恶魂、雪怪首领、冰雪女王、滑行魔石、武神女王、烈阳巨灵、狂瞳龙卷、凋灵、监守者和向日葵，均不可捕捉。默认 `bossWorldMode = "POKEMON_ENTITY"` 时自动转换：天境与深入天境须先完成原作对话 / 交付 / 唤醒，其余满足各来源资格后转换。改为 `NATIVE_MOB` 可保留原生 Boss。Boss 在 Cobblemon `BATTLE_VICTORY` 胜利事件中被玩家击败后，只奖励一次对应物种的**固定 1 级**个体。安装 Team Rocket 时，奖励装在 `teamrocket:recruit_ball` 中；队伍已满时球会进入背包或掉落在玩家脚下。没有 Team Rocket 时则直接加入队伍，队伍已满再加入 PC。
 
@@ -35,6 +35,8 @@
 女仆模组当前只接入自然生成的 `touhou_little_maid:fairy`。它在大世界仍会飞行和发射原生弹幕；使用转换器，或开启配置后按 R，才进入宝可梦对战。`touhou_fairy.json` 指向独立物种 `touhou_little_maid_fairy.json`，属性为妖精/飞行。兼容层记录 18 种颜色和幼体状态，供战斗与捕捉后的原生模型渲染使用。女仆本体、弹幕、扫帚等辅助实体不接入。妖精的点数掉落与死亡后续行为仍需实机验证。
 
 ## 修改一个生物
+
+生存获取补充见 [转化粉进化](CREATURE_EVOLUTIONS.md)：普通僵尸已开放捕捉，新增十六条原生进化，转换器有默认合成配方。其他普通禁捕来源保留野生禁捕，可通过表中的培养路线取得；首领和谜题羊仍要求原有胜利或任务。
 
 1. 在 profile 中找到实体 ID。`level.min/max` 控制初次绑定时的等级；`catchable` 控制是否允许捕捉；`worldMode` 选择两种接入模式；`defeat` 控制原生模式战败结算；`worldBehavior`、`nativeDrops`、`nativeExperience` 主要影响永久转换后的 `PokemonEntity`。
 2. 根据该 profile 的 `species` ID 打开 `data/entitybattle/species/<ID 路径>.json`。`primaryType`/`secondaryType` 是属性，`baseStats` 六项依次为 HP、攻击、防御、特攻、特防、速度；`abilities` 为 Cobblemon 特性 ID，`moves` 里的 `18:shadowball` 表示 18 级学习暗影球。

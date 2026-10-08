@@ -142,6 +142,19 @@ public final class EntityPokemonOrigin {
         return true;
     }
 
+    /** Native evolution changes the species, so an old world identity must not follow it.
+     * Same-source form changes retain their variant. Cross-source changes use a fresh,
+     * display-only identity and never inherit source death / quest ownership. */
+    public static void evolvePresentation(Pokemon pokemon, ResourceLocation entity) {
+        if (Objects.equals(entityId(pokemon).orElse(null), entity)) return;
+        pokemon.getPersistentData().remove(DATA_KEY);
+        if (entity != null) setPresentation(pokemon, entity, null);
+        else {
+            pokemon.updateAspects();
+            pokemon.onChange(null);
+        }
+    }
+
     public interface AppearanceAdapter {
         CompoundTag save(Mob mob);
         void load(Mob mob, CompoundTag snapshot);

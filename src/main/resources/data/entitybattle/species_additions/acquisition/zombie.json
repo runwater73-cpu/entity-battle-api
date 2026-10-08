@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:zombie",
+  "evolutions": [
+    {
+      "id": "zombie_to_twilightforest_lich_minion",
+      "variant": "item_interact",
+      "result": "entitybattle:twilightforest_lich_minion",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 28
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

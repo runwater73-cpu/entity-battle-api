@@ -161,6 +161,14 @@ public final class EntityBattleNetwork {
         if(phase>0)PacketDistributor.sendToPlayer(player,new NativePose(pokemon.getUUID(),"",phase));
     }
 
+    /** Evolution may retain the world entity while changing its native model. */
+    public static void syncNativeVisual(PokemonEntity entity) {
+        PacketDistributor.sendToPlayersTrackingEntity(entity, new NativeVisual(entity.getUUID(),
+                EntityPokemonOrigin.entityId(entity.getPokemon()).orElse(
+                        ResourceLocation.fromNamespaceAndPath(EntityBattleMod.ID, "unbound")),
+                EntityPokemonOrigin.appearance(entity.getPokemon()).orElseGet(CompoundTag::new)));
+    }
+
     @SubscribeEvent
     public static void onDatapackSync(OnDatapackSyncEvent event) {
         ProfileSync packet = new ProfileSync(EntityBattleProfiles.nativeBattleEntityIds(),

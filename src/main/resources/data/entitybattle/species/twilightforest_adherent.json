@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:twilightforest_skeleton_druid",
   "name": "TwilightforestAdherent",
   "nationalPokedexNumber": 10003,
   "implemented": false,

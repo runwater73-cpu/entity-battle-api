@@ -4,6 +4,7 @@
   "package": "dev.entitybattle.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "SpeciesEvolutionLookupMixin",
     "MobExperienceAccessor",
     "PokemonHerdBrainMixin",
     "BossHordeBattleBuilderMixin",

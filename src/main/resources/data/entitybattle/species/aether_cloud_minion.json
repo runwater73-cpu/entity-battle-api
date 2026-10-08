@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:aether_zephyr",
   "name": "AetherCloudMinion",
   "nationalPokedexNumber": 10081,
   "implemented": false,

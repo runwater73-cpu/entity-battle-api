@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:minecraft_pillager",
+  "evolutions": [
+    {
+      "id": "minecraft_pillager_to_minecraft_ravager",
+      "variant": "item_interact",
+      "result": "entitybattle:minecraft_ravager",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 50
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

@@ -238,3 +238,22 @@ node validation/other-boss-abilities.cjs build/source-boss-smoke-run/showdown
 要求 `RIDING_MODELS PASS` 和 `RIDING_DATA PASS`，无后续失败。诊断核对九百零七份资源确实来自修复包、模型烘焙座位、实际解析器的模型与姿态构造、全部姿态部件变换，以及九百四十四份数据通过原生骑乘反序列化器。小箭雀、火箭雀、穿山鼠与一家鼠两种家庭必须出现在实际检查中。没有逐只乘坐或执行完整动画帧，不能以此代替骑手位置与操作实机验收。
 
 初次隔离启动遗漏 owo 前置；之后因测试资源顺序让模组基础资源覆盖外部包而被来源检查拒绝；再补齐实际实例已启用的内置地区姿态。最后发现地图图标包的一家鼠旧姿态引用，生成器已按新版模型分别更正。测试不得跳过缺少姿态，也不能用默认占位模型代替实际目标来通过。
+
+## 转化粉与生存获取
+
+`check-creature-acquisition.py` 对照当前 169 种 profile、十六条中文路线和真实物种追加文件，检查等级、道具标签、可获得的来源、普通野生禁捕物种的获取缺口、进化前身及首领 / 谜题羊任务隔离。要求 `ACQUISITION_DATA PASS`。
+
+先用 `prepare-evolution-run.py --mods "你的模组目录"` 准备隔离服务器；复制来源模组及必需依赖，不修改原 JAR。完整模式安装暮色森林、天境、深入天境及传说遗迹，含来源实际依赖的大师对决、饰品库与 owo。`--base-only` 准备不含这些可选内容的独立目录。
+
+```powershell
+.\gradlew.bat -I validation/evolution-smoke.init.gradle runServer '-Pneo_version=21.1.249' *> build/evolution-server.log
+.\gradlew.bat -I validation/evolution-smoke.init.gradle runServer '-Pneo_version=21.1.249' '-Pevolution_base_only=true' *> build/evolution-absent-server.log
+```
+
+完整模式要求 `EVOLUTION PASS`，无后续 `EVOLUTION FAIL`。实际调用原生 `PokemonEntity.mobInteract`、待确认进化及原生计时完成流程，检查全部十六条路线、最低等级、错误道具、缺失目标、消耗一次、不重复消耗、待确认预览模型身份、个体编号、等级、个体值、努力值、性格、昵称、携带物、原有招式、目标特性、进化前身、原生 NBT 保存读取及旧来源清理。另以官方皮卡丘雷之石进化雷丘作对照，并在放出状态等待完整原生进化时序，检查巫妖仆从身份与魂契分担。实际工作台输入也检查默认转换器配方。
+
+缺少内容模组模式要求 `EVOLUTION_ABSENT PASS`。分别检查缺失目标及仍可用的原版僵尸马目标：空转化粉标签均不能把泥土等任意物品识别成粉，也不能登记待进化或扣物品。
+
+首次完整模式发现方可梦 1.8.1 的超极巨化因子设置器通过名称接口读取完整命名空间，导致预览复制与 NBT 加载报错；公共标识读取兼容层修复后上述原生流程通过。待确认显示在发事件前快照外观，事件中重建原生显示对象才能更新模型身份；结果物种同时补齐 `preEvolution`，避免原生进化成就因缺前身而跳过。测试使用 FakePlayer，不代表真人队伍确认界面、JEI 进化页、客户端动画或全部来源自然世界的游玩验收。正常发布构建不带 `-I`，不包含诊断类。
+
+2026-10-08 的最终日志分别在 18:17:32 出现 `EVOLUTION PASS`、18:19:27 出现 `EVOLUTION_ABSENT PASS`，无后续专项失败；普通 `clean build` 通过。两份中文属性表重新渲染并逐页检查，修正表头单独留在页末及装备表超出页宽的问题。

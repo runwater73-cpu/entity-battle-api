@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:minecraft_villager",
+  "evolutions": [
+    {
+      "id": "minecraft_villager_to_minecraft_wandering_trader",
+      "variant": "item_interact",
+      "result": "entitybattle:minecraft_wandering_trader",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 25
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

@@ -193,6 +193,9 @@ public final class EntityBossSources {
         for (String key : List.of(SNAPSHOT, HELPERS, WINNER, CANCELLED, COMPLETED)) pokemon.getPersistentData().remove(key);
         pokemon.onChange(null);
     }
+    static void clearOwnedEvolution(Pokemon pokemon) {
+        if (!pokemon.isWild()) clear(pokemon);
+    }
     private static List<Entity> toList(Iterable<Entity> entities) { var list = new ArrayList<Entity>(); entities.forEach(list::add); return list; }
 
     @SubscribeEvent public static void onJoin(EntityJoinLevelEvent event) {

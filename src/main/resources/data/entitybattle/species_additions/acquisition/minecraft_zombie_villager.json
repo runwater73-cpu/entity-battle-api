@@ -1,0 +1,20 @@
+{
+  "target": "entitybattle:minecraft_zombie_villager",
+  "evolutions": [
+    {
+      "id": "minecraft_zombie_villager_to_minecraft_villager",
+      "variant": "item_interact",
+      "result": "entitybattle:minecraft_villager",
+      "optional": true,
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 20
+        }
+      ],
+      "requiredContext": "#entitybattle:transformation_powders"
+    }
+  ]
+}

@@ -58,6 +58,7 @@ public final class EntityBattleMod {
         NeoForge.EVENT_BUS.register(EntityKnightSquads.class);
         NeoForge.EVENT_BUS.register(MaidHordeCompatibility.class);
         EntityBattleEvents.register();
+        dev.entitybattle.battle.EntityPokemonEvolutions.register();
         MaidHordeCompatibility.register();
         NagaTrophyCompatibility.register();
         EntityBossEncounters.register();

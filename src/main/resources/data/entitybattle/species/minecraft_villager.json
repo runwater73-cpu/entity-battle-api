@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_zombie_villager",
   "name": "MinecraftVillager",
   "nationalPokedexNumber": 11065,
   "implemented": false,

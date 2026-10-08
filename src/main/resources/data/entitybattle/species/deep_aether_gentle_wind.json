@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:deep_aether_baby_zephyr",
   "name": "DeepAetherGentleWind",
   "nationalPokedexNumber": 10087,
   "implemented": false,

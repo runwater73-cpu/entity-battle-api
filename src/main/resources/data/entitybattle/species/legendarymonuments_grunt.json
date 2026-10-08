@@ -1,4 +1,5 @@
 {
+  "preEvolution": "entitybattle:minecraft_evoker",
   "name": "LegendarymonumentsGrunt",
   "nationalPokedexNumber": 10089,
   "implemented": false,

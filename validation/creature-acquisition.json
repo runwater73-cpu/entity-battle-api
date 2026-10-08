@@ -1,0 +1,162 @@
+[
+  {
+    "source": "minecraft:zombie",
+    "target": "twilightforest:lich_minion",
+    "level": 28,
+    "sourceName": "僵尸",
+    "targetName": "巫妖仆从",
+    "reason": "首领召唤的随从；临时群战个体不可捕捉",
+    "sourceSpecies": "entitybattle:zombie",
+    "targetSpecies": "entitybattle:twilightforest_lich_minion"
+  },
+  {
+    "source": "minecraft:horse",
+    "target": "minecraft:zombie_horse",
+    "level": 15,
+    "sourceName": "马",
+    "targetName": "僵尸马",
+    "reason": "在我的世界 1.21.1 中没有自然生存生成入口",
+    "sourceSpecies": "entitybattle:minecraft_horse",
+    "targetSpecies": "entitybattle:minecraft_zombie_horse"
+  },
+  {
+    "source": "minecraft:guardian",
+    "target": "minecraft:elder_guardian",
+    "level": 55,
+    "sourceName": "守卫者",
+    "targetName": "远古守卫者",
+    "reason": "原生可生成，但当前普通生物配置禁止直接捕捉",
+    "sourceSpecies": "entitybattle:minecraft_guardian",
+    "targetSpecies": "entitybattle:minecraft_elder_guardian"
+  },
+  {
+    "source": "minecraft:snow_golem",
+    "target": "minecraft:iron_golem",
+    "level": 35,
+    "sourceName": "雪傀儡",
+    "targetName": "铁傀儡",
+    "reason": "原生可制造或生成，但当前普通生物配置禁止直接捕捉",
+    "sourceSpecies": "entitybattle:minecraft_snow_golem",
+    "targetSpecies": "entitybattle:minecraft_iron_golem"
+  },
+  {
+    "source": "minecraft:pillager",
+    "target": "minecraft:ravager",
+    "level": 50,
+    "sourceName": "掠夺者",
+    "targetName": "劫掠兽",
+    "reason": "原生可在袭击生成，但当前普通生物配置禁止直接捕捉",
+    "sourceSpecies": "entitybattle:minecraft_pillager",
+    "targetSpecies": "entitybattle:minecraft_ravager"
+  },
+  {
+    "source": "minecraft:zombie_villager",
+    "target": "minecraft:villager",
+    "level": 20,
+    "sourceName": "僵尸村民",
+    "targetName": "村民",
+    "reason": "原生可生成或治疗，但当前普通生物配置禁止直接捕捉",
+    "sourceSpecies": "entitybattle:minecraft_zombie_villager",
+    "targetSpecies": "entitybattle:minecraft_villager"
+  },
+  {
+    "source": "minecraft:villager",
+    "target": "minecraft:wandering_trader",
+    "level": 25,
+    "sourceName": "村民",
+    "targetName": "流浪商人",
+    "reason": "原生可生成，但当前普通生物配置禁止直接捕捉",
+    "sourceSpecies": "entitybattle:minecraft_villager",
+    "targetSpecies": "entitybattle:minecraft_wandering_trader"
+  },
+  {
+    "source": "twilightforest:giant_miner",
+    "target": "twilightforest:armored_giant",
+    "level": 55,
+    "sourceName": "巨人矿工",
+    "targetName": "武装巨人",
+    "reason": "原生可生成，但当前普通生物配置禁止直接捕捉",
+    "sourceSpecies": "entitybattle:twilightforest_giant_miner",
+    "targetSpecies": "entitybattle:twilightforest_armored_giant"
+  },
+  {
+    "source": "twilightforest:skeleton_druid",
+    "target": "twilightforest:adherent",
+    "level": 35,
+    "sourceName": "骷髅德鲁伊",
+    "targetName": "信徒",
+    "reason": "当前来源版本未发现生存生成入口",
+    "sourceSpecies": "entitybattle:twilightforest_skeleton_druid",
+    "targetSpecies": "entitybattle:twilightforest_adherent"
+  },
+  {
+    "source": "minecraft:magma_cube",
+    "target": "twilightforest:harbinger_cube",
+    "level": 30,
+    "sourceName": "岩浆怪",
+    "targetName": "噩兆立方",
+    "reason": "当前来源版本未发现生存生成入口",
+    "sourceSpecies": "entitybattle:minecraft_magma_cube",
+    "targetSpecies": "entitybattle:twilightforest_harbinger_cube"
+  },
+  {
+    "source": "twilightforest:maze_slime",
+    "target": "twilightforest:roving_cube",
+    "level": 35,
+    "sourceName": "迷宫史莱姆",
+    "targetName": "漫游立方",
+    "reason": "当前来源版本未发现生存生成入口",
+    "sourceSpecies": "entitybattle:twilightforest_maze_slime",
+    "targetSpecies": "entitybattle:twilightforest_roving_cube"
+  },
+  {
+    "source": "twilightforest:stable_ice_core",
+    "target": "twilightforest:ice_crystal",
+    "level": 35,
+    "sourceName": "稳定冰核",
+    "targetName": "冰晶",
+    "reason": "冰雪女王召唤的随从；临时群战个体不可捕捉",
+    "sourceSpecies": "entitybattle:twilightforest_stable_ice_core",
+    "targetSpecies": "entitybattle:twilightforest_ice_crystal"
+  },
+  {
+    "source": "minecraft:blaze",
+    "target": "aether:fire_minion",
+    "level": 30,
+    "sourceName": "烈焰人",
+    "targetName": "烈焰奴仆",
+    "reason": "原作陷阱也可召唤；补充稳定获取路线",
+    "sourceSpecies": "entitybattle:minecraft_blaze",
+    "targetSpecies": "entitybattle:aether_fire_minion"
+  },
+  {
+    "source": "aether:zephyr",
+    "target": "aether:cloud_minion",
+    "level": 20,
+    "sourceName": "西风啸云",
+    "targetName": "迷你云护卫",
+    "reason": "原作云杖也可召唤；补充脱离召唤物生命周期的获取路线",
+    "sourceSpecies": "entitybattle:aether_zephyr",
+    "targetSpecies": "entitybattle:aether_cloud_minion"
+  },
+  {
+    "source": "deep_aether:baby_zephyr",
+    "target": "deep_aether:gentle_wind",
+    "level": 15,
+    "sourceName": "西风嗤云",
+    "targetName": "和风",
+    "reason": "原作浮空围巾也可召唤；补充脱离召唤物生命周期的获取路线",
+    "sourceSpecies": "entitybattle:deep_aether_baby_zephyr",
+    "targetSpecies": "entitybattle:deep_aether_gentle_wind"
+  },
+  {
+    "source": "minecraft:evoker",
+    "target": "legendarymonuments:grunt",
+    "level": 35,
+    "sourceName": "唤魔者",
+    "targetName": "手下",
+    "reason": "当前来源版本仅发现刷怪蛋入口，未发现生存生成或合成入口",
+    "sourceSpecies": "entitybattle:minecraft_evoker",
+    "targetSpecies": "entitybattle:legendarymonuments_grunt"
+  }
+]

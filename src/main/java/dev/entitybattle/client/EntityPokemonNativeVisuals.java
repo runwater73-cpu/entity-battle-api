@@ -47,7 +47,9 @@ public final class EntityPokemonNativeVisuals {
     private EntityPokemonNativeVisuals() {}
 
     public static void setSource(UUID worldEntityId, ResourceLocation entityId, CompoundTag appearance) {
-        SOURCES.put(worldEntityId, new Visual(entityId, appearance.copy()));
+        if (BuiltInRegistries.ENTITY_TYPE.containsKey(entityId))
+            SOURCES.put(worldEntityId, new Visual(entityId, appearance.copy()));
+        else SOURCES.remove(worldEntityId);
         MODELS.entrySet().removeIf(entry -> entry.getKey().getUUID().equals(worldEntityId));
     }
 
