@@ -8,12 +8,12 @@
   "experienceGroup": "medium_fast",
   "primaryType": "fire",
   "baseStats": {
-    "hp": 81,
-    "attack": 76,
-    "defence": 65,
-    "special_attack": 110,
-    "special_defence": 73,
-    "speed": 87
+    "hp": 40,
+    "attack": 45,
+    "defence": 40,
+    "special_attack": 55,
+    "special_defence": 40,
+    "speed": 70
   },
   "evYield": {
     "hp": 0,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "flamebody"
+    "flashfire"
   ],
   "moves": [
     "1:ember",
-    "1:flamewheel",
-    "8:firepunch",
-    "18:flamethrower",
-    "30:fireblast",
-    "45:flareblitz"
+    "12:quickattack",
+    "24:flamecharge",
+    "36:protect"
   ],
   "hitbox": {
     "fixed": false,

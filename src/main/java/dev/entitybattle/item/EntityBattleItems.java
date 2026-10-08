@@ -15,7 +15,7 @@ public final class EntityBattleItems {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EntityBattleMod.ID);
 
     public static final Supplier<Item> CONVERTER = ITEMS.register("converter",
-            () -> new ConversionItem(new Item.Properties().stacksTo(1)));
+            () -> new ConversionItem(new Item.Properties().stacksTo(64)));
     public static final Supplier<CreativeModeTab> TAB = TABS.register("entitybattle", () ->
             CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.entitybattle"))

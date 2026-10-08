@@ -8,12 +8,12 @@
   "experienceGroup": "medium_fast",
   "primaryType": "fighting",
   "baseStats": {
-    "hp": 112,
-    "attack": 124,
-    "defence": 90,
-    "special_attack": 38,
-    "special_defence": 68,
-    "speed": 71
+    "hp": 75,
+    "attack": 85,
+    "defence": 65,
+    "special_attack": 30,
+    "special_defence": 55,
+    "speed": 50
   },
   "evYield": {
     "hp": 0,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "angerpoint"
+    "battlearmor"
   ],
   "moves": [
-    "1:tackle",
     "1:stomp",
-    "8:bulldoze",
-    "18:brickbreak",
-    "30:earthquake",
-    "45:megahorn"
+    "12:brickbreak",
+    "22:highhorsepower",
+    "30:protect"
   ],
   "hitbox": {
     "fixed": false,

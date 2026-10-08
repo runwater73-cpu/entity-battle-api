@@ -26,7 +26,7 @@
 
 ### `pokemon_entity` 生命周期
 
-原生 Mob 尝试加入世界时，`EntityPokemonWorldSpawns` 为其创建 Cobblemon `Pokemon` 和野生 `PokemonEntity`；成功后取消原始 Mob 的加入。之后只有一个世界实体。Cobblemon 直接处理野生对战、捕捉、再次放出和队伍生命周期。来源类型记录在 Pokemon 持久数据中，客户端在 PokemonEntity、战斗与队伍头像，以及 PC 预览和储存格中绘制来源 Mob 模型。当前预置清单不启用此模式；它作为接入作者的可选方案保留。
+原生 Mob 尝试加入世界时，`EntityPokemonWorldSpawns` 为其创建 Cobblemon `Pokemon` 和野生 `PokemonEntity`。普通直接模式在生成事件中取消原始 Mob；正式 Boss 在生成事件完成后的服务端 tick 转换，以便来源模组的刷怪笼观察到成功生成。之后只有一个世界实体。Cobblemon 直接处理野生对战、捕捉、再次放出和队伍生命周期。来源类型记录在 Pokemon 持久数据中，客户端在 PokemonEntity、战斗与队伍头像，以及 PC 预览和储存格中绘制来源 Mob 模型。预置正式 Boss 默认使用此模式；其他预置 profile 保留原生 Mob。
 
 这条模式不运行原生 Mob 的 AI、普通攻击或其真实死亡事件。`worldBehavior` 提供被动/敌对基础行为；特殊行为可由接入模组注册 `EntityPokemonWorldBehaviorAdapter`。`nativeDrops` 和 `nativeExperience` 可读取来源实体的战利品表和经验，但不会把死亡事件中的实体类型改成来源 Mob。
 
@@ -42,7 +42,7 @@
 | `EntityBattleNetwork` | R 键挑战的服务端校验和客户端资料同步 |
 | `EntityPokemonWorldSpawns` | `pokemon_entity` 模式的生成时替换 |
 | `EntityPokemonWorldBehaviors` | 真实 PokemonEntity 的基础敌对行为 |
-| `EntityPokemonNativeRewards` | `pokemon_entity` 模式的可选原生战利品表/经验 |
+| `EntityPokemonNativeRewards` | `pokemon_entity` 模式的可选原生战利品表/经验，以及正式 Boss 的 Cobblemon 胜利奖励 |
 | `EntityPokemonNativeVisuals` | 使用来源 Mob 渲染器绘制 PokemonEntity 外观 |
 | `EntityBattleItems` | 转换道具与独立创造物品栏标签页 |
 

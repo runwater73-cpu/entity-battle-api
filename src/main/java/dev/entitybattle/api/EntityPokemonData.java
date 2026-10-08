@@ -78,6 +78,7 @@ public final class EntityPokemonData {
             int levelNumber = profile.minLevel()
                     + mob.getRandom().nextInt(profile.maxLevel() - profile.minLevel() + 1);
             Pokemon pokemon = species.create(levelNumber);
+            if (!profile.moves().isEmpty()) initializeMoves(pokemon, profile);
             if (!EntityPokemonOrigin.bind(pokemon, mob)) return null;
             EntityPokemonOrigin.refreshAppearance(pokemon, mob);
             applyCapturePolicy(pokemon, profile);
@@ -87,6 +88,22 @@ public final class EntityPokemonData {
             LOGGER.error("Could not create Pokemon data for entity {}", mob.getUUID(), exception);
             return null;
         }
+    }
+
+    /** Explicit roster initialization, including minion level offsets; never applied to saved individuals implicitly. */
+    public static void initializeMoves(Pokemon pokemon, EntityBattleProfile profile) {
+        initializeMoves(pokemon, profile.moves());
+    }
+
+    public static void initializeMoves(Pokemon pokemon, java.util.List<String> moves) {
+        if (moves.isEmpty()) { pokemon.initializeMoveset(true); return; }
+        var templates = moves.stream().map(name -> {
+            var move = com.cobblemon.mod.common.api.moves.Moves.getByName(name);
+            if (move == null) throw new IllegalArgumentException("Unknown configured move " + name);
+            return move;
+        }).toList();
+        pokemon.getMoveSet().clear();
+        templates.forEach(move -> pokemon.getMoveSet().add(move.create()));
     }
 
     /** Writes the complete Cobblemon state after a battle or an integration change. */

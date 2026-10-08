@@ -1,157 +1,79 @@
 package dev.entitybattle.client;
 
-import com.cobblemon.mod.common.api.gui.GuiUtilsKt;
-import com.cobblemon.mod.common.client.battle.ActiveClientBattlePokemon;
+import com.cobblemon.mod.common.client.gui.ProfileTransformType;
 import com.cobblemon.mod.common.client.render.models.blockbench.PosableState;
-import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
-import com.cobblemon.mod.common.pokemon.Pokemon;
-import com.cobblemon.mod.common.client.gui.summary.widgets.ModelWidget;
 import com.mojang.blaze3d.vertex.PoseStack;
-import java.util.UUID;
+import com.mojang.blaze3d.platform.Lighting;
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.screens.inventory.InventoryScreen;
+import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Mob;
 import org.joml.Quaternionf;
-import org.joml.Vector3f;
 
-/** Renders registered native mobs in Cobblemon portrait slots. */
+/** Shared native rendering at Cobblemon's two GUI model entry points. */
 public final class EntityBattlePortraits {
-    private record Tile(GuiGraphics graphics, ActiveClientBattlePokemon active) {}
-
-    private static final ThreadLocal<Tile> CURRENT_TILE = new ThreadLocal<>();
-    private static final ThreadLocal<Pokemon> CURRENT_PARTY_POKEMON = new ThreadLocal<>();
-    private static final ThreadLocal<GuiGraphics> CURRENT_PARTY_GRAPHICS = new ThreadLocal<>();
-    private static final ThreadLocal<GuiGraphics> CURRENT_PC_GRAPHICS = new ThreadLocal<>();
-
     private EntityBattlePortraits() {}
-
-    public static void beginTile(GuiGraphics graphics, ActiveClientBattlePokemon active) {
-        CURRENT_TILE.set(new Tile(graphics, active));
-    }
-
-    public static void endTile() {
-        CURRENT_TILE.remove();
-    }
-
-    public static void beginParty(GuiGraphics graphics) {
-        CURRENT_PARTY_GRAPHICS.set(graphics);
-    }
-
-    public static void beginPartyPokemon(Pokemon pokemon) {
-        CURRENT_PARTY_POKEMON.set(pokemon);
-    }
-
-    public static void endParty() {
-        CURRENT_PARTY_POKEMON.remove();
-        CURRENT_PARTY_GRAPHICS.remove();
-    }
-
-    public static void beginPcSlot(GuiGraphics graphics) {
-        CURRENT_PC_GRAPHICS.set(graphics);
-    }
-
-    public static void endPcSlot() {
-        CURRENT_PC_GRAPHICS.remove();
-    }
-
-    public static boolean drawPcSlot(GuiGraphics graphics, Pokemon pokemon) {
-        Mob model = EntityPokemonNativeVisuals.modelFor(pokemon);
+    public static boolean drawProfile(ResourceLocation species, PoseStack pose, Quaternionf rotation,
+            PosableState state, float delta, float scale, ProfileTransformType transform,
+            boolean baseScale, float red, float green, float blue, float alpha, int light) {
+        Mob model = EntityPokemonNativeVisuals.modelFor(species, state);
         if (model == null) return false;
-        float size = Math.max(model.getBbHeight(), model.getBbWidth());
-        float modelScale = Math.min(8F, 8F / Math.max(0.5F, size));
-        InventoryScreen.renderEntityInInventory(graphics, 0F, 8F, modelScale,
-                new Vector3f(0F, model.getBbHeight() / 2F, 0F),
-                new Quaternionf().rotationZ((float) Math.PI).rotateY((float) Math.PI),
-                null, model);
-        return true;
-    }
-
-    public static boolean drawPcSlot(Pokemon pokemon) {
-        GuiGraphics graphics = CURRENT_PC_GRAPHICS.get();
-        return graphics != null && drawPcSlot(graphics, pokemon);
-    }
-
-    public static boolean drawPcPreview(GuiGraphics graphics, Pokemon pokemon, ModelWidget widget) {
-        Mob model = EntityPokemonNativeVisuals.modelFor(pokemon);
-        if (model == null) return false;
-        float size = Math.max(model.getBbHeight(), model.getBbWidth());
-        float modelScale = Math.min(42F, 44F / Math.max(0.5F, size));
-        graphics.enableScissor(widget.getX(), widget.getY(),
-                widget.getX() + widget.getWidth(), widget.getY() + widget.getHeight());
+        if (scale <= 0F || alpha <= 0F) return true;
+        // Respect each caller's pose and scissor instead of locating a particular screen.
+        var client = Minecraft.getInstance();
+        var dispatcher = client.getEntityRenderDispatcher();
+        var buffers = client.renderBuffers().bufferSource();
+        Quaternionf previousCamera = new Quaternionf(dispatcher.cameraOrientation());
+        float[] previousColor = RenderSystem.getShaderColor().clone();
+        pose.pushPose();
         try {
-            InventoryScreen.renderEntityInInventory(graphics,
-                    widget.getX() + widget.getWidth() / 2F,
-                    widget.getY() + widget.getHeight() - 7F, modelScale,
-                    new Vector3f(0F, model.getBbHeight() / 2F, 0F),
-                    new Quaternionf().rotationZ((float) Math.PI).rotateY((float) Math.PI),
-                    null, model);
+            TwilightBossPoses.preparePortrait(model);
+            EntityBattleNativeModels.prepare(model, null);
+            var bounds = EntityBattleNativeModels.bounds(model);
+            float extent = (float) Math.max(0.5, Math.max(bounds.getYsize(), Math.max(bounds.getXsize(), bounds.getZsize()) * 1.15));
+            float fitted = transform == ProfileTransformType.NONE ? scale : scale * 1.8F / extent;
+            buffers.endBatch();
+            RenderSystem.applyModelViewMatrix();
+            if (transform != ProfileTransformType.NONE) pose.translate(0, scale, 50);
+            else pose.translate(0, 0, 50);
+            pose.scale(fitted, -fitted, fitted);
+            pose.mulPose(rotation);
+            if (transform != ProfileTransformType.NONE) pose.translate(-bounds.getCenter().x, -bounds.getCenter().y, -bounds.getCenter().z);
+            model.setYRot(0); model.setXRot(0);
+            model.yBodyRot = model.yBodyRotO = model.yHeadRot = model.yHeadRotO = 0;
+            Lighting.setupForEntityInInventory();
+            RenderSystem.setShaderColor(red, green, blue, alpha);
+            dispatcher.overrideCameraOrientation(new Quaternionf(rotation).conjugate());
+            dispatcher.setRenderShadow(false);
+            RenderSystem.runAsFancy(() -> EntityBattleNativeModels.render(model, 0, delta,
+                    pose, buffers, LightTexture.pack(light, 15)));
+            buffers.endBatch();
+            return true;
+        } catch (RuntimeException exception) {
+            EntityPokemonNativeVisuals.reportFailure(model, exception);
+            return false;
         } finally {
-            graphics.disableScissor();
+            dispatcher.overrideCameraOrientation(previousCamera);
+            dispatcher.setRenderShadow(true);
+            RenderSystem.setShaderColor(previousColor[0], previousColor[1], previousColor[2], previousColor[3]);
+            pose.popPose();
+            Lighting.setupFor3DItems();
         }
-        return true;
     }
 
-    public static void draw(ResourceLocation species, PoseStack pose, float x, float y,
-                            boolean flipped, PosableState state, float scale, float offsetX,
-                            float offsetY, float rotationX, float rotationY, float rotationZ,
-                            boolean shiny, float red, float green, float blue, float alpha,
-                            int mask, Object marker) {
-        if (drawNative()) return;
-        if (drawNativeParty()) return;
-        GuiUtilsKt.drawPosablePortrait(species, pose,
-                (mask & 4) != 0 ? 13F : x, (mask & 8) != 0 ? 1F : y,
-                (mask & 16) != 0 ? false : flipped, state, scale,
-                (mask & 128) != 0 ? 0F : offsetX,
-                (mask & 256) != 0 ? 0F : offsetY,
-                (mask & 512) != 0 ? 0F : rotationX,
-                (mask & 1024) != 0 ? 0F : rotationY,
-                (mask & 2048) != 0 ? 0F : rotationZ,
-                (mask & 4096) != 0 || shiny,
-                (mask & 8192) != 0 ? 1F : red,
-                (mask & 16384) != 0 ? 1F : green,
-                (mask & 32768) != 0 ? 1F : blue,
-                (mask & 65536) != 0 ? 1F : alpha);
-    }
-
-    private static boolean drawNativeParty() {
-        Pokemon pokemon = CURRENT_PARTY_POKEMON.get();
-        GuiGraphics graphics = CURRENT_PARTY_GRAPHICS.get();
-        if (pokemon == null || graphics == null) return false;
-        Mob model = EntityPokemonNativeVisuals.modelFor(pokemon);
-        if (model == null) return false;
-        float modelScale = Math.min(16F, 18F / Math.max(model.getBbHeight(), model.getBbWidth()));
-        InventoryScreen.renderEntityInInventory(graphics, 0F, 18F, modelScale,
-                new Vector3f(0F, model.getBbHeight() / 2F, 0F),
-                new Quaternionf().rotationZ((float) Math.PI).rotateY((float) Math.PI),
-                null, model);
-        return true;
-    }
-
-    private static boolean drawNative() {
-        Tile tile = CURRENT_TILE.get();
-        Minecraft client = Minecraft.getInstance();
-        if (tile == null || client.level == null || tile.active().getBattlePokemon() == null) return false;
-
-        UUID pokemonId = tile.active().getBattlePokemon().getUuid();
-        Mob model = null;
-        for (Entity candidate : client.level.entitiesForRendering()) {
-            if (candidate instanceof PokemonEntity pokemon
-                    && pokemon.getPokemon().getUuid().equals(pokemonId)) {
-                model = EntityPokemonNativeVisuals.modelFor(pokemon);
-                break;
-            }
+    public static boolean drawPortrait(ResourceLocation species, PoseStack pose, PosableState state,
+            float scale, boolean reversed, float delta, float red, float green, float blue, float alpha) {
+        float profileScale = Math.min(24F, scale * 1.4F) / 1.8F;
+        pose.pushPose();
+        try {
+            pose.translate(0, 18F - profileScale, 0);
+            return drawProfile(species, pose, new Quaternionf().rotationXYZ(
+                    (float) Math.toRadians(5), (float) Math.toRadians(reversed ? -32 : 32), 0),
+                    state, delta, profileScale, ProfileTransformType.PROFILE,
+                    false, red, green, blue, alpha, 13);
+        } finally {
+            pose.popPose();
         }
-        if (model == null) return false;
-
-        // The parent pose is already at the portrait center and inside its scissor.
-        float modelScale = Math.min(18F, 24F / Math.max(0.5F, model.getBbHeight()));
-        InventoryScreen.renderEntityInInventory(tile.graphics(), 0F, 19F,
-                modelScale, new Vector3f(0F, model.getBbHeight() / 2F, 0F),
-                new Quaternionf().rotationZ((float) Math.PI).rotateY((float) Math.PI),
-                null, model);
-        return true;
     }
 }

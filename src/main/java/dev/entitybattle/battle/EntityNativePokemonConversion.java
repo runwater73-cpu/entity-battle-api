@@ -31,6 +31,7 @@ public final class EntityNativePokemonConversion {
     public static Converted sendOut(Mob mob, EntityBattleProfile profile, boolean snapshotRequired) {
         if (!(mob.level() instanceof ServerLevel level) || !mob.isAlive() || mob.isRemoved()
                 || mob instanceof TamableAnimal tameable && tameable.isTame()) return null;
+        if (dev.entitybattle.api.EntityBattleSources.denial(mob) != null) return null;
         Pokemon pokemon = EntityPokemonData.getOrCreate(mob, profile);
         if (pokemon == null || pokemon.getCurrentHealth() <= 0) return null;
         CompoundTag snapshot = new CompoundTag();
@@ -42,13 +43,17 @@ public final class EntityNativePokemonConversion {
             PokemonEntity entity = pokemon.sendOut(level, mob.position(), null, sent -> {
                 sent.setYRot(mob.getYRot());
                 sent.setXRot(mob.getXRot());
-                if (mob.isPersistenceRequired()) sent.setPersistenceRequired();
+                // Native bosses often override despawning without setting the vanilla flag.
+                // Preserve that lifetime when the replacement uses Cobblemon's aging despawner.
+                if (profile.boss() || mob.isPersistenceRequired()) sent.setPersistenceRequired();
                 return kotlin.Unit.INSTANCE;
             });
             if (entity == null || level.getEntity(entity.getUUID()) != entity) {
                 pokemon.recall();
                 return null;
             }
+            EntityKnightSquads.rememberSource(mob, entity);
+            EntityBossSources.remember(mob, pokemon);
             return new Converted(entity, pokemon, snapshot);
         } catch (RuntimeException exception) {
             pokemon.recall();
@@ -62,7 +67,10 @@ public final class EntityNativePokemonConversion {
         if (converted == null) return false;
         converted.pokemon().getPersistentData().putBoolean(PERMANENT, true);
         converted.pokemon().onChange(null);
+        EntityBossSources.suspend(mob, converted.pokemon());
         mob.discard();
+        if (profile.boss()) LOGGER.info("Converted boss {} ({}) to PokemonEntity {} at {} in {}",
+                mob.getUUID(), profile.entity(), converted.entity().getUUID(), mob.blockPosition(), mob.level().dimension().location());
         return true;
     }
 

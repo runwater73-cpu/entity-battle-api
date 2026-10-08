@@ -41,12 +41,17 @@ public final class EntityBattleSessions {
     }
 
     public static boolean start(ServerPlayer player, UUID pokemonId, Mob mob) {
+        mob = dev.entitybattle.api.EntityBattleSources.resolve(mob);
+        if (mob == null) return false;
         EntityBattleProfile profile = EntityBattleProfiles.get(mob.getType());
-        if (profile == null || profile.worldMode() != EntityBattleProfile.WorldMode.NATIVE_MOB
+        if (profile == null || EntityBattleProfiles.worldMode(profile)
+                != EntityBattleProfile.WorldMode.NATIVE_MOB
                 || ACTIVE.containsKey(mob.getUUID()) || !mob.isAlive() || pokemonId == null
                 || mob.level() != player.level()
                 || BattleRegistry.getBattleByParticipatingPlayer(player) != null) return false;
         if (COOLDOWN.getOrDefault(mob.getUUID(), 0) > player.getServer().getTickCount()) return false;
+        var denial = dev.entitybattle.api.EntityBattleSources.denial(mob);
+        if (denial != null) { player.displayClientMessage(denial, true); return false; }
         var party = Cobblemon.INSTANCE.getStorage().getParty(player);
         if (party.toBattleTeam(false, false, pokemonId).isEmpty()) return false;
 
@@ -55,10 +60,21 @@ public final class EntityBattleSessions {
         try {
             var result = BattleBuilder.INSTANCE.pve(player, converted.entity(), pokemonId);
             if (!(result instanceof SuccessfulBattleStart success)) {
+                if (result instanceof com.cobblemon.mod.common.battles.ErroredBattleStart error)
+                    error.sendTo(player, message -> message);
                 converted.pokemon().recall();
                 return false;
             }
+            if (EntityKnightSquads.isMember(converted.pokemon())) {
+                mob.discard();
+                return true; // The whole original squad owns restoration and settlement.
+            }
             // The battle is now owned by Cobblemon. Only after it accepts the encounter
+            if (EntityBossSources.managed(converted.pokemon())) {
+                EntityBossSources.suspend(mob, converted.pokemon());
+                mob.discard();
+                return true; // EntityBossEncounters owns this source's persistent lifecycle.
+            }
             // can the source be removed and its recovery snapshot attached to the Pokemon.
             EntityNativePokemonConversion.attachRecovery(converted);
             Session session = new Session(mob.getUUID(), player, converted.entity(), converted.pokemon(),
@@ -162,6 +178,7 @@ public final class EntityBattleSessions {
         if (!ACTIVE.remove(session.sourceId, session)) return;
         FINISHING.remove(session.sourceId);
         if (!session.battle.getEnded()) session.battle.stop();
+        EntityBossEncounters.beforeNativeAbort(session.pokemon);
         session.pokemon.recall();
         ServerLevel level = (ServerLevel) session.pokemonEntity.level();
         if (EntityNativePokemonConversion.restore(level, session.snapshot, session.pokemon) != null) {

@@ -1,0 +1,8 @@
+allprojects {
+    afterEvaluate { p ->
+        if (p.plugins.hasPlugin('net.neoforged.moddev')) {
+            p.sourceSets.main.java.srcDir(p.file('validation/multipart-src'))
+            p.neoForge.runs.client.gameDirectory = p.file('build/multipart-smoke-run')
+        }
+    }
+}

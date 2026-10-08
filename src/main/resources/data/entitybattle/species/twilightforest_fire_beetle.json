@@ -8,12 +8,12 @@
   "experienceGroup": "medium_fast",
   "primaryType": "bug",
   "baseStats": {
-    "hp": 72,
-    "attack": 86,
-    "defence": 78,
-    "special_attack": 90,
-    "special_defence": 62,
-    "speed": 58
+    "hp": 55,
+    "attack": 45,
+    "defence": 65,
+    "special_attack": 60,
+    "special_defence": 50,
+    "speed": 40
   },
   "evYield": {
     "hp": 0,
@@ -28,11 +28,9 @@
   ],
   "moves": [
     "1:ember",
-    "1:bugbite",
-    "8:flamewheel",
-    "18:firefang",
-    "30:flamethrower",
-    "45:fireblast"
+    "10:strugglebug",
+    "22:incinerate",
+    "32:willowisp"
   ],
   "hitbox": {
     "fixed": false,

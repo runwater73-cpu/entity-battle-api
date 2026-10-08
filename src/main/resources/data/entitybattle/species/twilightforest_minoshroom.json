@@ -2,18 +2,18 @@
   "name": "TwilightforestMinoshroom",
   "nationalPokedexNumber": 10032,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 351,
   "experienceGroup": "slow",
   "primaryType": "grass",
   "baseStats": {
-    "hp": 212,
-    "attack": 153,
-    "defence": 126,
-    "special_attack": 58,
-    "special_defence": 106,
-    "speed": 76
+    "hp": 155,
+    "attack": 135,
+    "defence": 110,
+    "special_attack": 50,
+    "special_defence": 95,
+    "speed": 55
   },
   "evYield": {
     "hp": 3,
@@ -27,12 +27,10 @@
     "intimidate"
   ],
   "moves": [
-    "1:tackle",
-    "1:stomp",
-    "8:seedbomb",
-    "18:bulkup",
-    "30:woodhammer",
-    "45:closecombat"
+    "1:highhorsepower",
+    "15:hammerarm",
+    "25:woodhammer",
+    "35:rockslide"
   ],
   "hitbox": {
     "fixed": false,

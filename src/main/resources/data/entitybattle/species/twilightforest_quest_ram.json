@@ -3,7 +3,7 @@
   "nationalPokedexNumber": 10039,
   "implemented": false,
   "maleRatio": 0.5,
-  "catchRate": 3,
+  "catchRate": 45,
   "baseExperienceYield": 205,
   "experienceGroup": "medium_fast",
   "primaryType": "normal",

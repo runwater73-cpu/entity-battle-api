@@ -9,12 +9,12 @@
   "primaryType": "ghost",
   "secondaryType": "fire",
   "baseStats": {
-    "hp": 48,
-    "attack": 36,
-    "defence": 42,
-    "special_attack": 85,
-    "special_defence": 52,
-    "speed": 100
+    "hp": 45,
+    "attack": 25,
+    "defence": 40,
+    "special_attack": 70,
+    "special_defence": 50,
+    "speed": 85
   },
   "evYield": {
     "hp": 0,
@@ -28,12 +28,10 @@
     "levitate"
   ],
   "moves": [
-    "1:astonish",
     "1:ember",
-    "8:confuseray",
-    "18:hex",
-    "30:flameburst",
-    "45:shadowball"
+    "12:confuseray",
+    "24:hex",
+    "36:flameburst"
   ],
   "hitbox": {
     "fixed": false,

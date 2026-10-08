@@ -953,17 +953,25 @@
   },
   {
     "entity": "minecraft:warden",
+    "boss": true,
     "species": "entitybattle:minecraft_warden",
     "level": {
-      "min": 70,
-      "max": 85
+      "min": 68,
+      "max": 72
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "heldItem": "cobblemon:assault_vest",
+    "moves": [
+      "boomburst",
+      "hammerarm",
+      "stompingtantrum",
+      "throatchop"
+    ]
   },
   {
     "entity": "minecraft:witch",
@@ -981,17 +989,38 @@
   },
   {
     "entity": "minecraft:wither",
+    "boss": true,
     "species": "entitybattle:minecraft_wither",
     "level": {
-      "min": 70,
-      "max": 85
+      "min": 73,
+      "max": 77
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "heldItem": "cobblemon:leftovers",
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "minecraft:wither_skeleton",
+      "minionCount": 3,
+      "levelOffset": -10,
+      "minionHeldItem": "cobblemon:black_glasses",
+      "minionMoves": [
+        "shadowclaw",
+        "bite",
+        "poisonjab",
+        "protect"
+      ]
+    },
+    "moves": [
+      "shadowball",
+      "sludgebomb",
+      "darkpulse",
+      "protect"
+    ]
   },
   {
     "entity": "minecraft:wither_skeleton",

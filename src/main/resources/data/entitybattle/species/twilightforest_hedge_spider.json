@@ -9,12 +9,12 @@
   "primaryType": "bug",
   "secondaryType": "poison",
   "baseStats": {
-    "hp": 65,
-    "attack": 88,
-    "defence": 64,
-    "special_attack": 45,
-    "special_defence": 58,
-    "speed": 76
+    "hp": 55,
+    "attack": 60,
+    "defence": 50,
+    "special_attack": 35,
+    "special_defence": 45,
+    "speed": 60
   },
   "evYield": {
     "hp": 0,
@@ -28,12 +28,10 @@
     "poisonpoint"
   ],
   "moves": [
-    "1:poisonsting",
-    "1:stringshot",
-    "8:bugbite",
-    "18:poisonfang",
-    "30:xscissor",
-    "45:toxic"
+    "1:bugbite",
+    "8:stringshot",
+    "14:poisonfang",
+    "20:lunge"
   ],
   "hitbox": {
     "fixed": false,

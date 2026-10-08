@@ -11,6 +11,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
+import net.neoforged.fml.ModList;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 
@@ -31,6 +32,8 @@ public final class EntityPokemonWorldBehaviors {
                 || pokemon.tickCount % 10 != 0) return;
         EntityBattleProfile profile = profileFor(pokemon);
         if (profile == null) return;
+
+        if (profile.boss() && ModList.get().isLoaded("fightorflight")) return;
 
         if (profile.worldBehavior() != EntityBattleProfile.WorldBehavior.HOSTILE) {
             EntityPokemonWorldBehaviorAdapters.install(pokemon, profile);
@@ -79,7 +82,7 @@ public final class EntityPokemonWorldBehaviors {
         if (!pokemon.getPokemon().isWild() || pokemon.getOwnerUUID() != null) return null;
         return EntityPokemonOrigin.entityId(pokemon.getPokemon())
                 .map(EntityBattleProfiles::get)
-                .filter(profile -> (profile.worldMode() == EntityBattleProfile.WorldMode.POKEMON_ENTITY
+                .filter(profile -> (EntityBattleProfiles.worldMode(profile) == EntityBattleProfile.WorldMode.POKEMON_ENTITY
                         || EntityNativePokemonConversion.isPermanent(pokemon.getPokemon()))
                         && profile.species().equals(pokemon.getPokemon().getSpecies().getResourceIdentifier()))
                 .orElse(null);

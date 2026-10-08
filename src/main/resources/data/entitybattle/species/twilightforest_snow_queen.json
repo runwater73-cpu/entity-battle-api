@@ -2,19 +2,19 @@
   "name": "TwilightforestSnowQueen",
   "nationalPokedexNumber": 10048,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 375,
   "experienceGroup": "slow",
   "primaryType": "ice",
   "secondaryType": "fairy",
   "baseStats": {
-    "hp": 184,
-    "attack": 76,
-    "defence": 110,
-    "special_attack": 162,
-    "special_defence": 142,
-    "speed": 108
+    "hp": 140,
+    "attack": 55,
+    "defence": 95,
+    "special_attack": 135,
+    "special_defence": 110,
+    "speed": 90
   },
   "evYield": {
     "hp": 3,
@@ -25,15 +25,13 @@
     "speed": 0
   },
   "abilities": [
-    "pressure"
+    "snowwarning"
   ],
   "moves": [
-    "1:powdersnow",
-    "1:confuseray",
-    "8:aurorabeam",
-    "18:icebeam",
-    "30:moonblast",
-    "45:blizzard"
+    "1:icebeam",
+    "18:dazzlinggleam",
+    "35:auroraveil",
+    "50:blizzard"
   ],
   "hitbox": {
     "fixed": false,

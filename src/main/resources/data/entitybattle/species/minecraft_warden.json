@@ -2,18 +2,18 @@
   "name": "MinecraftWarden",
   "nationalPokedexNumber": 11068,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 445,
   "experienceGroup": "slow",
   "primaryType": "dark",
   "baseStats": {
-    "hp": 290,
-    "attack": 170,
-    "defence": 155,
-    "special_attack": 120,
-    "special_defence": 137,
-    "speed": 56
+    "hp": 230,
+    "attack": 135,
+    "defence": 105,
+    "special_attack": 90,
+    "special_defence": 115,
+    "speed": 45
   },
   "evYield": {
     "hp": 3,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "pressure"
+    "unaware"
   ],
   "moves": [
-    "1:tackle",
-    "1:stomp",
-    "8:bulldoze",
-    "18:roar",
-    "30:earthquake",
-    "45:hyperbeam"
+    "1:boomburst",
+    "18:hammerarm",
+    "30:stompingtantrum",
+    "45:throatchop"
   ],
   "hitbox": {
     "fixed": false,

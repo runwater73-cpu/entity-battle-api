@@ -8,12 +8,12 @@
   "experienceGroup": "medium_fast",
   "primaryType": "ghost",
   "baseStats": {
-    "hp": 92,
-    "attack": 115,
-    "defence": 80,
-    "special_attack": 58,
-    "special_defence": 75,
-    "speed": 65
+    "hp": 60,
+    "attack": 85,
+    "defence": 65,
+    "special_attack": 35,
+    "special_defence": 55,
+    "speed": 60
   },
   "evYield": {
     "hp": 0,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "cursedbody"
+    "innerfocus"
   ],
   "moves": [
-    "1:tackle",
-    "1:astonish",
-    "8:bite",
-    "18:shadowclaw",
-    "30:crunch",
-    "45:nightshade"
+    "1:shadowclaw",
+    "12:bite",
+    "24:poisonjab",
+    "36:protect"
   ],
   "hitbox": {
     "fixed": false,

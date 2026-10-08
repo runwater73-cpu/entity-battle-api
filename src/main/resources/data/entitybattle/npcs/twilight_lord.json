@@ -1,0 +1,33 @@
+{
+  "resourceIdentifier": "cobblemon:standard",
+  "names": [
+    "entitybattle.npc.twilight_lord"
+  ],
+  "hitbox": "player",
+  "canDespawn": false,
+  "skill": 4,
+  "autoHealParty": true,
+  "randomizePartyOrder": false,
+  "isMovable": false,
+  "isInvulnerable": true,
+  "isLeashable": false,
+  "allowProjectileHits": false,
+  "hideNameTag": false,
+  "battleConfiguration": {
+    "canChallenge": false,
+    "simultaneousBattles": false,
+    "healAfterwards": false
+  },
+  "party": {
+    "type": "simple",
+    "isStatic": true,
+    "pokemon": [
+      "species=entitybattle:twilightforest_naga level=50 held_item=cobblemon:dragon_fang moves=bodyslam,crunch,rockslide,breakingswipe",
+      "species=entitybattle:twilightforest_knight_phantom level=50 held_item=cobblemon:metal_coat moves=shadowclaw,ironhead,sacredsword,protect",
+      "species=entitybattle:twilightforest_lich level=50 held_item=cobblemon:wise_glasses moves=protect,supersonic,shadowball,flameburst",
+      "species=entitybattle:twilightforest_ur_ghast level=50 held_item=cobblemon:charcoal_stick moves=shadowball,hypervoice,fireblast,heatwave",
+      "species=entitybattle:twilightforest_hydra level=50 held_item=cobblemon:leftovers moves=crunch,flamethrower,heatwave,fireblast",
+      "species=entitybattle:twilightforest_snow_queen level=50 held_item=cobblemon:never_melt_ice moves=icebeam,dazzlinggleam,auroraveil,blizzard"
+    ]
+  }
+}

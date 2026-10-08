@@ -8,12 +8,12 @@
   "experienceGroup": "medium_fast",
   "primaryType": "ice",
   "baseStats": {
-    "hp": 131,
-    "attack": 126,
-    "defence": 92,
-    "special_attack": 55,
-    "special_defence": 74,
-    "speed": 59
+    "hp": 70,
+    "attack": 75,
+    "defence": 60,
+    "special_attack": 30,
+    "special_defence": 50,
+    "speed": 45
   },
   "evYield": {
     "hp": 2,
@@ -27,12 +27,10 @@
     "thickfat"
   ],
   "moves": [
-    "1:powdersnow",
     "1:stomp",
-    "8:icepunch",
-    "18:bulkup",
-    "30:icehammer",
-    "45:closecombat"
+    "12:icepunch",
+    "24:bulkup",
+    "36:iceshard"
   ],
   "hitbox": {
     "fixed": false,

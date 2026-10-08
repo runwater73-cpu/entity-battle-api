@@ -1,17 +1,23 @@
 # 预置生物配置与修改方法
 
-适用版本：Minecraft 1.21.1、NeoForge、Cobblemon 1.8.1。本项目预置 87 种其他模组生物、79 种原版生物和车万女仆模组的野外妖精，共 167 种。每种生物使用不同的 `entitybattle:` 物种 ID，并有自己的类型、六项种族值、特性和升级招式。具有主人、背包和工作状态的女仆本体暂未接入。中文名称位于 `src/main/resources/assets/entitybattle/lang/zh_cn.json`，全部数值以 `src/main/resources/data/entitybattle/species/` 中的 JSON 为准。
+适用版本：Minecraft 1.21.1、NeoForge、Cobblemon 1.8.1。本项目预置 89 种其他模组生物、79 种原版生物和车万女仆模组的野外妖精，共 169 种。每种生物使用不同的 `entitybattle:` 物种 ID，并有自己的类型、六项种族值、特性和升级招式。具有主人、背包和工作状态的女仆本体暂未接入。中文名称位于 `src/main/resources/assets/entitybattle/lang/zh_cn.json`，全部数值以 `src/main/resources/data/entitybattle/species/` 中的 JSON 为准。
 
 ## 两种世界模式
+
+最新 Boss 等级以 [流程等级表](BOSS_PROGRESSION.md) 为准。共 15 个野外 Boss，均服从全局 `bossWorldMode`，默认在原作开战条件解锁后自动成为宝可梦；剧情未完成时保留来源交互。向日葵的独立配置在 `battle_profiles/sunflower_boss.json`，详细说明见 [向日葵 Boss](SUNFLOWER_BOSS.md)。深入天境狂瞳龙卷在 `battle_profiles/deep_aether_boss.json`，见 [狂瞳龙卷](DEEP_AETHER_BOSS.md)。用户已取消继续开发暮色领主。
 
 | 模式 | 世界实体 | 对战与捕捉 | 原生 AI、交互与死亡事件 |
 | --- | --- | --- | --- |
 | `native_mob` | 来源模组的 `Mob` | 使用转换器永久变为野生 `PokemonEntity`；也可在配置开启时对准按 R 临时转换对战 | 世界阶段保留；按 R 临时对战的 `vanilla_death` 会尝试走来源 Mob 死亡结算 |
 | `pokemon_entity` | 从生成起就是 `PokemonEntity` | 直接使用 Cobblemon 的野生对战、捕捉和队伍行为 | 不会自动运行来源 Mob 的 AI 或专属交互；需要额外的行为适配器 |
 
-当前 167 种预置生物全部使用 `native_mob`。`config/entitybattle-common.toml` 中的 `enableRChallenge` 默认是 `false`：大世界中可直接用 Minecraft 方式战斗，对准生物按 R 不会触发本模组的临时转换。想用宝可梦方式挑战时，用创造标签页“生物宝可梦化”中的转换器右击已接入生物，将其永久转换为野生 `PokemonEntity`。转换器在生存模式也可使用，但当前没有合成配方。单人游戏可在“模组列表 → Entity Battle API → 配置 → Common”中切换 R 对战开关；多人服务器须由服主修改服务端配置。修改后重启游戏或服务器。本模组不会在 Mob 攻击玩家时自动开战。`examples/direct_pokemon_entity/cow.json` 保留了牛的直接模式示例，默认不加载。
+普通生物预置 `worldMode` 为 `native_mob`；15 个标记为 `boss` 的实体受 `bossWorldMode` 覆盖，仍保留来源资格门槛。`config/entitybattle-common.toml` 中的 `enableRChallenge` 默认是 `false`：大世界中的普通原生 Mob 可直接用 Minecraft 方式战斗，对准生物按 R 不会触发本模组的临时转换。想用宝可梦方式挑战普通生物时，用创造标签页“生物宝可梦化”中的转换器右击已接入生物，将其永久转换为野生 `PokemonEntity`。转换器在生存模式也可使用，但当前没有合成配方。单人游戏可在“模组列表 → Entity Battle API → 配置 → Common”中切换 R 对战开关；多人服务器须由服主修改服务端配置。修改后重启游戏或服务器。本模组不会在 Mob 攻击玩家时自动开战。`examples/direct_pokemon_entity/cow.json` 保留了牛的直接模式示例，默认不加载。
 
-转换器会移除原生 Mob，此后大世界的 AI 与战败结算遵循 `PokemonEntity` 路径。特殊 Boss 的多阶段 AI、真正的原生死亡事件和任务回调不会因此自动保留；`nativeDrops` 和 `nativeExperience` 仅尝试提供原生战利品表与 Minecraft 经验。依赖原生死亡事件推进任务的 Boss 请先实机验证转换后的行为。需要原生死亡结算时，可开启按 R 临时对战，或直接进行 Minecraft 战斗。
+正式 Boss 包括娜迦、巫妖、米诺菇、九头蛇、幻影骑士、暮初恶魂、雪怪首领、冰雪女王、滑行魔石、武神女王、烈阳巨灵、狂瞳龙卷、凋灵、监守者和向日葵，均不可捕捉。默认 `bossWorldMode = "POKEMON_ENTITY"` 时自动转换：天境与深入天境须先完成原作对话 / 交付 / 唤醒，其余满足各来源资格后转换。改为 `NATIVE_MOB` 可保留原生 Boss。Boss 在 Cobblemon `BATTLE_VICTORY` 胜利事件中被玩家击败后，只奖励一次对应物种的**固定 1 级**个体。安装 Team Rocket 时，奖励装在 `teamrocket:recruit_ball` 中；队伍已满时球会进入背包或掉落在玩家脚下。没有 Team Rocket 时则直接加入队伍，队伍已满再加入 PC。
+
+巫妖的 `bossBattle` 是首个群战预置：只要同时安装 Asymmetric Battles 与 Horde Encounters，profile 中的群战定义就会自动生效，不需要额外开关。战斗开始时巫妖和两名巫妖仆从成为野生 Horde 敌方，玩家仍一次只上一只。巫妖等级范围为 28–32，群战仆从跟随巫妖等级；普通野生仆从也在 28–32 级范围。仆从使用自己的 species，群战临时仆从不可捕捉，也不发放额外来源掉落或 Minecraft 经验。巫妖四招为守住、超音波、暗影球和烈焰溅射；仆从为咬住、浊雾、挑衅、黑夜魔影，并全部携带剩饭。阶段使用正式特性暮光支配与魂契分担，不更换招式。修改物种学习表请编辑 species 文件，修改 Boss 固定四招、援军数、等级与持有物请编辑 `battle_profiles/pack_mobs.json`。详细机制边界见 [BOSS_BATTLES.md](BOSS_BATTLES.md)。
+
+转换器会移除原生 Mob。未登记来源适配器的生物此后大世界 AI 与战败结算遵循 `PokemonEntity` 路径；`nativeDrops` 和 `nativeExperience` 尝试提供原生战利品表与 Minecraft 经验。天境、凋灵、监守者、向日葵及骑士小队已登记来源死亡 / 中断恢复适配，完整胜利可执行真正来源死亡回调。原作多阶段 AI 不会自动迁移到宝可梦引擎，第三方任务插件仍需实机验证。
 
 ## 文件位置
 
@@ -40,6 +46,6 @@
 
 ## 捕捉与验证边界
 
-整合包清单的 12 个高数值 Boss 与任务羊不可捕捉。原版远古守卫者、铁傀儡、劫掠兽、监守者、凋灵、村民及流浪商人也不可捕捉。原版末影龙有多部件实体和特殊死亡流程，巨人、幻术师属于未自然生成的特殊实体，这三者未加入预置清单。投射物、展示实体与玩家不是可接入 `Mob`。
+正式 Boss 与铁傀儡、劫掠兽、村民、流浪商人不可捕捉。谜题羊是普通可捕捉物种，35–50 级，一般 / 妖精、毛茸茸，捕获率 45。大世界保留原生 Mob 与 AI，完成原作十六色羊毛任务并实际发放奖励后才允许转换；完成任务不会自动转换，玩家自行选择转换器或已开启的 R，再走 Cobblemon 捕捉。捕捉后由 Cobblemon 管理，不携带新的任务奖励。远古守卫者保留为普通 `native_mob` 配置，不会触发 Boss 奖励。原版末影龙有多部件实体和特殊死亡流程，巨人、幻术师属于未自然生成的特殊实体，这三者未加入预置清单。投射物、展示实体与玩家不是可接入 `Mob`。
 
 所有独立物种均已写入数据；种族值、特性和招式是针对各生物机制的初始平衡方案。实机仍须验证原生 Mob 的特殊外观、Boss 多阶段行为、任务死亡回调、掉落、捕捉与队伍重新放出，尤其是来源模组升级或整合包变更以后。

@@ -1,0 +1,14 @@
+{
+  "entity": "deep_aether:eots_controller",
+  "species": "entitybattle:deep_aether_eots_controller",
+  "boss": true,
+  "level": { "min": 63, "max": 67 },
+  "defeat": "vanilla_death",
+  "catchable": false,
+  "worldMode": "pokemon_entity",
+  "worldBehavior": "hostile",
+  "nativeDrops": true,
+  "nativeExperience": true,
+  "heldItem": "cobblemon:sharp_beak",
+  "moves": [ "hurricane", "airslash", "icywind", "tailwind" ]
+}

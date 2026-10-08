@@ -1,0 +1,14 @@
+{
+  "entity": "kaleidoscope_twilight:umbral_sunflower",
+  "species": "entitybattle:kaleidoscope_twilight_umbral_sunflower",
+  "boss": true,
+  "level": { "min": 43, "max": 47 },
+  "defeat": "vanilla_death",
+  "catchable": false,
+  "worldMode": "native_mob",
+  "worldBehavior": "hostile",
+  "nativeDrops": true,
+  "nativeExperience": true,
+  "heldItem": "cobblemon:miracle_seed",
+  "moves": [ "leafblade", "sacredsword", "bulldoze", "protect" ]
+}

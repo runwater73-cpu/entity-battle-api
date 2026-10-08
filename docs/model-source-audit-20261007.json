@@ -1,0 +1,2376 @@
+[
+  {
+    "source": "aether:aechor_plant",
+    "species": "entitybattle:aether_aechor_plant",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.AechorPlantRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/aechor_plant/aechor_plant.png",
+    "actualTexture": "aether:textures/entity/mobs/aechor_plant/aechor_plant.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/aechor_plant/aechor_plant.png": 1
+    },
+    "vertices": 768,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:aerbunny",
+    "species": "entitybattle:aether_aerbunny",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.AerbunnyRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/aerbunny/aerbunny.png",
+    "actualTexture": "aether:textures/entity/mobs/aerbunny/aerbunny.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/aerbunny/aerbunny.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:aerwhale",
+    "species": "entitybattle:aether_aerwhale",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.AerwhaleRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/aerwhale/aerwhale.png",
+    "actualTexture": "aether:textures/entity/mobs/aerwhale/aerwhale.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/aerwhale/aerwhale.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:blue_swet",
+    "species": "entitybattle:aether_blue_swet",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.BlueSwetRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/swet/swet_blue.png",
+    "actualTexture": "aether:textures/entity/mobs/swet/swet_blue.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/swet/swet_blue.png": 2
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:cloud_minion",
+    "species": "entitybattle:aether_cloud_minion",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.CloudMinionRenderer",
+    "reportedTexture": "aether:textures/entity/miscellaneous/cloud_minion/cloud_minion.png",
+    "actualTexture": "aether:textures/entity/miscellaneous/cloud_minion/cloud_minion.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/miscellaneous/cloud_minion/cloud_minion.png": 1
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:cockatrice",
+    "species": "entitybattle:aether_cockatrice",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.CockatriceRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/cockatrice/cockatrice.png",
+    "actualTexture": "aether:textures/entity/mobs/cockatrice/cockatrice.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/cockatrice/cockatrice.png": 1,
+      "aether:textures/entity/mobs/cockatrice/cockatrice_emissive.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:evil_whirlwind",
+    "species": "entitybattle:aether_evil_whirlwind",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.WhirlwindRenderer",
+    "reportedTexture": "minecraft:textures/atlas/blocks.png",
+    "actualTexture": "minecraft:textures/atlas/blocks.png",
+    "reportedMismatch": false,
+    "materials": {},
+    "vertices": 0,
+    "meshVerified": false,
+    "resourcePack": "not a PNG resource"
+  },
+  {
+    "source": "aether:fire_minion",
+    "species": "entitybattle:aether_fire_minion",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.FireMinionRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/sun_spirit/sun_spirit.png",
+    "actualTexture": "aether:textures/entity/mobs/sun_spirit/sun_spirit.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/sun_spirit/sun_spirit.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:flying_cow",
+    "species": "entitybattle:aether_flying_cow",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.FlyingCowRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/flying_cow/flying_cow.png",
+    "actualTexture": "aether:textures/entity/mobs/flying_cow/flying_cow.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/flying_cow/flying_cow.png": 1,
+      "aether:textures/entity/mobs/flying_cow/flying_cow_wings.png": 1
+    },
+    "vertices": 312,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:golden_swet",
+    "species": "entitybattle:aether_golden_swet",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.GoldenSwetRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/swet/swet_golden.png",
+    "actualTexture": "aether:textures/entity/mobs/swet/swet_golden.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/swet/swet_golden.png": 2
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:mimic",
+    "species": "entitybattle:aether_mimic",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.MimicRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/mimic/normal.png",
+    "actualTexture": "aether:textures/entity/mobs/mimic/normal.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/mimic/normal.png": 1
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:moa",
+    "species": "entitybattle:aether_moa",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.MoaRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/moa/white_moa.png",
+    "actualTexture": "aether:textures/entity/mobs/moa/white_moa.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/moa/white_moa.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:phyg",
+    "species": "entitybattle:aether_phyg",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.PhygRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/phyg/phyg.png",
+    "actualTexture": "aether:textures/entity/mobs/phyg/phyg.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/phyg/phyg.png": 1,
+      "aether:textures/entity/mobs/phyg/phyg_wings.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:sentry",
+    "species": "entitybattle:aether_sentry",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.SentryRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/sentry/sentry.png",
+    "actualTexture": "aether:textures/entity/mobs/sentry/sentry.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/sentry/eye.png": 1,
+      "aether:textures/entity/mobs/sentry/sentry.png": 1
+    },
+    "vertices": 24,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:sheepuff",
+    "species": "entitybattle:aether_sheepuff",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.SheepuffRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/sheepuff/sheepuff.png",
+    "actualTexture": "aether:textures/entity/mobs/sheepuff/sheepuff.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/sheepuff/sheepuff.png": 1,
+      "aether:textures/entity/mobs/sheepuff/sheepuff_wool.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:slider",
+    "species": "entitybattle:aether_slider",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.SliderRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/slider/slider_asleep.png",
+    "actualTexture": "aether:textures/entity/mobs/slider/slider_asleep.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/slider/slider_asleep.png": 1,
+      "aether:textures/entity/mobs/slider/slider_awake_glow.png": 1
+    },
+    "vertices": 24,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:sun_spirit",
+    "species": "entitybattle:aether_sun_spirit",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.SunSpiritRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/sun_spirit/sun_spirit.png",
+    "actualTexture": "aether:textures/entity/mobs/sun_spirit/sun_spirit.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/sun_spirit/sun_spirit.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:valkyrie",
+    "species": "entitybattle:aether_valkyrie",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.ValkyrieRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/valkyrie/valkyrie.png",
+    "actualTexture": "aether:textures/entity/mobs/valkyrie/valkyrie.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/valkyrie/valkyrie.png": 2
+    },
+    "vertices": 1056,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:valkyrie_queen",
+    "species": "entitybattle:aether_valkyrie_queen",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.ValkyrieQueenRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/valkyrie_queen/valkyrie_queen.png",
+    "actualTexture": "aether:textures/entity/mobs/valkyrie_queen/valkyrie_queen.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/valkyrie_queen/valkyrie_queen.png": 2
+    },
+    "vertices": 1056,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "aether:whirlwind",
+    "species": "entitybattle:aether_whirlwind",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.WhirlwindRenderer",
+    "reportedTexture": "minecraft:textures/atlas/blocks.png",
+    "actualTexture": "minecraft:textures/atlas/blocks.png",
+    "reportedMismatch": false,
+    "materials": {},
+    "vertices": 0,
+    "meshVerified": false,
+    "resourcePack": "not a PNG resource"
+  },
+  {
+    "source": "aether:zephyr",
+    "species": "entitybattle:aether_zephyr",
+    "renderer": "com.aetherteam.aether.client.renderer.entity.ZephyrRenderer",
+    "reportedTexture": "aether:textures/entity/mobs/zephyr/zephyr.png",
+    "actualTexture": "aether:textures/entity/mobs/zephyr/zephyr.png",
+    "reportedMismatch": false,
+    "materials": {
+      "aether:textures/entity/mobs/zephyr/zephyr.png": 1,
+      "aether:textures/entity/mobs/zephyr/zephyr_layer.png": 1
+    },
+    "vertices": 576,
+    "meshVerified": true,
+    "resourcePack": "mod/aether"
+  },
+  {
+    "source": "artifacts:mimic",
+    "species": "entitybattle:artifacts_mimic",
+    "renderer": "artifacts.client.mimic.MimicRenderer",
+    "reportedTexture": "artifacts:textures/entity/mimic.png",
+    "actualTexture": "artifacts:textures/entity/mimic.png",
+    "reportedMismatch": false,
+    "materials": {
+      "artifacts:textures/entity/mimic.png": 1,
+      "minecraft:textures/atlas/chest.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "mod/artifacts"
+  },
+  {
+    "source": "minecraft:cow",
+    "species": "entitybattle:cow",
+    "renderer": "net.minecraft.client.renderer.entity.CowRenderer",
+    "reportedTexture": "minecraft:textures/entity/cow/cow.png",
+    "actualTexture": "minecraft:textures/entity/cow/cow.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/cow/cow.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "deep_aether:aerglow_fish",
+    "species": "entitybattle:deep_aether_aerglow_fish",
+    "renderer": "io.github.razordevs.deep_aether.client.renderer.entity.AetherFishRenderer",
+    "reportedTexture": "deep_aether:textures/entity/aerglow_fish.png",
+    "actualTexture": "deep_aether:textures/entity/aerglow_fish.png",
+    "reportedMismatch": false,
+    "materials": {
+      "deep_aether:textures/entity/aerglow_fish.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "mod/deep_aether"
+  },
+  {
+    "source": "deep_aether:baby_zephyr",
+    "species": "entitybattle:deep_aether_baby_zephyr",
+    "renderer": "io.github.razordevs.deep_aether.client.renderer.entity.BabyZephyrRenderer",
+    "reportedTexture": "deep_aether:textures/entity/baby_zephyr.png",
+    "actualTexture": "deep_aether:textures/entity/baby_zephyr.png",
+    "reportedMismatch": false,
+    "materials": {
+      "deep_aether:textures/entity/baby_zephyr.png": 1
+    },
+    "vertices": 144,
+    "meshVerified": true,
+    "resourcePack": "mod/deep_aether"
+  },
+  {
+    "source": "deep_aether:gentle_wind",
+    "species": "entitybattle:deep_aether_gentle_wind",
+    "renderer": "io.github.razordevs.deep_aether.client.renderer.entity.GentleWindRenderer",
+    "reportedTexture": "deep_aether:textures/entity/gentle_wind.png",
+    "actualTexture": "deep_aether:textures/entity/gentle_wind.png",
+    "reportedMismatch": false,
+    "materials": {
+      "deep_aether:textures/entity/gentle_wind.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "mod/deep_aether"
+  },
+  {
+    "source": "deep_aether:quail",
+    "species": "entitybattle:deep_aether_quail",
+    "renderer": "io.github.razordevs.deep_aether.client.renderer.entity.QuailRenderer",
+    "reportedTexture": "deep_aether:textures/entity/quail/quail_old_green.png",
+    "actualTexture": "deep_aether:textures/entity/quail/quail_old_green.png",
+    "reportedMismatch": false,
+    "materials": {
+      "deep_aether:textures/entity/quail/quail_old_green.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "mod/deep_aether"
+  },
+  {
+    "source": "deep_aether:venomite",
+    "species": "entitybattle:deep_aether_venomite",
+    "renderer": "io.github.razordevs.deep_aether.client.renderer.entity.VenomiteRenderer",
+    "reportedTexture": "deep_aether:textures/entity/venomite/venomite.png",
+    "actualTexture": "deep_aether:textures/entity/venomite/venomite.png",
+    "reportedMismatch": false,
+    "materials": {
+      "deep_aether:textures/entity/venomite/venomite.png": 1
+    },
+    "vertices": 312,
+    "meshVerified": true,
+    "resourcePack": "mod/deep_aether"
+  },
+  {
+    "source": "deep_aether:windfly",
+    "species": "entitybattle:deep_aether_windfly",
+    "renderer": "io.github.razordevs.deep_aether.client.renderer.entity.WindflyRenderer",
+    "reportedTexture": "deep_aether:textures/entity/windfly/windfly.png",
+    "actualTexture": "deep_aether:textures/entity/windfly/windfly.png",
+    "reportedMismatch": false,
+    "materials": {
+      "deep_aether:textures/entity/windfly/windfly.png": 1
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/deep_aether"
+  },
+  {
+    "source": "legendarymonuments:grunt",
+    "species": "entitybattle:legendarymonuments_grunt",
+    "renderer": "com.jorgaomc.legendarymonuments.entities.GruntRenderer",
+    "reportedTexture": "legendarymonuments:textures/entity/rocket_grunt.png",
+    "actualTexture": "legendarymonuments:textures/entity/rocket_grunt.png",
+    "reportedMismatch": false,
+    "materials": {
+      "legendarymonuments:textures/entity/rocket_grunt.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "mod/legendarymonuments"
+  },
+  {
+    "source": "minecraft:allay",
+    "species": "entitybattle:minecraft_allay",
+    "renderer": "net.minecraft.client.renderer.entity.AllayRenderer",
+    "reportedTexture": "minecraft:textures/entity/allay/allay.png",
+    "actualTexture": "minecraft:textures/entity/allay/allay.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/allay/allay.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:armadillo",
+    "species": "entitybattle:minecraft_armadillo",
+    "renderer": "net.minecraft.client.renderer.entity.ArmadilloRenderer",
+    "reportedTexture": "minecraft:textures/entity/armadillo.png",
+    "actualTexture": "minecraft:textures/entity/armadillo.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/armadillo.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:axolotl",
+    "species": "entitybattle:minecraft_axolotl",
+    "renderer": "net.minecraft.client.renderer.entity.AxolotlRenderer",
+    "reportedTexture": "minecraft:textures/entity/axolotl/axolotl_lucy.png",
+    "actualTexture": "minecraft:textures/entity/axolotl/axolotl_lucy.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/axolotl/axolotl_lucy.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:bat",
+    "species": "entitybattle:minecraft_bat",
+    "renderer": "net.minecraft.client.renderer.entity.BatRenderer",
+    "reportedTexture": "minecraft:textures/entity/bat.png",
+    "actualTexture": "minecraft:textures/entity/bat.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/bat.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:bee",
+    "species": "entitybattle:minecraft_bee",
+    "renderer": "net.minecraft.client.renderer.entity.BeeRenderer",
+    "reportedTexture": "minecraft:textures/entity/bee/bee.png",
+    "actualTexture": "minecraft:textures/entity/bee/bee.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/bee/bee.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:blaze",
+    "species": "entitybattle:minecraft_blaze",
+    "renderer": "net.minecraft.client.renderer.entity.BlazeRenderer",
+    "reportedTexture": "minecraft:textures/entity/blaze.png",
+    "actualTexture": "minecraft:textures/entity/blaze.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/blaze.png": 1
+    },
+    "vertices": 312,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:bogged",
+    "species": "entitybattle:minecraft_bogged",
+    "renderer": "net.minecraft.client.renderer.entity.BoggedRenderer",
+    "reportedTexture": "minecraft:textures/entity/skeleton/bogged.png",
+    "actualTexture": "minecraft:textures/entity/skeleton/bogged.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/skeleton/bogged.png": 1,
+      "minecraft:textures/entity/skeleton/bogged_overlay.png": 1
+    },
+    "vertices": 480,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:breeze",
+    "species": "entitybattle:minecraft_breeze",
+    "renderer": "net.minecraft.client.renderer.entity.BreezeRenderer",
+    "reportedTexture": "minecraft:textures/entity/breeze/breeze.png",
+    "actualTexture": "minecraft:textures/entity/breeze/breeze.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/breeze/breeze.png": 1,
+      "minecraft:textures/entity/breeze/breeze_eyes.png": 1,
+      "minecraft:textures/entity/breeze/breeze_wind.png": 1
+    },
+    "vertices": 384,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:camel",
+    "species": "entitybattle:minecraft_camel",
+    "renderer": "net.minecraft.client.renderer.entity.CamelRenderer",
+    "reportedTexture": "minecraft:textures/entity/camel/camel.png",
+    "actualTexture": "minecraft:textures/entity/camel/camel.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/camel/camel.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:cat",
+    "species": "entitybattle:minecraft_cat",
+    "renderer": "net.minecraft.client.renderer.entity.CatRenderer",
+    "reportedTexture": "minecraft:textures/entity/cat/black.png",
+    "actualTexture": "minecraft:textures/entity/cat/black.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/cat/black.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:cave_spider",
+    "species": "entitybattle:minecraft_cave_spider",
+    "renderer": "net.minecraft.client.renderer.entity.CaveSpiderRenderer",
+    "reportedTexture": "minecraft:textures/entity/spider/cave_spider.png",
+    "actualTexture": "minecraft:textures/entity/spider/cave_spider.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/spider/cave_spider.png": 1,
+      "minecraft:textures/entity/spider_eyes.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:chicken",
+    "species": "entitybattle:minecraft_chicken",
+    "renderer": "net.minecraft.client.renderer.entity.ChickenRenderer",
+    "reportedTexture": "minecraft:textures/entity/chicken.png",
+    "actualTexture": "minecraft:textures/entity/chicken.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/chicken.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:cod",
+    "species": "entitybattle:minecraft_cod",
+    "renderer": "net.minecraft.client.renderer.entity.CodRenderer",
+    "reportedTexture": "minecraft:textures/entity/fish/cod.png",
+    "actualTexture": "minecraft:textures/entity/fish/cod.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/fish/cod.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:creeper",
+    "species": "entitybattle:minecraft_creeper",
+    "renderer": "net.minecraft.client.renderer.entity.CreeperRenderer",
+    "reportedTexture": "minecraft:textures/entity/creeper/creeper.png",
+    "actualTexture": "minecraft:textures/entity/creeper/creeper.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/creeper/creeper.png": 1
+    },
+    "vertices": 144,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:dolphin",
+    "species": "entitybattle:minecraft_dolphin",
+    "renderer": "net.minecraft.client.renderer.entity.DolphinRenderer",
+    "reportedTexture": "minecraft:textures/entity/dolphin.png",
+    "actualTexture": "minecraft:textures/entity/dolphin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/dolphin.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:donkey",
+    "species": "entitybattle:minecraft_donkey",
+    "renderer": "net.minecraft.client.renderer.entity.ChestedHorseRenderer",
+    "reportedTexture": "minecraft:textures/entity/horse/donkey.png",
+    "actualTexture": "minecraft:textures/entity/horse/donkey.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/horse/donkey.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:drowned",
+    "species": "entitybattle:minecraft_drowned",
+    "renderer": "net.minecraft.client.renderer.entity.DrownedRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/drowned.png",
+    "actualTexture": "minecraft:textures/entity/zombie/drowned.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/zombie/drowned.png": 1,
+      "minecraft:textures/entity/zombie/drowned_outer_layer.png": 1
+    },
+    "vertices": 336,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:elder_guardian",
+    "species": "entitybattle:minecraft_elder_guardian",
+    "renderer": "net.minecraft.client.renderer.entity.ElderGuardianRenderer",
+    "reportedTexture": "minecraft:textures/entity/guardian_elder.png",
+    "actualTexture": "minecraft:textures/entity/guardian_elder.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/guardian_elder.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:enderman",
+    "species": "entitybattle:minecraft_enderman",
+    "renderer": "net.minecraft.client.renderer.entity.EndermanRenderer",
+    "reportedTexture": "minecraft:textures/entity/enderman/enderman.png",
+    "actualTexture": "minecraft:textures/entity/enderman/enderman.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/enderman/enderman.png": 1,
+      "minecraft:textures/entity/enderman/enderman_eyes.png": 1
+    },
+    "vertices": 336,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:endermite",
+    "species": "entitybattle:minecraft_endermite",
+    "renderer": "net.minecraft.client.renderer.entity.EndermiteRenderer",
+    "reportedTexture": "minecraft:textures/entity/endermite.png",
+    "actualTexture": "minecraft:textures/entity/endermite.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/endermite.png": 1
+    },
+    "vertices": 96,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:evoker",
+    "species": "entitybattle:minecraft_evoker",
+    "renderer": "net.minecraft.client.renderer.entity.EvokerRenderer",
+    "reportedTexture": "minecraft:textures/entity/illager/evoker.png",
+    "actualTexture": "minecraft:textures/entity/illager/evoker.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/illager/evoker.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:fox",
+    "species": "entitybattle:minecraft_fox",
+    "renderer": "net.minecraft.client.renderer.entity.FoxRenderer",
+    "reportedTexture": "minecraft:textures/entity/fox/fox.png",
+    "actualTexture": "minecraft:textures/entity/fox/fox.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/fox/fox.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:frog",
+    "species": "entitybattle:minecraft_frog",
+    "renderer": "net.minecraft.client.renderer.entity.FrogRenderer",
+    "reportedTexture": "minecraft:textures/entity/frog/temperate_frog.png",
+    "actualTexture": "minecraft:textures/entity/frog/temperate_frog.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/frog/temperate_frog.png": 1
+    },
+    "vertices": 360,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:ghast",
+    "species": "entitybattle:minecraft_ghast",
+    "renderer": "net.minecraft.client.renderer.entity.GhastRenderer",
+    "reportedTexture": "minecraft:textures/entity/ghast/ghast.png",
+    "actualTexture": "minecraft:textures/entity/ghast/ghast.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/ghast/ghast.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:glow_squid",
+    "species": "entitybattle:minecraft_glow_squid",
+    "renderer": "net.minecraft.client.renderer.entity.GlowSquidRenderer",
+    "reportedTexture": "minecraft:textures/entity/squid/glow_squid.png",
+    "actualTexture": "minecraft:textures/entity/squid/glow_squid.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/squid/glow_squid.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:goat",
+    "species": "entitybattle:minecraft_goat",
+    "renderer": "net.minecraft.client.renderer.entity.GoatRenderer",
+    "reportedTexture": "minecraft:textures/entity/goat/goat.png",
+    "actualTexture": "minecraft:textures/entity/goat/goat.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/goat/goat.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:guardian",
+    "species": "entitybattle:minecraft_guardian",
+    "renderer": "net.minecraft.client.renderer.entity.GuardianRenderer",
+    "reportedTexture": "minecraft:textures/entity/guardian.png",
+    "actualTexture": "minecraft:textures/entity/guardian.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/guardian.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:hoglin",
+    "species": "entitybattle:minecraft_hoglin",
+    "renderer": "net.minecraft.client.renderer.entity.HoglinRenderer",
+    "reportedTexture": "minecraft:textures/entity/hoglin/hoglin.png",
+    "actualTexture": "minecraft:textures/entity/hoglin/hoglin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/hoglin/hoglin.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:horse",
+    "species": "entitybattle:minecraft_horse",
+    "renderer": "net.minecraft.client.renderer.entity.HorseRenderer",
+    "reportedTexture": "minecraft:textures/entity/horse/horse_white.png",
+    "actualTexture": "minecraft:textures/entity/horse/horse_white.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/horse/horse_white.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:husk",
+    "species": "entitybattle:minecraft_husk",
+    "renderer": "net.minecraft.client.renderer.entity.HuskRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/husk.png",
+    "actualTexture": "minecraft:textures/entity/zombie/husk.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/zombie/husk.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:iron_golem",
+    "species": "entitybattle:minecraft_iron_golem",
+    "renderer": "net.minecraft.client.renderer.entity.IronGolemRenderer",
+    "reportedTexture": "minecraft:textures/entity/iron_golem/iron_golem.png",
+    "actualTexture": "minecraft:textures/entity/iron_golem/iron_golem.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/iron_golem/iron_golem.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:llama",
+    "species": "entitybattle:minecraft_llama",
+    "renderer": "net.minecraft.client.renderer.entity.LlamaRenderer",
+    "reportedTexture": "minecraft:textures/entity/llama/creamy.png",
+    "actualTexture": "minecraft:textures/entity/llama/creamy.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/llama/creamy.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:magma_cube",
+    "species": "entitybattle:minecraft_magma_cube",
+    "renderer": "com.github.tartaricacid.touhoulittlemaid.client.renderer.entity.EntityMarisaYukkuriSlimeRender",
+    "reportedTexture": "touhou_little_maid:textures/bedrock/entity/marisa_yukkuri.png",
+    "actualTexture": "minecraft:textures/entity/slime/magmacube.png",
+    "reportedMismatch": true,
+    "materials": {
+      "minecraft:textures/entity/slime/magmacube.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:mooshroom",
+    "species": "entitybattle:minecraft_mooshroom",
+    "renderer": "net.minecraft.client.renderer.entity.MushroomCowRenderer",
+    "reportedTexture": "minecraft:textures/entity/cow/red_mooshroom.png",
+    "actualTexture": "minecraft:textures/entity/cow/red_mooshroom.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/atlas/blocks.png": 3,
+      "minecraft:textures/entity/cow/red_mooshroom.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:mule",
+    "species": "entitybattle:minecraft_mule",
+    "renderer": "net.minecraft.client.renderer.entity.ChestedHorseRenderer",
+    "reportedTexture": "minecraft:textures/entity/horse/mule.png",
+    "actualTexture": "minecraft:textures/entity/horse/mule.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/horse/mule.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:ocelot",
+    "species": "entitybattle:minecraft_ocelot",
+    "renderer": "net.minecraft.client.renderer.entity.OcelotRenderer",
+    "reportedTexture": "minecraft:textures/entity/cat/ocelot.png",
+    "actualTexture": "minecraft:textures/entity/cat/ocelot.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/cat/ocelot.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:panda",
+    "species": "entitybattle:minecraft_panda",
+    "renderer": "net.minecraft.client.renderer.entity.PandaRenderer",
+    "reportedTexture": "minecraft:textures/entity/panda/panda.png",
+    "actualTexture": "minecraft:textures/entity/panda/panda.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/panda/panda.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:parrot",
+    "species": "entitybattle:minecraft_parrot",
+    "renderer": "net.minecraft.client.renderer.entity.ParrotRenderer",
+    "reportedTexture": "minecraft:textures/entity/parrot/parrot_red_blue.png",
+    "actualTexture": "minecraft:textures/entity/parrot/parrot_red_blue.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/parrot/parrot_red_blue.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:phantom",
+    "species": "entitybattle:minecraft_phantom",
+    "renderer": "net.minecraft.client.renderer.entity.PhantomRenderer",
+    "reportedTexture": "minecraft:textures/entity/phantom.png",
+    "actualTexture": "minecraft:textures/entity/phantom.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/phantom.png": 1,
+      "minecraft:textures/entity/phantom_eyes.png": 1
+    },
+    "vertices": 384,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:pig",
+    "species": "entitybattle:minecraft_pig",
+    "renderer": "net.minecraft.client.renderer.entity.PigRenderer",
+    "reportedTexture": "minecraft:textures/entity/pig/pig.png",
+    "actualTexture": "minecraft:textures/entity/pig/pig.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/pig/pig.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:piglin",
+    "species": "entitybattle:minecraft_piglin",
+    "renderer": "net.minecraft.client.renderer.entity.PiglinRenderer",
+    "reportedTexture": "minecraft:textures/entity/piglin/piglin.png",
+    "actualTexture": "minecraft:textures/entity/piglin/piglin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/piglin/piglin.png": 1
+    },
+    "vertices": 384,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:piglin_brute",
+    "species": "entitybattle:minecraft_piglin_brute",
+    "renderer": "net.minecraft.client.renderer.entity.PiglinRenderer",
+    "reportedTexture": "minecraft:textures/entity/piglin/piglin_brute.png",
+    "actualTexture": "minecraft:textures/entity/piglin/piglin_brute.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/piglin/piglin_brute.png": 1
+    },
+    "vertices": 384,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:pillager",
+    "species": "entitybattle:minecraft_pillager",
+    "renderer": "net.minecraft.client.renderer.entity.PillagerRenderer",
+    "reportedTexture": "minecraft:textures/entity/illager/pillager.png",
+    "actualTexture": "minecraft:textures/entity/illager/pillager.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/illager/pillager.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:polar_bear",
+    "species": "entitybattle:minecraft_polar_bear",
+    "renderer": "net.minecraft.client.renderer.entity.PolarBearRenderer",
+    "reportedTexture": "minecraft:textures/entity/bear/polarbear.png",
+    "actualTexture": "minecraft:textures/entity/bear/polarbear.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/bear/polarbear.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:pufferfish",
+    "species": "entitybattle:minecraft_pufferfish",
+    "renderer": "net.minecraft.client.renderer.entity.PufferfishRenderer",
+    "reportedTexture": "minecraft:textures/entity/fish/pufferfish.png",
+    "actualTexture": "minecraft:textures/entity/fish/pufferfish.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/fish/pufferfish.png": 1
+    },
+    "vertices": 144,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:rabbit",
+    "species": "entitybattle:minecraft_rabbit",
+    "renderer": "net.minecraft.client.renderer.entity.RabbitRenderer",
+    "reportedTexture": "minecraft:textures/entity/rabbit/brown.png",
+    "actualTexture": "minecraft:textures/entity/rabbit/brown.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/rabbit/brown.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:ravager",
+    "species": "entitybattle:minecraft_ravager",
+    "renderer": "net.minecraft.client.renderer.entity.RavagerRenderer",
+    "reportedTexture": "minecraft:textures/entity/illager/ravager.png",
+    "actualTexture": "minecraft:textures/entity/illager/ravager.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/illager/ravager.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:salmon",
+    "species": "entitybattle:minecraft_salmon",
+    "renderer": "net.minecraft.client.renderer.entity.SalmonRenderer",
+    "reportedTexture": "minecraft:textures/entity/fish/salmon.png",
+    "actualTexture": "minecraft:textures/entity/fish/salmon.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/fish/salmon.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:sheep",
+    "species": "entitybattle:minecraft_sheep",
+    "renderer": "net.minecraft.client.renderer.entity.SheepRenderer",
+    "reportedTexture": "minecraft:textures/entity/sheep/sheep.png",
+    "actualTexture": "minecraft:textures/entity/sheep/sheep.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/sheep/sheep.png": 1,
+      "minecraft:textures/entity/sheep/sheep_fur.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:shulker",
+    "species": "entitybattle:minecraft_shulker",
+    "renderer": "net.minecraft.client.renderer.entity.ShulkerRenderer",
+    "reportedTexture": "minecraft:textures/entity/shulker/shulker.png",
+    "actualTexture": "minecraft:textures/entity/shulker/shulker.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/shulker/shulker.png": 2
+    },
+    "vertices": 72,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:silverfish",
+    "species": "entitybattle:minecraft_silverfish",
+    "renderer": "net.minecraft.client.renderer.entity.SilverfishRenderer",
+    "reportedTexture": "minecraft:textures/entity/silverfish.png",
+    "actualTexture": "minecraft:textures/entity/silverfish.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/silverfish.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:skeleton",
+    "species": "entitybattle:minecraft_skeleton",
+    "renderer": "net.minecraft.client.renderer.entity.SkeletonRenderer",
+    "reportedTexture": "minecraft:textures/entity/skeleton/skeleton.png",
+    "actualTexture": "minecraft:textures/entity/skeleton/skeleton.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/skeleton/skeleton.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:skeleton_horse",
+    "species": "entitybattle:minecraft_skeleton_horse",
+    "renderer": "net.minecraft.client.renderer.entity.UndeadHorseRenderer",
+    "reportedTexture": "minecraft:textures/entity/horse/horse_skeleton.png",
+    "actualTexture": "minecraft:textures/entity/horse/horse_skeleton.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/horse/horse_skeleton.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:slime",
+    "species": "entitybattle:minecraft_slime",
+    "renderer": "com.github.tartaricacid.touhoulittlemaid.client.renderer.entity.EntityYukkuriSlimeRender",
+    "reportedTexture": "touhou_little_maid:textures/bedrock/entity/reimu_yukkuri.png",
+    "actualTexture": "minecraft:textures/entity/slime/slime.png",
+    "reportedMismatch": true,
+    "materials": {
+      "minecraft:textures/entity/slime/slime.png": 2
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:sniffer",
+    "species": "entitybattle:minecraft_sniffer",
+    "renderer": "net.minecraft.client.renderer.entity.SnifferRenderer",
+    "reportedTexture": "minecraft:textures/entity/sniffer/sniffer.png",
+    "actualTexture": "minecraft:textures/entity/sniffer/sniffer.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/sniffer/sniffer.png": 1
+    },
+    "vertices": 360,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:snow_golem",
+    "species": "entitybattle:minecraft_snow_golem",
+    "renderer": "net.minecraft.client.renderer.entity.SnowGolemRenderer",
+    "reportedTexture": "minecraft:textures/entity/snow_golem.png",
+    "actualTexture": "minecraft:textures/entity/snow_golem.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/atlas/blocks.png": 1,
+      "minecraft:textures/entity/snow_golem.png": 1
+    },
+    "vertices": 144,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:spider",
+    "species": "entitybattle:minecraft_spider",
+    "renderer": "net.minecraft.client.renderer.entity.SpiderRenderer",
+    "reportedTexture": "minecraft:textures/entity/spider/spider.png",
+    "actualTexture": "minecraft:textures/entity/spider/spider.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/spider/spider.png": 1,
+      "minecraft:textures/entity/spider_eyes.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:squid",
+    "species": "entitybattle:minecraft_squid",
+    "renderer": "net.minecraft.client.renderer.entity.SquidRenderer",
+    "reportedTexture": "minecraft:textures/entity/squid/squid.png",
+    "actualTexture": "minecraft:textures/entity/squid/squid.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/squid/squid.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:stray",
+    "species": "entitybattle:minecraft_stray",
+    "renderer": "net.minecraft.client.renderer.entity.StrayRenderer",
+    "reportedTexture": "minecraft:textures/entity/skeleton/stray.png",
+    "actualTexture": "minecraft:textures/entity/skeleton/stray.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/skeleton/stray.png": 1,
+      "minecraft:textures/entity/skeleton/stray_overlay.png": 1
+    },
+    "vertices": 336,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:strider",
+    "species": "entitybattle:minecraft_strider",
+    "renderer": "net.minecraft.client.renderer.entity.StriderRenderer",
+    "reportedTexture": "minecraft:textures/entity/strider/strider.png",
+    "actualTexture": "minecraft:textures/entity/strider/strider.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/strider/strider.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:tadpole",
+    "species": "entitybattle:minecraft_tadpole",
+    "renderer": "net.minecraft.client.renderer.entity.TadpoleRenderer",
+    "reportedTexture": "minecraft:textures/entity/tadpole/tadpole.png",
+    "actualTexture": "minecraft:textures/entity/tadpole/tadpole.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/tadpole/tadpole.png": 1
+    },
+    "vertices": 72,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:trader_llama",
+    "species": "entitybattle:minecraft_trader_llama",
+    "renderer": "net.minecraft.client.renderer.entity.LlamaRenderer",
+    "reportedTexture": "minecraft:textures/entity/llama/creamy.png",
+    "actualTexture": "minecraft:textures/entity/llama/creamy.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/llama/creamy.png": 1,
+      "minecraft:textures/entity/llama/decor/trader_llama.png": 1
+    },
+    "vertices": 432,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:tropical_fish",
+    "species": "entitybattle:minecraft_tropical_fish",
+    "renderer": "net.minecraft.client.renderer.entity.TropicalFishRenderer",
+    "reportedTexture": "minecraft:textures/entity/fish/tropical_a.png",
+    "actualTexture": "minecraft:textures/entity/fish/tropical_a.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/fish/tropical_a.png": 1,
+      "minecraft:textures/entity/fish/tropical_a_pattern_1.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:turtle",
+    "species": "entitybattle:minecraft_turtle",
+    "renderer": "net.minecraft.client.renderer.entity.TurtleRenderer",
+    "reportedTexture": "minecraft:textures/entity/turtle/big_sea_turtle.png",
+    "actualTexture": "minecraft:textures/entity/turtle/big_sea_turtle.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/turtle/big_sea_turtle.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:vex",
+    "species": "entitybattle:minecraft_vex",
+    "renderer": "net.minecraft.client.renderer.entity.VexRenderer",
+    "reportedTexture": "minecraft:textures/entity/illager/vex.png",
+    "actualTexture": "minecraft:textures/entity/illager/vex.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/illager/vex.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:villager",
+    "species": "entitybattle:minecraft_villager",
+    "renderer": "net.minecraft.client.renderer.entity.VillagerRenderer",
+    "reportedTexture": "minecraft:textures/entity/villager/villager.png",
+    "actualTexture": "minecraft:textures/entity/villager/villager.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/villager/type/plains.png": 1,
+      "minecraft:textures/entity/villager/villager.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:vindicator",
+    "species": "entitybattle:minecraft_vindicator",
+    "renderer": "net.minecraft.client.renderer.entity.VindicatorRenderer",
+    "reportedTexture": "minecraft:textures/entity/illager/vindicator.png",
+    "actualTexture": "minecraft:textures/entity/illager/vindicator.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/illager/vindicator.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:wandering_trader",
+    "species": "entitybattle:minecraft_wandering_trader",
+    "renderer": "net.minecraft.client.renderer.entity.WanderingTraderRenderer",
+    "reportedTexture": "minecraft:textures/entity/wandering_trader.png",
+    "actualTexture": "minecraft:textures/entity/wandering_trader.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/wandering_trader.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:warden",
+    "species": "entitybattle:minecraft_warden",
+    "renderer": "net.minecraft.client.renderer.entity.WardenRenderer",
+    "reportedTexture": "minecraft:textures/entity/warden/warden.png",
+    "actualTexture": "minecraft:textures/entity/warden/warden.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/warden/warden.png": 2,
+      "minecraft:textures/entity/warden/warden_bioluminescent_layer.png": 1,
+      "minecraft:textures/entity/warden/warden_heart.png": 1,
+      "minecraft:textures/entity/warden/warden_pulsating_spots_1.png": 1,
+      "minecraft:textures/entity/warden/warden_pulsating_spots_2.png": 1
+    },
+    "vertices": 1248,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:witch",
+    "species": "entitybattle:minecraft_witch",
+    "renderer": "net.minecraft.client.renderer.entity.WitchRenderer",
+    "reportedTexture": "minecraft:textures/entity/witch.png",
+    "actualTexture": "minecraft:textures/entity/witch.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/witch.png": 1
+    },
+    "vertices": 360,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:wither",
+    "species": "entitybattle:minecraft_wither",
+    "renderer": "net.minecraft.client.renderer.entity.WitherBossRenderer",
+    "reportedTexture": "minecraft:textures/entity/wither/wither.png",
+    "actualTexture": "minecraft:textures/entity/wither/wither.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/wither/wither.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:wither_skeleton",
+    "species": "entitybattle:minecraft_wither_skeleton",
+    "renderer": "net.minecraft.client.renderer.entity.WitherSkeletonRenderer",
+    "reportedTexture": "minecraft:textures/entity/skeleton/wither_skeleton.png",
+    "actualTexture": "minecraft:textures/entity/skeleton/wither_skeleton.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/skeleton/wither_skeleton.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:wolf",
+    "species": "entitybattle:minecraft_wolf",
+    "renderer": "net.minecraft.client.renderer.entity.WolfRenderer",
+    "reportedTexture": "minecraft:textures/entity/wolf/wolf.png",
+    "actualTexture": "minecraft:textures/entity/wolf/wolf.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/wolf/wolf.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:zoglin",
+    "species": "entitybattle:minecraft_zoglin",
+    "renderer": "net.minecraft.client.renderer.entity.ZoglinRenderer",
+    "reportedTexture": "minecraft:textures/entity/hoglin/zoglin.png",
+    "actualTexture": "minecraft:textures/entity/hoglin/zoglin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/hoglin/zoglin.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:zombie_horse",
+    "species": "entitybattle:minecraft_zombie_horse",
+    "renderer": "net.minecraft.client.renderer.entity.UndeadHorseRenderer",
+    "reportedTexture": "minecraft:textures/entity/horse/horse_zombie.png",
+    "actualTexture": "minecraft:textures/entity/horse/horse_zombie.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/horse/horse_zombie.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:zombie_villager",
+    "species": "entitybattle:minecraft_zombie_villager",
+    "renderer": "net.minecraft.client.renderer.entity.ZombieVillagerRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie_villager/zombie_villager.png",
+    "actualTexture": "minecraft:textures/entity/zombie_villager/zombie_villager.png",
+    "reportedMismatch": false,
+    "materials": {
+      "legendarymonuments:textures/entity/zombie_villager/profession/entrepreneur.png": 1,
+      "minecraft:textures/entity/zombie_villager/profession_level/stone.png": 1,
+      "minecraft:textures/entity/zombie_villager/type/plains.png": 1,
+      "minecraft:textures/entity/zombie_villager/zombie_villager.png": 1
+    },
+    "vertices": 960,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "minecraft:zombified_piglin",
+    "species": "entitybattle:minecraft_zombified_piglin",
+    "renderer": "net.minecraft.client.renderer.entity.PiglinRenderer",
+    "reportedTexture": "minecraft:textures/entity/piglin/zombified_piglin.png",
+    "actualTexture": "minecraft:textures/entity/piglin/zombified_piglin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/piglin/zombified_piglin.png": 1
+    },
+    "vertices": 360,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "touhou_little_maid:fairy",
+    "species": "entitybattle:touhou_little_maid_fairy",
+    "renderer": "com.github.tartaricacid.touhoulittlemaid.client.renderer.entity.EntityFairyRenderer",
+    "reportedTexture": "touhou_little_maid:textures/bedrock/entity/new_maid_fairy/maid_fairy_0.png",
+    "actualTexture": "touhou_little_maid:textures/bedrock/entity/new_maid_fairy/maid_fairy_0.png",
+    "reportedMismatch": false,
+    "materials": {
+      "touhou_little_maid:textures/bedrock/entity/new_maid_fairy/maid_fairy_0.png": 1
+    },
+    "vertices": 1704,
+    "meshVerified": true,
+    "resourcePack": "mod/touhou_little_maid"
+  },
+  {
+    "source": "twilightforest:adherent",
+    "species": "entitybattle:twilightforest_adherent",
+    "renderer": "twilightforest.client.renderer.entity.AdherentRenderer",
+    "reportedTexture": "twilightforest:textures/entity/adherent.png",
+    "actualTexture": "twilightforest:textures/entity/adherent.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/adherent.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:alpha_yeti",
+    "species": "entitybattle:twilightforest_alpha_yeti",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/yetialpha.png",
+    "actualTexture": "twilightforest:textures/entity/yetialpha.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/yetialpha.png": 1
+    },
+    "vertices": 504,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:armored_giant",
+    "species": "entitybattle:twilightforest_armored_giant",
+    "renderer": "twilightforest.client.renderer.entity.TFGiantRenderer",
+    "reportedTexture": "minecraft:textures/entity/player/slim/efe.png",
+    "actualTexture": "minecraft:textures/entity/player/slim/efe.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/player/slim/efe.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:bighorn_sheep",
+    "species": "entitybattle:twilightforest_bighorn_sheep",
+    "renderer": "twilightforest.client.renderer.entity.BighornRenderer",
+    "reportedTexture": "twilightforest:textures/entity/bighorn.png",
+    "actualTexture": "twilightforest:textures/entity/bighorn.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/sheep/sheep_fur.png": 2,
+      "twilightforest:textures/entity/bighorn.png": 1
+    },
+    "vertices": 672,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:blockchain_goblin",
+    "species": "entitybattle:twilightforest_blockchain_goblin",
+    "renderer": "twilightforest.client.renderer.entity.BlockChainGoblinRenderer",
+    "reportedTexture": "twilightforest:textures/entity/blockgoblin.png",
+    "actualTexture": "twilightforest:textures/entity/blockgoblin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/block_and_chain.png": 5,
+      "twilightforest:textures/entity/blockgoblin.png": 1
+    },
+    "vertices": 936,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:boar",
+    "species": "entitybattle:twilightforest_boar",
+    "renderer": "twilightforest.client.renderer.entity.BoarRenderer",
+    "reportedTexture": "twilightforest:textures/entity/wildboar.png",
+    "actualTexture": "twilightforest:textures/entity/wildboar.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/wildboar.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:carminite_broodling",
+    "species": "entitybattle:twilightforest_carminite_broodling",
+    "renderer": "twilightforest.client.renderer.entity.TFSpiderRenderer",
+    "reportedTexture": "twilightforest:textures/entity/towerbroodling.png",
+    "actualTexture": "twilightforest:textures/entity/towerbroodling.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/spider_eyes.png": 1,
+      "twilightforest:textures/entity/towerbroodling.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:carminite_ghastguard",
+    "species": "entitybattle:twilightforest_carminite_ghastguard",
+    "renderer": "twilightforest.client.renderer.entity.CarminiteGhastRenderer",
+    "reportedTexture": "twilightforest:textures/entity/towerghast.png",
+    "actualTexture": "twilightforest:textures/entity/towerghast.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/towerghast.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:carminite_ghastling",
+    "species": "entitybattle:twilightforest_carminite_ghastling",
+    "renderer": "twilightforest.client.renderer.entity.TFGhastRenderer",
+    "reportedTexture": "twilightforest:textures/entity/towerghast.png",
+    "actualTexture": "twilightforest:textures/entity/towerghast.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/towerghast.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:carminite_golem",
+    "species": "entitybattle:twilightforest_carminite_golem",
+    "renderer": "twilightforest.client.renderer.entity.CarminiteGolemRenderer",
+    "reportedTexture": "twilightforest:textures/entity/carminitegolem.png",
+    "actualTexture": "twilightforest:textures/entity/carminitegolem.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/carminitegolem.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:death_tome",
+    "species": "entitybattle:twilightforest_death_tome",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "minecraft:textures/entity/enchanting_table_book.png",
+    "actualTexture": "minecraft:textures/entity/enchanting_table_book.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/enchanting_table_book.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:deer",
+    "species": "entitybattle:twilightforest_deer",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "twilightforest:textures/entity/wilddeer.png",
+    "actualTexture": "twilightforest:textures/entity/wilddeer.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/wilddeer.png": 1
+    },
+    "vertices": 744,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:dwarf_rabbit",
+    "species": "entitybattle:twilightforest_dwarf_rabbit",
+    "renderer": "twilightforest.client.renderer.entity.BunnyRenderer",
+    "reportedTexture": "twilightforest:textures/entity/bunnybrown.png",
+    "actualTexture": "twilightforest:textures/entity/bunnybrown.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/bunnybrown.png": 1
+    },
+    "vertices": 216,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:fire_beetle",
+    "species": "entitybattle:twilightforest_fire_beetle",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "twilightforest:textures/entity/firebeetle.png",
+    "actualTexture": "twilightforest:textures/entity/firebeetle.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/firebeetle.png": 1
+    },
+    "vertices": 456,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:giant_miner",
+    "species": "entitybattle:twilightforest_giant_miner",
+    "renderer": "twilightforest.client.renderer.entity.TFGiantRenderer",
+    "reportedTexture": "minecraft:textures/entity/player/slim/efe.png",
+    "actualTexture": "minecraft:textures/entity/player/slim/efe.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/player/slim/efe.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:harbinger_cube",
+    "species": "entitybattle:twilightforest_harbinger_cube",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "twilightforest:textures/entity/apocalypse2.png",
+    "actualTexture": "twilightforest:textures/entity/apocalypse2.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/apocalypse2.png": 1
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:hedge_spider",
+    "species": "entitybattle:twilightforest_hedge_spider",
+    "renderer": "twilightforest.client.renderer.entity.TFSpiderRenderer",
+    "reportedTexture": "twilightforest:textures/entity/hedgespider.png",
+    "actualTexture": "twilightforest:textures/entity/hedgespider.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/spider_eyes.png": 1,
+      "twilightforest:textures/entity/hedgespider.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:helmet_crab",
+    "species": "entitybattle:twilightforest_helmet_crab",
+    "renderer": "twilightforest.client.renderer.entity.HelmetCrabRenderer",
+    "reportedTexture": "twilightforest:textures/entity/helmetcrab.png",
+    "actualTexture": "twilightforest:textures/entity/helmetcrab.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/helmetcrab.png": 1
+    },
+    "vertices": 432,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:hostile_wolf",
+    "species": "entitybattle:twilightforest_hostile_wolf",
+    "renderer": "twilightforest.client.renderer.entity.HostileWolfRenderer",
+    "reportedTexture": "minecraft:textures/entity/wolf/wolf.png",
+    "actualTexture": "minecraft:textures/entity/wolf/wolf.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/wolf/wolf.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:hydra",
+    "species": "entitybattle:twilightforest_hydra",
+    "renderer": "twilightforest.client.renderer.entity.HydraRenderer",
+    "reportedTexture": "twilightforest:textures/entity/hydra4.png",
+    "actualTexture": "twilightforest:textures/entity/hydra4.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/hydra4.png": 19
+    },
+    "vertices": 2280,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:ice_crystal",
+    "species": "entitybattle:twilightforest_ice_crystal",
+    "renderer": "twilightforest.client.renderer.entity.IceCrystalRenderer",
+    "reportedTexture": "twilightforest:textures/entity/icecrystal.png",
+    "actualTexture": "twilightforest:textures/entity/icecrystal.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/icecrystal.png": 1
+    },
+    "vertices": 768,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:king_spider",
+    "species": "entitybattle:twilightforest_king_spider",
+    "renderer": "twilightforest.client.renderer.entity.TFSpiderRenderer",
+    "reportedTexture": "twilightforest:textures/entity/kingspider.png",
+    "actualTexture": "twilightforest:textures/entity/kingspider.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/spider_eyes.png": 1,
+      "twilightforest:textures/entity/kingspider.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:knight_phantom",
+    "species": "entitybattle:twilightforest_knight_phantom",
+    "renderer": "twilightforest.client.renderer.entity.KnightPhantomRenderer",
+    "reportedTexture": "twilightforest:textures/entity/phantomskeleton.png",
+    "actualTexture": "twilightforest:textures/entity/phantomskeleton.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/atlas/blocks.png": 2,
+      "twilightforest:textures/entity/phantomskeleton.png": 1
+    },
+    "vertices": 368,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:kobold",
+    "species": "entitybattle:twilightforest_kobold",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/kobold.png",
+    "actualTexture": "twilightforest:textures/entity/kobold.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/kobold.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:lich",
+    "species": "entitybattle:twilightforest_lich",
+    "renderer": "twilightforest.client.renderer.entity.LichRenderer",
+    "reportedTexture": "twilightforest:textures/entity/twilightlich64.png",
+    "actualTexture": "twilightforest:textures/entity/twilightlich64.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/atlas/blocks.png": 84,
+      "twilightforest:textures/entity/twilightlich64.png": 1
+    },
+    "vertices": 2472,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:lich_minion",
+    "species": "entitybattle:twilightforest_lich_minion",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "actualTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/zombie/zombie.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:lower_goblin_knight",
+    "species": "entitybattle:twilightforest_lower_goblin_knight",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/doublegoblin.png",
+    "actualTexture": "twilightforest:textures/entity/doublegoblin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/doublegoblin.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:loyal_zombie",
+    "species": "entitybattle:twilightforest_loyal_zombie",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "actualTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/zombie/zombie.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:maze_slime",
+    "species": "entitybattle:twilightforest_maze_slime",
+    "renderer": "twilightforest.client.renderer.entity.MazeSlimeRenderer",
+    "reportedTexture": "twilightforest:textures/entity/mazeslime.png",
+    "actualTexture": "twilightforest:textures/entity/mazeslime.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/mazeslime.png": 2
+    },
+    "vertices": 120,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:minoshroom",
+    "species": "entitybattle:twilightforest_minoshroom",
+    "renderer": "twilightforest.client.renderer.entity.MinoshroomRenderer",
+    "reportedTexture": "twilightforest:textures/entity/minoshroomtaur.png",
+    "actualTexture": "twilightforest:textures/entity/minoshroomtaur.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/atlas/blocks.png": 3,
+      "twilightforest:textures/entity/minoshroomtaur.png": 1
+    },
+    "vertices": 408,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:minotaur",
+    "species": "entitybattle:twilightforest_minotaur",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/minotaur.png",
+    "actualTexture": "twilightforest:textures/entity/minotaur.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/minotaur.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:mist_wolf",
+    "species": "entitybattle:twilightforest_mist_wolf",
+    "renderer": "twilightforest.client.renderer.entity.MistWolfRenderer",
+    "reportedTexture": "twilightforest:textures/entity/mistwolf.png",
+    "actualTexture": "twilightforest:textures/entity/mistwolf.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/mistwolf.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:mosquito_swarm",
+    "species": "entitybattle:twilightforest_mosquito_swarm",
+    "renderer": "twilightforest.client.renderer.entity.MosquitoSwarmRenderer",
+    "reportedTexture": "twilightforest:textures/entity/mosquitoswarm.png",
+    "actualTexture": "twilightforest:textures/entity/mosquitoswarm.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/mosquitoswarm.png": 1
+    },
+    "vertices": 2472,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:naga",
+    "species": "entitybattle:twilightforest_naga",
+    "renderer": "twilightforest.client.renderer.entity.NagaRenderer",
+    "reportedTexture": "twilightforest:textures/entity/nagahead.png",
+    "actualTexture": "twilightforest:textures/entity/nagahead.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/nagahead.png": 1,
+      "twilightforest:textures/entity/nagasegment.png": 12
+    },
+    "vertices": 312,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:penguin",
+    "species": "entitybattle:twilightforest_penguin",
+    "renderer": "twilightforest.client.renderer.entity.BirdRenderer",
+    "reportedTexture": "twilightforest:textures/entity/penguin.png",
+    "actualTexture": "twilightforest:textures/entity/penguin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/penguin.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:pinch_beetle",
+    "species": "entitybattle:twilightforest_pinch_beetle",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "twilightforest:textures/entity/pinchbeetle.png",
+    "actualTexture": "twilightforest:textures/entity/pinchbeetle.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/pinchbeetle.png": 1
+    },
+    "vertices": 600,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:quest_ram",
+    "species": "entitybattle:twilightforest_quest_ram",
+    "renderer": "twilightforest.client.renderer.entity.QuestRamRenderer",
+    "reportedTexture": "twilightforest:textures/entity/questram.png",
+    "actualTexture": "twilightforest:textures/entity/questram.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/questram.png": 1,
+      "twilightforest:textures/entity/questram_lines.png": 1
+    },
+    "vertices": 1296,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:raven",
+    "species": "entitybattle:twilightforest_raven",
+    "renderer": "twilightforest.client.renderer.entity.BirdRenderer",
+    "reportedTexture": "twilightforest:textures/entity/raven.png",
+    "actualTexture": "twilightforest:textures/entity/raven.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/raven.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:redcap",
+    "species": "entitybattle:twilightforest_redcap",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/redcap.png",
+    "actualTexture": "twilightforest:textures/entity/redcap.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/redcap.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:redcap_sapper",
+    "species": "entitybattle:twilightforest_redcap_sapper",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/redcapsapper.png",
+    "actualTexture": "twilightforest:textures/entity/redcapsapper.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/redcapsapper.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:rising_zombie",
+    "species": "entitybattle:twilightforest_rising_zombie",
+    "renderer": "twilightforest.client.renderer.entity.RisingZombieRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "actualTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "reportedMismatch": false,
+    "materials": {},
+    "vertices": 0,
+    "meshVerified": false,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:roving_cube",
+    "species": "entitybattle:twilightforest_roving_cube",
+    "renderer": "twilightforest.client.renderer.entity.RovingCubeRenderer",
+    "reportedTexture": "twilightforest:textures/entity/cubeofannihilation.png",
+    "actualTexture": "twilightforest:textures/entity/cubeofannihilation.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/cubeofannihilation.png": 1
+    },
+    "vertices": 96,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:skeleton_druid",
+    "species": "entitybattle:twilightforest_skeleton_druid",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/skeletondruid.png",
+    "actualTexture": "twilightforest:textures/entity/skeletondruid.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/skeletondruid.png": 1
+    },
+    "vertices": 192,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:slime_beetle",
+    "species": "entitybattle:twilightforest_slime_beetle",
+    "renderer": "twilightforest.client.renderer.entity.SlimeBeetleRenderer",
+    "reportedTexture": "twilightforest:textures/entity/slimebeetle.png",
+    "actualTexture": "twilightforest:textures/entity/slimebeetle.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/slimebeetle.png": 2
+    },
+    "vertices": 504,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:snow_guardian",
+    "species": "entitybattle:twilightforest_snow_guardian",
+    "renderer": "twilightforest.client.renderer.entity.SnowGuardianRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "actualTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/zombie/zombie.png": 1
+    },
+    "vertices": 0,
+    "meshVerified": false,
+    "resourcePack": "vanilla"
+  },
+  {
+    "source": "twilightforest:snow_queen",
+    "species": "entitybattle:twilightforest_snow_queen",
+    "renderer": "twilightforest.client.renderer.entity.SnowQueenRenderer",
+    "reportedTexture": "twilightforest:textures/entity/snowqueen.png",
+    "actualTexture": "twilightforest:textures/entity/snowqueen.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/atlas/blocks.png": 7,
+      "twilightforest:textures/entity/snowqueen.png": 1
+    },
+    "vertices": 696,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:squirrel",
+    "species": "entitybattle:twilightforest_squirrel",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "twilightforest:textures/entity/squirrel2.png",
+    "actualTexture": "twilightforest:textures/entity/squirrel2.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/squirrel2.png": 1
+    },
+    "vertices": 288,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:stable_ice_core",
+    "species": "entitybattle:twilightforest_stable_ice_core",
+    "renderer": "twilightforest.client.renderer.entity.StableIceCoreRenderer",
+    "reportedTexture": "twilightforest:textures/entity/iceshooter.png",
+    "actualTexture": "twilightforest:textures/entity/iceshooter.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/iceshooter.png": 1
+    },
+    "vertices": 792,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:swarm_spider",
+    "species": "entitybattle:twilightforest_swarm_spider",
+    "renderer": "twilightforest.client.renderer.entity.TFSpiderRenderer",
+    "reportedTexture": "twilightforest:textures/entity/swarmspider.png",
+    "actualTexture": "twilightforest:textures/entity/swarmspider.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/spider_eyes.png": 1,
+      "twilightforest:textures/entity/swarmspider.png": 1
+    },
+    "vertices": 528,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:tiny_bird",
+    "species": "entitybattle:twilightforest_tiny_bird",
+    "renderer": "twilightforest.client.renderer.entity.TinyBirdRenderer",
+    "reportedTexture": "twilightforest:textures/entity/tinybirdred.png",
+    "actualTexture": "twilightforest:textures/entity/tinybirdred.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/tinybirdred.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:towerwood_borer",
+    "species": "entitybattle:twilightforest_towerwood_borer",
+    "renderer": "twilightforest.client.renderer.entity.TFGenericMobRenderer",
+    "reportedTexture": "twilightforest:textures/entity/towertermite.png",
+    "actualTexture": "twilightforest:textures/entity/towertermite.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/towertermite.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:troll",
+    "species": "entitybattle:twilightforest_troll",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/troll.png",
+    "actualTexture": "twilightforest:textures/entity/troll.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/troll.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:unstable_ice_core",
+    "species": "entitybattle:twilightforest_unstable_ice_core",
+    "renderer": "twilightforest.client.renderer.entity.UnstableIceCoreRenderer",
+    "reportedTexture": "twilightforest:textures/entity/iceexploder.png",
+    "actualTexture": "twilightforest:textures/entity/iceexploder.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/iceexploder.png": 1
+    },
+    "vertices": 792,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:upper_goblin_knight",
+    "species": "entitybattle:twilightforest_upper_goblin_knight",
+    "renderer": "twilightforest.client.renderer.entity.UpperGoblinKnightRenderer",
+    "reportedTexture": "twilightforest:textures/entity/doublegoblin.png",
+    "actualTexture": "twilightforest:textures/entity/doublegoblin.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/doublegoblin.png": 1
+    },
+    "vertices": 360,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:ur_ghast",
+    "species": "entitybattle:twilightforest_ur_ghast",
+    "renderer": "twilightforest.client.renderer.entity.UrGhastRenderer",
+    "reportedTexture": "twilightforest:textures/entity/towerboss.png",
+    "actualTexture": "twilightforest:textures/entity/towerboss.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/towerboss.png": 1
+    },
+    "vertices": 888,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:winter_wolf",
+    "species": "entitybattle:twilightforest_winter_wolf",
+    "renderer": "twilightforest.client.renderer.entity.WinterWolfRenderer",
+    "reportedTexture": "twilightforest:textures/entity/winterwolf.png",
+    "actualTexture": "twilightforest:textures/entity/winterwolf.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/winterwolf.png": 1
+    },
+    "vertices": 264,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:wraith",
+    "species": "entitybattle:twilightforest_wraith",
+    "renderer": "twilightforest.client.renderer.entity.WraithRenderer",
+    "reportedTexture": "twilightforest:textures/entity/ghost.png",
+    "actualTexture": "twilightforest:textures/entity/ghost.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/ghost.png": 1
+    },
+    "vertices": 144,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "twilightforest:yeti",
+    "species": "entitybattle:twilightforest_yeti",
+    "renderer": "twilightforest.client.renderer.entity.TFBipedRenderer",
+    "reportedTexture": "twilightforest:textures/entity/yeti2.png",
+    "actualTexture": "twilightforest:textures/entity/yeti2.png",
+    "reportedMismatch": false,
+    "materials": {
+      "twilightforest:textures/entity/yeti2.png": 1
+    },
+    "vertices": 240,
+    "meshVerified": true,
+    "resourcePack": "mod/twilightforest"
+  },
+  {
+    "source": "minecraft:zombie",
+    "species": "entitybattle:zombie",
+    "renderer": "net.minecraft.client.renderer.entity.ZombieRenderer",
+    "reportedTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "actualTexture": "minecraft:textures/entity/zombie/zombie.png",
+    "reportedMismatch": false,
+    "materials": {
+      "minecraft:textures/entity/zombie/zombie.png": 1
+    },
+    "vertices": 168,
+    "meshVerified": true,
+    "resourcePack": "vanilla"
+  }
+]

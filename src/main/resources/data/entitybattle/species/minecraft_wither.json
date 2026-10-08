@@ -2,18 +2,18 @@
   "name": "MinecraftWither",
   "nationalPokedexNumber": 11070,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 446,
   "experienceGroup": "slow",
   "primaryType": "ghost",
   "baseStats": {
-    "hp": 260,
-    "attack": 133,
-    "defence": 133,
-    "special_attack": 180,
-    "special_defence": 154,
-    "speed": 70
+    "hp": 185,
+    "attack": 85,
+    "defence": 105,
+    "special_attack": 135,
+    "special_defence": 125,
+    "speed": 65
   },
   "evYield": {
     "hp": 3,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "pressure"
+    "entitybattlewitherarmor"
   ],
   "moves": [
-    "1:astonish",
-    "1:willowisp",
-    "8:shadowball",
-    "18:darkpulse",
-    "30:nastyplot",
-    "45:hyperbeam"
+    "1:shadowball",
+    "18:sludgebomb",
+    "30:darkpulse",
+    "45:protect"
   ],
   "hitbox": {
     "fixed": false,
@@ -41,5 +39,5 @@
   },
   "height": 35,
   "weight": 3000,
-  "secondaryType": "dark"
+  "secondaryType": "poison"
 }

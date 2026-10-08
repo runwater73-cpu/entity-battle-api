@@ -1,0 +1,8 @@
+{
+  "variants": { "default": "model:0" },
+  "modelConfigs": [{
+    "modelRootPath": [["twilightforest.client.model.entity.HydraModel;root"]],
+    "modelMainPartFieldAliases": ["net.minecraft.client.model.geom.ModelPart;children['head_1']"],
+    "layersAllowed": false
+  }]
+}

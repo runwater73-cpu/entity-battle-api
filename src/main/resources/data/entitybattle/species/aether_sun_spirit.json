@@ -2,19 +2,19 @@
   "name": "AetherSunSpirit",
   "nationalPokedexNumber": 10080,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 387,
   "experienceGroup": "slow",
   "primaryType": "fire",
   "secondaryType": "psychic",
   "baseStats": {
-    "hp": 216,
-    "attack": 78,
-    "defence": 113,
-    "special_attack": 177,
-    "special_defence": 136,
-    "speed": 86
+    "hp": 170,
+    "attack": 65,
+    "defence": 90,
+    "special_attack": 130,
+    "special_defence": 105,
+    "speed": 80
   },
   "evYield": {
     "hp": 3,
@@ -25,15 +25,13 @@
     "speed": 0
   },
   "abilities": [
-    "drought"
+    "entitybattlecorecooling"
   ],
   "moves": [
-    "1:ember",
-    "1:confusion",
-    "8:morningsun",
-    "18:psychic",
-    "30:flamethrower",
-    "45:solarbeam"
+    "1:fireblast",
+    "18:heatwave",
+    "30:icywind",
+    "45:protect"
   ],
   "hitbox": {
     "fixed": false,

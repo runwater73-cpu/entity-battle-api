@@ -2,18 +2,18 @@
   "name": "TwilightforestAlphaYeti",
   "nationalPokedexNumber": 10004,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 326,
   "experienceGroup": "slow",
   "primaryType": "ice",
   "baseStats": {
-    "hp": 190,
-    "attack": 145,
-    "defence": 115,
-    "special_attack": 72,
-    "special_defence": 100,
-    "speed": 58
+    "hp": 155,
+    "attack": 135,
+    "defence": 110,
+    "special_attack": 50,
+    "special_defence": 85,
+    "speed": 50
   },
   "evYield": {
     "hp": 3,
@@ -27,12 +27,10 @@
     "intimidate"
   ],
   "moves": [
-    "1:powdersnow",
-    "1:stomp",
-    "8:icepunch",
-    "18:bulkup",
-    "30:blizzard",
-    "45:closecombat"
+    "1:stompingtantrum",
+    "18:stormthrow",
+    "30:avalanche",
+    "42:icehammer"
   ],
   "hitbox": {
     "fixed": false,

@@ -3,7 +3,47 @@
   "minVersion": "0.8",
   "package": "dev.entitybattle.client.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": ["MobExperienceAccessor"],
-  "client": ["PokemonRendererMixin", "BattleOverlayMixin", "PartyOverlayMixin", "StorageSlotMixin", "PCGUIMixin"],
-  "injectors": { "defaultRequire": 1 }
+  "mixins": [
+    "MobExperienceAccessor",
+    "PokemonHerdBrainMixin",
+    "BossHordeBattleBuilderMixin",
+    "NativeSupportTargetMixin",
+    "NativeMoveAnimationMixin",
+    "BattleAbilityTranslationMixin",
+    "BossEquipmentDropsMixin",
+    "BossAbilityVisualMixin",
+    "KnightSettlementRosterMixin",
+    "HordeWorldPositionMixin",
+    "DollConversionMixin",
+    "DollIdentityMixin",
+    "AetherMinionOwnerMixin",
+    "LivingDeathStateAccess",
+    "SunflowerAttackOwnerAccess",
+    "RecruitBallIdentityMixin",
+    "RecruitMachineSpeciesMixin"
+  ],
+  "client": [
+    "PokemonRendererMixin",
+    "PokemonGuiPortraitMixin",
+    "PokemonGuiModelMixin",
+    "NagaVisualCollisionMixin",
+    "XaeroNativeIconMixin",
+    "PokemonModelRepositoryMixin",
+    "NativeRenderTypeAccess",
+    "NativeTextureStateAccess",
+    "NativeCompositeStateAccess",
+    "NativePosableRenderMixin",
+    "DollSelectedPokemonMixin",
+    "DollLoaderMixin",
+    "DollModelInjectorMixin",
+    "DollNativeRendererMixin",
+    "CobbledexSpeciesMixin",
+    "CobbledexLabelsMixin",
+    "CobbledexIconMixin",
+    "NativePokemonItemMixin",
+    "SunflowerAnimationAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

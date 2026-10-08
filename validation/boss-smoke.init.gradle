@@ -1,0 +1,10 @@
+allprojects {
+    afterEvaluate { p ->
+        if (p.plugins.hasPlugin('net.neoforged.moddev')) {
+            p.sourceSets.main.java.srcDir(p.file('validation/src'))
+            p.neoForge.runs.server.gameDirectory = p.file('build/boss-smoke-run')
+            p.neoForge.runs.server.jvmArgument '-Dmixin.debug.verbose=true'
+            p.neoForge.runs.server.jvmArgument '-Dmixin.debug.export=true'
+        }
+    }
+}

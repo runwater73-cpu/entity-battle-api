@@ -1,0 +1,7 @@
+{
+  "variants": { "default": "model:0" },
+  "modelConfigs": [{
+    "modelMainPartFieldAliases": ["twilightforest.client.model.entity.NagaModel;head"],
+    "layersAllowed": false
+  }]
+}

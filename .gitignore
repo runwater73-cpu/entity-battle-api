@@ -7,6 +7,11 @@ docx_render*/
 *.log
 *.hprof
 *.docx
+!/EntityBattle原版与整合包生物属性表.docx
+!/EntityBattle整合包生物属性表.docx
+__pycache__/
+*.py[cod]
+/docs/*.zip
 ~$*
 
 # One-off local generators depend on private modpack paths; the generated JSON is committed.

@@ -25,15 +25,13 @@
     "speed": 0
   },
   "abilities": [
-    "pressure"
+    "entitybattletwilightdominion"
   ],
   "moves": [
-    "1:confusion",
-    "1:hypnosis",
-    "8:shadowball",
-    "18:psychic",
-    "30:darkpulse",
-    "45:nastyplot"
+    "1:protect",
+    "1:supersonic",
+    "20:shadowball",
+    "30:flameburst"
   ],
   "hitbox": {
     "fixed": false,

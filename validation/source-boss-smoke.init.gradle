@@ -1,0 +1,16 @@
+allprojects {
+    afterEvaluate { p ->
+        if (p.plugins.hasPlugin('net.neoforged.moddev')) {
+            p.sourceSets.main.java.srcDir(p.file('validation/source-boss-src'))
+            p.neoForge.runs.server.gameDirectory = p.file('build/source-boss-smoke-run')
+            if (p.hasProperty('source_boss_start'))
+                p.neoForge.runs.server.systemProperty('entitybattle.test.sourceStart', p.property('source_boss_start'))
+            p.tasks.named('runServer').configure {
+                doFirst {
+                    def config = p.file('build/source-boss-smoke-run/config/entitybattle-common.toml')
+                    config.text = config.text.replace('bossWorldMode = "POKEMON_ENTITY"', 'bossWorldMode = "NATIVE_MOB"')
+                }
+            }
+        }
+    }
+}

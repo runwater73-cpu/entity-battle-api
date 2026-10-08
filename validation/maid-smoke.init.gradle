@@ -1,0 +1,15 @@
+allprojects {
+    afterEvaluate { p ->
+        if (p.plugins.hasPlugin('net.neoforged.moddev')) {
+            p.sourceSets.main.java.srcDir(p.file('validation/maid-src'))
+            p.neoForge.runs.server.gameDirectory = p.file('build/maid-smoke-run')
+            if (p.providers.gradleProperty('maid_knights').isPresent()) {
+                p.neoForge.runs.server.jvmArgument '-Dentitybattle.test.knights=true'
+                p.tasks.named('runServer').configure { doFirst {
+                    def config = p.file('build/maid-smoke-run/config/entitybattle-common.toml')
+                    config.text = config.text.replace('bossWorldMode = "POKEMON_ENTITY"', 'bossWorldMode = "NATIVE_MOB"')
+                } }
+            }
+        }
+    }
+}

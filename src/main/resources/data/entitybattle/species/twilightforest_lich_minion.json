@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "cursedbody"
+    "entitybattlesoulcovenant"
   ],
   "moves": [
-    "1:astonish",
-    "1:leer",
-    "8:bite",
-    "18:nightshade",
-    "30:shadowball",
-    "45:crunch"
+    "1:bite",
+    "1:smog",
+    "1:taunt",
+    "1:nightshade"
   ],
   "hitbox": {
     "fixed": false,

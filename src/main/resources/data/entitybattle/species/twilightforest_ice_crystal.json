@@ -8,12 +8,12 @@
   "experienceGroup": "medium_fast",
   "primaryType": "ice",
   "baseStats": {
-    "hp": 68,
-    "attack": 35,
-    "defence": 60,
-    "special_attack": 103,
-    "special_defence": 88,
-    "speed": 112
+    "hp": 60,
+    "attack": 25,
+    "defence": 45,
+    "special_attack": 75,
+    "special_defence": 65,
+    "speed": 70
   },
   "evYield": {
     "hp": 0,
@@ -27,12 +27,10 @@
     "levitate"
   ],
   "moves": [
-    "1:powdersnow",
-    "1:confusion",
-    "8:iceshard",
-    "18:aurorabeam",
-    "30:icebeam",
-    "45:blizzard"
+    "1:aurorabeam",
+    "12:confuseray",
+    "24:protect",
+    "42:icywind"
   ],
   "hitbox": {
     "fixed": false,

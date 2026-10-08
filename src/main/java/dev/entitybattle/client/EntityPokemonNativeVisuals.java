@@ -6,6 +6,8 @@ import com.cobblemon.mod.common.client.entity.PokemonClientDelegate;
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.entitybattle.EntityBattleMod;
 import dev.entitybattle.api.EntityPokemonOrigin;
+import dev.entitybattle.api.EntityPokemonPresentation;
+import com.cobblemon.mod.common.client.render.models.blockbench.PosableState;
 import com.mojang.logging.LogUtils;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -33,10 +35,13 @@ public final class EntityPokemonNativeVisuals {
     private static final Logger LOGGER = LogUtils.getLogger();
     private record Visual(ResourceLocation source, CompoundTag appearance) {}
     private record Model(Mob mob, int lastTick) {}
+    private record GuiModel(ResourceLocation species, Set<String> aspects, Mob mob) {}
+    private record PartyModel(ResourceLocation source, CompoundTag appearance, Mob mob) {}
 
     private static final Map<UUID, Visual> SOURCES = new HashMap<>();
     private static final Map<PokemonEntity, Model> MODELS = new WeakHashMap<>();
-    private static final Map<Pokemon, Mob> PARTY_MODELS = new WeakHashMap<>();
+    private static final Map<Pokemon, PartyModel> PARTY_MODELS = new WeakHashMap<>();
+    private static final Map<PosableState, Map<ResourceLocation, GuiModel>> GUI_MODELS = new WeakHashMap<>();
     private static final Set<ResourceLocation> FAILED = new HashSet<>();
 
     private EntityPokemonNativeVisuals() {}
@@ -50,7 +55,22 @@ public final class EntityPokemonNativeVisuals {
         SOURCES.clear();
         MODELS.clear();
         PARTY_MODELS.clear();
+        GUI_MODELS.clear();
         FAILED.clear();
+        TwilightBossPoses.clear();
+        EntityBattleNativeModels.clear();
+    }
+
+    public static void clearGuiModels() { GUI_MODELS.clear(); }
+
+    public static void clearResourceModels() {
+        MODELS.clear(); PARTY_MODELS.clear(); GUI_MODELS.clear(); FAILED.clear();
+        EntityBattleNativeModels.clear();
+    }
+
+    public static void reportFailure(Mob mob, RuntimeException exception) {
+        fail(BuiltInRegistries.ENTITY_TYPE.getKey(mob.getType()), exception);
+        GUI_MODELS.clear();
     }
 
     public static Mob modelFor(PokemonEntity pokemon) {
@@ -80,6 +100,8 @@ public final class EntityPokemonNativeVisuals {
             MODELS.put(pokemon, new Model(model, pokemon.tickCount));
         }
         model.setPos(pokemon.getX(), pokemon.getY(), pokemon.getZ());
+        model.xo = pokemon.xo; model.yo = pokemon.yo; model.zo = pokemon.zo;
+        model.setGlowingTag(pokemon.isCurrentlyGlowing());
         // A PokemonEntity's look animation is not a vanilla Mob's head pose. Reuse its
         // facing direction for the body and keep the native model's head level.
         float facing = pokemon.getYRot();
@@ -90,15 +112,20 @@ public final class EntityPokemonNativeVisuals {
         model.yHeadRot = facing;
         model.yHeadRotO = facing;
         model.tickCount = pokemon.tickCount;
+        // Native multipart bosses deliberately avoid head-only frustum culling.
+        if (model.noCulling) pokemon.noCulling = true;
         model.hurtTime = pokemon.hurtTime;
         model.deathTime = pokemon.deathTime;
         model.attackAnim = pokemon.attackAnim;
         model.oAttackAnim = pokemon.oAttackAnim;
+        TwilightBossPoses.apply(pokemon, model);
         return model;
     }
 
     public static boolean render(PokemonEntity pokemon, float yaw, float partialTick,
                                  PoseStack poseStack, MultiBufferSource buffers, int packedLight) {
+        if (EntityBattleModelRepository.usesRepository(pokemon.getPokemon().getSpecies().getResourceIdentifier(),
+                (PosableState) pokemon.getDelegate())) return false;
         Mob model = modelFor(pokemon);
         if (model == null) return false;
         try {
@@ -108,8 +135,10 @@ public final class EntityPokemonNativeVisuals {
             poseStack.pushPose();
             try {
                 poseStack.scale(scale, scale, scale);
-                Minecraft.getInstance().getEntityRenderDispatcher().render(model, 0, 0, 0, yaw,
-                        partialTick, poseStack, buffers, packedLight);
+                var offset = TwilightBossPoses.offset(pokemon, partialTick);
+                poseStack.translate(offset.x, offset.y, offset.z);
+                EntityBattleNativeModels.prepare(model, pokemon);
+                EntityBattleNativeModels.render(model, yaw, partialTick, poseStack, buffers, packedLight);
             } finally {
                 poseStack.popPose();
             }
@@ -121,20 +150,52 @@ public final class EntityPokemonNativeVisuals {
     }
 
     public static Mob modelFor(Pokemon pokemon) {
-        ResourceLocation source = EntityPokemonOrigin.entityId(pokemon).orElse(null);
+        EntityPokemonPresentation.Visual decoded = EntityPokemonPresentation.decode(pokemon.getAspects());
+        ResourceLocation source = decoded != null ? decoded.source()
+                : EntityPokemonOrigin.entityId(pokemon).orElse(null);
+        CompoundTag appearance = decoded != null ? decoded.appearance()
+                : EntityPokemonOrigin.appearance(pokemon).orElseGet(CompoundTag::new);
+        return modelFor(source, pokemon, appearance);
+    }
+
+    public static Mob modelFor(ResourceLocation species, PosableState state) {
+        return modelFor(species, state, EntityBattleClientProfiles.sourceForSpecies(species));
+    }
+
+    static Mob modelFor(ResourceLocation species, PosableState state, ResourceLocation preferredSource) {
+        Minecraft client = Minecraft.getInstance();
+        if (client.level == null) return null;
+        Set<String> aspects = state.getCurrentAspects();
+        var models = GUI_MODELS.computeIfAbsent(state, ignored -> new HashMap<>());
+        GuiModel cached = models.get(species);
+        if (cached != null && species.equals(cached.species()) && aspects.equals(cached.aspects())
+                && (cached.mob() == null || cached.mob().level() == client.level)) {
+            return cached.mob() != null && FAILED.contains(BuiltInRegistries.ENTITY_TYPE.getKey(cached.mob().getType()))
+                    ? null : cached.mob();
+        }
+        EntityPokemonPresentation.Visual decoded = EntityPokemonPresentation.decode(aspects);
+        if (decoded != null && preferredSource != null && !preferredSource.equals(decoded.source())) decoded = null;
+        ResourceLocation source = decoded != null ? decoded.source()
+                : preferredSource;
+        Mob mob = modelFor(source, null, decoded == null ? new CompoundTag() : decoded.appearance());
+        models.put(species, new GuiModel(species, Set.copyOf(aspects), mob));
+        return mob;
+    }
+
+    private static Mob modelFor(ResourceLocation source, Pokemon pokemon, CompoundTag appearance) {
         if (source == null || !BuiltInRegistries.ENTITY_TYPE.containsKey(source)
                 || FAILED.contains(source)) return null;
         Minecraft client = Minecraft.getInstance();
         if (client.level == null) return null;
-        Mob cached = PARTY_MODELS.get(pokemon);
-        if (cached != null && cached.level() == client.level) return cached;
+        PartyModel cached = pokemon == null ? null : PARTY_MODELS.get(pokemon);
+        if (cached != null && cached.source().equals(source) && cached.appearance().equals(appearance)
+                && cached.mob().level() == client.level) return cached.mob();
         try {
             EntityType<?> type = BuiltInRegistries.ENTITY_TYPE.get(source);
             Entity created = type.create(client.level);
             if (!(created instanceof Mob mob)) return null;
-            EntityPokemonOrigin.appearance(pokemon)
-                    .ifPresent(snapshot -> EntityPokemonOrigin.restoreAppearance(type, mob, snapshot));
-            PARTY_MODELS.put(pokemon, mob);
+            EntityPokemonOrigin.restoreAppearance(type, mob, appearance);
+            if (pokemon != null) PARTY_MODELS.put(pokemon, new PartyModel(source, appearance.copy(), mob));
             return mob;
         } catch (RuntimeException exception) {
             fail(source, exception);
@@ -151,5 +212,6 @@ public final class EntityPokemonNativeVisuals {
         if (!event.getLevel().isClientSide() || !(event.getEntity() instanceof PokemonEntity pokemon)) return;
         SOURCES.remove(pokemon.getUUID());
         MODELS.remove(pokemon);
+        TwilightBossPoses.remove(pokemon.getUUID());
     }
 }

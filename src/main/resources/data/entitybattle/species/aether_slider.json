@@ -2,18 +2,18 @@
   "name": "AetherSlider",
   "nationalPokedexNumber": 10076,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 372,
   "experienceGroup": "slow",
   "primaryType": "rock",
   "baseStats": {
-    "hp": 234,
-    "attack": 148,
-    "defence": 185,
-    "special_attack": 54,
-    "special_defence": 128,
-    "speed": 27
+    "hp": 180,
+    "attack": 120,
+    "defence": 150,
+    "special_attack": 40,
+    "special_defence": 120,
+    "speed": 30
   },
   "evYield": {
     "hp": 3,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "sturdy"
+    "stamina"
   ],
   "moves": [
-    "1:tackle",
-    "1:harden",
-    "8:rockthrow",
-    "18:irondefense",
-    "30:stoneedge",
-    "45:heavyslam"
+    "1:rockslide",
+    "18:heavyslam",
+    "30:bodypress",
+    "45:bulldoze"
   ],
   "hitbox": {
     "fixed": false,

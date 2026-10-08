@@ -77,6 +77,7 @@ public final class EntityPokemonOrigin {
         CompoundTag origin = pokemon.getPersistentData().getCompound(DATA_KEY);
         if (snapshot.equals(origin.getCompound(APPEARANCE_KEY))) return false;
         origin.put(APPEARANCE_KEY, snapshot);
+        pokemon.updateAspects();
         pokemon.onChange(null);
         return true;
     }
@@ -117,6 +118,26 @@ public final class EntityPokemonOrigin {
         origin.putString(ENTITY_KEY, entity.toString());
         origin.putUUID(SOURCE_UUID_KEY, mob.getUUID());
         pokemon.getPersistentData().put(DATA_KEY, origin);
+        pokemon.updateAspects();
+        pokemon.onChange(null);
+        return true;
+    }
+
+    /** Keeps the native model and variant on a newly created, owned reward Pokemon. */
+    public static boolean copyPresentation(Pokemon source, Pokemon reward) {
+        Optional<ResourceLocation> entity = entityId(source);
+        if (entity.isEmpty()) return false;
+        return setPresentation(reward, entity.get(), appearance(source).orElse(null));
+    }
+
+    /** Display-only identity for owned / NPC Pokemon, without a world source or death settlement. */
+    public static boolean setPresentation(Pokemon pokemon, ResourceLocation entity, CompoundTag appearance) {
+        if (pokemon == null || entity == null || pokemon.getPersistentData().contains(DATA_KEY)) return false;
+        CompoundTag origin = new CompoundTag();
+        origin.putString(ENTITY_KEY, entity.toString());
+        if (appearance != null) origin.put(APPEARANCE_KEY, appearance.copy());
+        pokemon.getPersistentData().put(DATA_KEY, origin);
+        pokemon.updateAspects();
         pokemon.onChange(null);
         return true;
     }

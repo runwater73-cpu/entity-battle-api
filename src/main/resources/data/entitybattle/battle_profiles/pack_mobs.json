@@ -15,17 +15,38 @@
   },
   {
     "entity": "twilightforest:alpha_yeti",
+    "boss": true,
+    "heldItem": "twilightforest:alpha_yeti_trophy",
     "species": "entitybattle:twilightforest_alpha_yeti",
     "level": {
-      "min": 55,
-      "max": 70
+      "min": 33,
+      "max": 37
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:yeti",
+      "minionCount": 2,
+      "levelOffset": -5,
+      "minionHeldItem": "cobblemon:never_melt_ice",
+      "minionMoves": [
+        "stomp",
+        "icepunch",
+        "bulkup",
+        "iceshard"
+      ]
+    },
+    "moves": [
+      "stompingtantrum",
+      "stormthrow",
+      "avalanche",
+      "icehammer"
+    ]
   },
   {
     "entity": "twilightforest:armored_giant",
@@ -115,8 +136,8 @@
     "entity": "twilightforest:carminite_ghastling",
     "species": "entitybattle:twilightforest_carminite_ghastling",
     "level": {
-      "min": 20,
-      "max": 35
+      "min": 43,
+      "max": 47
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -185,8 +206,8 @@
     "entity": "twilightforest:fire_beetle",
     "species": "entitybattle:twilightforest_fire_beetle",
     "level": {
-      "min": 20,
-      "max": 35
+      "min": 36,
+      "max": 40
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -227,8 +248,8 @@
     "entity": "twilightforest:hedge_spider",
     "species": "entitybattle:twilightforest_hedge_spider",
     "level": {
-      "min": 12,
-      "max": 28
+      "min": 23,
+      "max": 27
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -267,24 +288,45 @@
   },
   {
     "entity": "twilightforest:hydra",
+    "boss": true,
+    "heldItem": "twilightforest:hydra_trophy",
     "species": "entitybattle:twilightforest_hydra",
     "level": {
-      "min": 65,
-      "max": 80
+      "min": 38,
+      "max": 42
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:fire_beetle",
+      "minionCount": 2,
+      "levelOffset": -7,
+      "minionHeldItem": "cobblemon:charcoal_stick",
+      "minionMoves": [
+        "ember",
+        "strugglebug",
+        "incinerate",
+        "willowisp"
+      ]
+    },
+    "moves": [
+      "crunch",
+      "flamethrower",
+      "heatwave",
+      "fireblast"
+    ]
   },
   {
     "entity": "twilightforest:ice_crystal",
     "species": "entitybattle:twilightforest_ice_crystal",
     "level": {
-      "min": 30,
-      "max": 45
+      "min": 48,
+      "max": 52
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -309,17 +351,32 @@
   },
   {
     "entity": "twilightforest:knight_phantom",
+    "boss": true,
+    "heldItem": "twilightforest:knight_phantom_trophy",
     "species": "entitybattle:twilightforest_knight_phantom",
     "level": {
-      "min": 55,
-      "max": 70
+      "min": 33,
+      "max": 37
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "existing_squad",
+      "minionEntity": "twilightforest:knight_phantom",
+      "minionCount": 5,
+      "levelOffset": 0,
+      "minionHeldItem": "cobblemon:metal_coat"
+    },
+    "moves": [
+      "shadowclaw",
+      "ironhead",
+      "sacredsword",
+      "protect"
+    ]
   },
   {
     "entity": "twilightforest:kobold",
@@ -337,24 +394,46 @@
   },
   {
     "entity": "twilightforest:lich",
+    "boss": true,
+    "heldItem": "twilightforest:lich_trophy",
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:lich_minion",
+      "minionCount": 2,
+      "levelOffset": 0,
+      "minionHeldItem": "cobblemon:leftovers",
+      "minionMoves": [
+        "bite",
+        "smog",
+        "taunt",
+        "nightshade"
+      ]
+    },
     "species": "entitybattle:twilightforest_lich",
     "level": {
-      "min": 60,
-      "max": 75
+      "min": 28,
+      "max": 32
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "moves": [
+      "protect",
+      "supersonic",
+      "shadowball",
+      "flameburst"
+    ]
   },
   {
     "entity": "twilightforest:lich_minion",
+    "heldItem": "cobblemon:leftovers",
     "species": "entitybattle:twilightforest_lich_minion",
     "level": {
-      "min": 20,
-      "max": 35
+      "min": 28,
+      "max": 32
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -407,24 +486,45 @@
   },
   {
     "entity": "twilightforest:minoshroom",
+    "boss": true,
+    "heldItem": "twilightforest:minoshroom_trophy",
     "species": "entitybattle:twilightforest_minoshroom",
     "level": {
-      "min": 50,
-      "max": 65
+      "min": 33,
+      "max": 37
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:minotaur",
+      "minionCount": 2,
+      "levelOffset": -5,
+      "minionHeldItem": "cobblemon:black_belt",
+      "minionMoves": [
+        "stomp",
+        "brickbreak",
+        "highhorsepower",
+        "protect"
+      ]
+    },
+    "moves": [
+      "highhorsepower",
+      "hammerarm",
+      "woodhammer",
+      "rockslide"
+    ]
   },
   {
     "entity": "twilightforest:minotaur",
     "species": "entitybattle:twilightforest_minotaur",
     "level": {
-      "min": 20,
-      "max": 35
+      "min": 33,
+      "max": 37
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -463,17 +563,38 @@
   },
   {
     "entity": "twilightforest:naga",
+    "boss": true,
+    "heldItem": "twilightforest:naga_trophy",
     "species": "entitybattle:twilightforest_naga",
     "level": {
-      "min": 50,
-      "max": 65
+      "min": 23,
+      "max": 27
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:hedge_spider",
+      "minionCount": 2,
+      "levelOffset": -5,
+      "minionHeldItem": "cobblemon:silver_powder",
+      "minionMoves": [
+        "bugbite",
+        "stringshot",
+        "poisonfang",
+        "lunge"
+      ]
+    },
+    "moves": [
+      "bodyslam",
+      "crunch",
+      "rockslide",
+      "breakingswipe"
+    ]
   },
   {
     "entity": "twilightforest:penguin",
@@ -511,7 +632,7 @@
       "max": 50
     },
     "defeat": "vanilla_death",
-    "catchable": false,
+    "catchable": true,
     "worldMode": "native_mob",
     "worldBehavior": "passive",
     "nativeDrops": true,
@@ -631,17 +752,38 @@
   },
   {
     "entity": "twilightforest:snow_queen",
+    "boss": true,
+    "heldItem": "twilightforest:snow_queen_trophy",
     "species": "entitybattle:twilightforest_snow_queen",
     "level": {
-      "min": 60,
-      "max": 75
+      "min": 38,
+      "max": 42
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:ice_crystal",
+      "minionCount": 2,
+      "levelOffset": -5,
+      "minionHeldItem": "cobblemon:never_melt_ice",
+      "minionMoves": [
+        "aurorabeam",
+        "confuseray",
+        "protect",
+        "icywind"
+      ]
+    },
+    "moves": [
+      "icebeam",
+      "dazzlinggleam",
+      "auroraveil",
+      "blizzard"
+    ]
   },
   {
     "entity": "twilightforest:squirrel",
@@ -757,17 +899,38 @@
   },
   {
     "entity": "twilightforest:ur_ghast",
+    "boss": true,
+    "heldItem": "twilightforest:ur_ghast_trophy",
     "species": "entitybattle:twilightforest_ur_ghast",
     "level": {
-      "min": 70,
-      "max": 85
+      "min": 38,
+      "max": 42
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "twilightforest:carminite_ghastling",
+      "minionCount": 2,
+      "levelOffset": -5,
+      "minionHeldItem": "cobblemon:wise_glasses",
+      "minionMoves": [
+        "ember",
+        "confuseray",
+        "hex",
+        "flameburst"
+      ]
+    },
+    "moves": [
+      "shadowball",
+      "hypervoice",
+      "fireblast",
+      "heatwave"
+    ]
   },
   {
     "entity": "twilightforest:winter_wolf",
@@ -801,8 +964,8 @@
     "entity": "twilightforest:yeti",
     "species": "entitybattle:twilightforest_yeti",
     "level": {
-      "min": 35,
-      "max": 50
+      "min": 43,
+      "max": 47
     },
     "defeat": "vanilla_death",
     "catchable": true,
@@ -1023,17 +1186,25 @@
   },
   {
     "entity": "aether:slider",
+    "boss": true,
     "species": "entitybattle:aether_slider",
     "level": {
-      "min": 55,
-      "max": 70
+      "min": 53,
+      "max": 57
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "heldItem": "cobblemon:hard_stone",
+    "moves": [
+      "rockslide",
+      "heavyslam",
+      "bodypress",
+      "bulldoze"
+    ]
   },
   {
     "entity": "aether:valkyrie",
@@ -1051,17 +1222,25 @@
   },
   {
     "entity": "aether:valkyrie_queen",
+    "boss": true,
     "species": "entitybattle:aether_valkyrie_queen",
     "level": {
-      "min": 60,
-      "max": 75
+      "min": 58,
+      "max": 62
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "heldItem": "cobblemon:black_belt",
+    "moves": [
+      "sacredsword",
+      "aerialace",
+      "roost",
+      "wideguard"
+    ]
   },
   {
     "entity": "aether:fire_minion",
@@ -1079,17 +1258,38 @@
   },
   {
     "entity": "aether:sun_spirit",
+    "boss": true,
     "species": "entitybattle:aether_sun_spirit",
     "level": {
-      "min": 65,
-      "max": 80
+      "min": 63,
+      "max": 67
     },
     "defeat": "vanilla_death",
     "catchable": false,
     "worldMode": "native_mob",
     "worldBehavior": "hostile",
     "nativeDrops": true,
-    "nativeExperience": true
+    "nativeExperience": true,
+    "heldItem": "cobblemon:wise_glasses",
+    "bossBattle": {
+      "mode": "horde",
+      "minionEntity": "aether:fire_minion",
+      "minionCount": 5,
+      "levelOffset": -12,
+      "minionHeldItem": "cobblemon:oran_berry",
+      "minionMoves": [
+        "ember",
+        "quickattack",
+        "flamecharge",
+        "protect"
+      ]
+    },
+    "moves": [
+      "fireblast",
+      "heatwave",
+      "icywind",
+      "protect"
+    ]
   },
   {
     "entity": "aether:cloud_minion",

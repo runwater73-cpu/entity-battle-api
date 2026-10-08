@@ -2,18 +2,18 @@
   "name": "AetherValkyrieQueen",
   "nationalPokedexNumber": 10078,
   "implemented": false,
-  "maleRatio": -1.0,
+  "maleRatio": -1,
   "catchRate": 3,
   "baseExperienceYield": 396,
   "experienceGroup": "slow",
   "primaryType": "fighting",
   "baseStats": {
-    "hp": 192,
-    "attack": 150,
-    "defence": 136,
-    "special_attack": 121,
-    "special_defence": 132,
-    "speed": 93
+    "hp": 160,
+    "attack": 135,
+    "defence": 105,
+    "special_attack": 65,
+    "special_defence": 105,
+    "speed": 110
   },
   "evYield": {
     "hp": 3,
@@ -24,15 +24,13 @@
     "speed": 0
   },
   "abilities": [
-    "pressure"
+    "defiant"
   ],
   "moves": [
-    "1:wingattack",
-    "1:brickbreak",
-    "8:moonblast",
-    "18:swordsdance",
-    "30:closecombat",
-    "45:bravebird"
+    "1:sacredsword",
+    "18:aerialace",
+    "30:roost",
+    "45:wideguard"
   ],
   "hitbox": {
     "fixed": false,
@@ -41,5 +39,5 @@
   },
   "height": 35,
   "weight": 3000,
-  "secondaryType": "fairy"
+  "secondaryType": "flying"
 }
