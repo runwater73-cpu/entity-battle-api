@@ -53,7 +53,7 @@
 
 需要 JDK 21。运行 `./gradlew build`，Windows 使用 `gradlew.bat build`。Gradle 默认从 Modrinth 获取 Cobblemon 1.8.1；也可通过 `-Pcobblemon_local_jar=<路径>` 指向本地 JAR。输出位于 `build/libs/`。
 
-当前版本为 `0.2.0-beta.2`，公开测试目标为 Minecraft 1.21.1 / NeoForge / Cobblemon 1.8.1。全部可选来源安装时预置 169 个 profile。服务端剧情 / 战斗结算、客户端来源姿态 / 实际物品模型和缺少可选来源启动均有专项验证，详见 [验证记录](BOSS_VERIFICATION.md)。自然地牢完整游玩、随机投球捕捉、全部第三方显示界面及战斗平衡仍需游戏测试；暂不宣称稳定正式版或真人多人协作已完成。
+当前版本为 `0.2.0-beta.3`，公开测试目标为 Minecraft 1.21.1 / NeoForge / Cobblemon 1.8.1。全部可选来源安装时预置 169 个 profile。服务端剧情 / 战斗结算、客户端来源姿态 / 实际物品模型和缺少可选来源启动均有专项验证，详见 [验证记录](BOSS_VERIFICATION.md)。本版本补齐原生来源模型的步行动画时钟和转换后模型来源回退，避免跟随移动时平移以及刚生成宝可梦尚未收到追踪包时出现空模型。自然地牢完整游玩、随机投球捕捉、全部第三方显示界面及战斗平衡仍需游戏测试；暂不宣称稳定正式版或真人多人协作已完成。
 
 ## 许可
 

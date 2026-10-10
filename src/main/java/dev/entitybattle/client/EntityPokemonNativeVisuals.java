@@ -77,6 +77,20 @@ public final class EntityPokemonNativeVisuals {
 
     public static Mob modelFor(PokemonEntity pokemon) {
         Visual visual = SOURCES.get(pokemon.getUUID());
+        // A newly spawned or permanently converted Pokemon can be rendered one frame
+        // before the tracking packet arrives. The origin is already serialized on the
+        // individual, so use it as a deterministic fallback instead of briefly (or
+        // permanently, after a failed cache lookup) falling back to a blank model.
+        if (visual == null) {
+            ResourceLocation source = EntityPokemonOrigin.entityId(pokemon.getPokemon()).orElse(null);
+            if (source == null) source = EntityBattleClientProfiles.sourceForSpecies(
+                    pokemon.getPokemon().getSpecies().getResourceIdentifier());
+            if (source != null) {
+                visual = new Visual(source, EntityPokemonOrigin.appearance(pokemon.getPokemon())
+                        .orElseGet(CompoundTag::new));
+                SOURCES.put(pokemon.getUUID(), visual);
+            }
+        }
         if (visual == null || !BuiltInRegistries.ENTITY_TYPE.containsKey(visual.source())
                 || FAILED.contains(visual.source())) return null;
         Minecraft client = Minecraft.getInstance();
@@ -98,7 +112,25 @@ public final class EntityPokemonNativeVisuals {
             }
         }
         if (state.lastTick() != pokemon.tickCount) {
-            model.walkAnimation.update(pokemon.walkAnimation.speed(), 1F);
+            /*
+             * The display mob is never added to the client level, so its LivingEntity
+             * tick/travel loop cannot update WalkAnimationState.  Copying only
+             * PokemonEntity.walkAnimation.speed() made ordinary native models (most
+             * visibly the iron golem) slide while their legs stayed in the idle pose:
+             * source renderers consume both speed and the accumulated position, and
+             * several vanilla renderers also use that state for body sway.
+             *
+             * Run the same displacement based calculation that LivingEntity uses.
+             * This keeps the source renderer's animation clock in the same phase as
+             * the real PokemonEntity, including follow movement and client lerps.  A
+             * flying source includes vertical displacement just like vanilla flying
+             * mobs; walking sources intentionally ignore it.
+             */
+            model.xo = pokemon.xo;
+            model.yo = pokemon.yo;
+            model.zo = pokemon.zo;
+            model.setPos(pokemon.getX(), pokemon.getY(), pokemon.getZ());
+            model.calculateEntityAnimation(model instanceof net.minecraft.world.entity.animal.FlyingAnimal);
             MODELS.put(pokemon, new Model(model, pokemon.tickCount));
         }
         model.setPos(pokemon.getX(), pokemon.getY(), pokemon.getZ());
